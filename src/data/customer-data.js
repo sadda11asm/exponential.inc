@@ -1,26 +1,26 @@
 export default [
   {
-    title: 'Lorem ipsum dolor sit amet, consectetur adipiscing',
+    title: 'Ментор 1го ранга',
     content:
-      'Eu lobortis elementum nibh tellus molestie nunc non blandit massa. Sit amet consectetur adipiscing elit duis.',
-    customerName: 'Jane Doe',
-    customerTitle: 'Director of Research and Data',
+      'Салам всем хохлам',
+    customerName: 'Алишер Султанов',
+    customerTitle: 'ГейДев Инженер в МоскваСити',
     customerImage: 'https://placeimg.com/150/150/people'
   },
   {
-    title: 'Lorem ipsum dolor sit amet, consectetur adipiscing',
+    title: 'Ментор 1го ранга',
     content:
-      'Eu lobortis elementum nibh tellus molestie nunc non blandit massa. Sit amet consectetur adipiscing elit duis.',
-    customerName: 'John Doe',
-    customerTitle: 'Director of Research and Data',
+      'Сплю один, никого не трогаю',
+    customerName: 'Даулет Амирханов',
+    customerTitle: 'Джуниор Саксесс Инженер в Ботпресс',
     customerImage: 'https://placeimg.com/150/150/people'
   },
   {
-    title: 'Lorem ipsum dolor sit amet, consectetur adipiscing',
+    title: 'Ментор 1го ранга',
     content:
-      'Eu lobortis elementum nibh tellus molestie nunc non blandit massa. Sit amet consectetur adipiscing elit duis.',
-    customerName: 'Jane Smith',
-    customerTitle: 'Director of Research and Data',
+      'Ваша карьера это мои штанги.',
+    customerName: 'Илья Ильин',
+    customerTitle: 'Чемпион мира по тяжелой атлеттике',
     customerImage: 'https://placeimg.com/150/150/people'
   }
 ];
