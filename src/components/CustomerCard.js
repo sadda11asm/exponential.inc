@@ -2,7 +2,7 @@ import React from 'react';
 import Card from './Card';
 
 const CustomerCard = ({ customer }) => (
-  <Card className="mb-8">
+  <Card className="mb-8 bg-opacity-60 bg-white">
     <p className="text-xl font-semibold">{customer.title}</p>
     <p className="mt-6">{customer.content}</p>
     <div className="flex items-center mt-8">

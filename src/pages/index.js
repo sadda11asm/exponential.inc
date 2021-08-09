@@ -9,18 +9,19 @@ import StatsBox from '../components/StatsBox';
 import customerData from '../data/customer-data';
 import HeroImage from '../svg/HeroImage';
 import SvgCharts from '../svg/SvgCharts';
-import faang from '../images/faang.jpg'
+import faang from '../images/faang.png'
+import google_office from '../images/google-office.jpg'
 
 const Index = () => (
   <Layout>
-    <section className="font-mono pt-20 md:pt-40">
+    <section className="font-mono pt-20 md:pt-40 pb-40">
       <div className="container mx-auto px-8 lg:flex">
         <div className="text-center lg:text-left lg:w-1/2">
           <h1 className="text-4xl lg:text-5xl xl:text-6xl font-bold leading-none">
             Exponential Inc.
           </h1>
           <p className="text-xl lg:text-2xl mt-6 font-light">
-            Менторская программа для 1-2-3 курсов c усиленной подготовкой к FAANG стажировкам
+            Менторская программа усиленной подготовки к FAANG стажировкам для студентов 1-2-3 курсов.
           </p>
           <p className="mt-8 md:mt-12">
             <Button size="lg">Подать заявку</Button>
@@ -32,12 +33,13 @@ const Index = () => (
         </div>
       </div>
     </section>
+    <div className="bg-primary bg-opacity-25">
     <section id="what-we-offer" className="font-mono py-20 lg:pb-40 lg:pt-48">
       <div className="container mx-auto text-center">
         <h2 className="text-3xl lg:text-5xl font-semibold">What We Offer</h2>
         <div className="flex flex-col sm:flex-row sm:-mx-3 mt-12">
           <div className="flex-1 px-3">
-            <Card className="mb-8">
+            <Card className="mb-8 bg-opacity-60 bg-white">
               <p className="font-semibold text-xl">#1</p>
               <p className="mt-4">
                 Оказываем всестороннюю <b> индивидуальную </b> поддержку студентам при подготовке к первой важной цели на пути в FAANG.
@@ -45,7 +47,7 @@ const Index = () => (
             </Card>
           </div>
           <div className="flex-1 px-3">
-            <Card className="mb-8">
+            <Card className="mb-8 bg-opacity-60 bg-white">
               <p className="font-semibold text-xl">#2</p>
               <p className="mt-4">
                 Предоставляем отработанную стратегию подготовки на опыте более 40 аппликантов предыдущих лет, <b> получивших в итоге offer в FAANG </b>.
@@ -53,7 +55,7 @@ const Index = () => (
             </Card>
           </div>
           <div className="flex-1 px-3">
-            <Card className="mb-8">
+            <Card className="mb-8 bg-opacity-60 bg-white">
               <p className="font-semibold text-xl">#3</p>
               <p className="mt-4">
                 Создаем идеальную атмосферу подготовки, включающую в себя обмен знанием и навыками, подтягиваем слабые и развиваем сильные стороны.
@@ -63,6 +65,7 @@ const Index = () => (
         </div>
       </div>
     </section>
+    </div>
     <SplitSection
       id="program"
       primarySlot={
@@ -102,6 +105,27 @@ const Index = () => (
       }
       secondarySlot={<SvgCharts />}
     />
+    <div className="bg-primary bg-opacity-25">
+    <section id="mentors" className="font-mono py-20 lg:py-40">
+      <div className="container mx-auto">
+        <LabelText className="mb-8 text-gray-600 text-center">Наши ментора</LabelText>
+        <div className="flex flex-col md:flex-row md:-mx-3">
+          {customerData.slice(0, 3).map(customer => (
+            <div key={customer.customerName} className="flex-1 px-3">
+              <CustomerCard customer={customer} />
+            </div>
+          ))}
+        </div>
+        <div className="flex flex-col md:flex-row md:-mx-3">
+          {customerData.slice(3, 6).map(customer => (
+            <div key={customer.customerName} className="flex-1 px-3">
+              <CustomerCard customer={customer} />
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+    </div>
     <section id="value" className="font-mono py-20 lg:pt-32">
       <div className="container mx-auto text-center">
         <LabelText className="text-gray-600">Ваши результаты</LabelText>
@@ -116,21 +140,20 @@ const Index = () => (
             <StatsBox primaryText="+300%" secondaryText="Вера в себя" thirdText="Наши  ментора гарантируют, что вы имеете всё для победы."/>
           </div>
         </div>
-      </div>
-    </section>
-    <section id="mentors" className="font-mono py-20 lg:py-40">
-      <div className="container mx-auto">
-        <LabelText className="mb-8 text-gray-600 text-center">Наши ментора</LabelText>
-        <div className="flex flex-col md:flex-row md:-mx-3">
-          {customerData.map(customer => (
-            <div key={customer.customerName} className="flex-1 px-3">
-              <CustomerCard customer={customer} />
-            </div>
-          ))}
+        <div className="flex flex-col sm:flex-row mt-8 lg:px-24">
+          <div className="w-full sm:w-1/3">
+            <StatsBox primaryText="+200%" secondaryText="Боевой Дух"  thirdText="Наши ментора делятся с вами своим ценным опытом."/>
+          </div>
+          <div className="w-full sm:w-1/3">
+            <StatsBox primaryText="+400%" secondaryText="Мотивация" thirdText="Вы идёте по уже протоптанной тропе."/>
+          </div>
+          <div className="w-full sm:w-1/3">
+            <StatsBox primaryText="-100%" secondaryText="Прокрастинация" thirdText="Наши  ментора гарантируют, что вы имеете всё для победы."/>
+          </div>
         </div>
       </div>
     </section>
-    <section className="font-mono container mx-auto my-20 py-24 bg-gray-200 rounded-lg text-center">
+    <section className="font-mono container mx-auto my-20 py-24 bg-gray-200 rounded-lg text-center bg-opacity-50">
       <h3 className="text-5xl font-semibold">Хотите стажировку в FAANG?</h3>
       <p className="mt-8 text-xl font-light">
        Подавайте в Exponential Inc. и станьте одним из 20 учеников эксклюзивной программы.
