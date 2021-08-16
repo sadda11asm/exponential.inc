@@ -14,29 +14,29 @@ import google_office from '../images/google-office.jpg'
 
 const Index = () => (
   <Layout>
-    <section className="font-mono pt-20 md:pt-40 pb-40">
-      <div className="container mx-auto px-8 lg:flex">
+    <section className="font-display pt-20 md:pt-40 pb-40">
+      <div className="container mx-auto px-10 lg:flex">
         <div className="text-center lg:text-left lg:w-1/2">
           <h1 className="text-4xl lg:text-5xl xl:text-6xl font-bold leading-none">
-            Exponential Inc.
+            You can get it!
           </h1>
           <p className="text-xl lg:text-2xl mt-6 font-light">
-            Менторская программа усиленной подготовки к FAANG стажировкам для студентов 1-2-3 курсов.
+            Менторская программа для девушек подающих на стажировки в FAANG
           </p>
           <p className="mt-8 md:mt-12">
             <Button size="lg">Подать заявку</Button>
           </p>
           <p className="mt-4 text-gray-600"></p>
         </div>
-        <div className="lg:w-1/2">
+        <div className="lg:w-1/2 pl-12">
           <img src={faang} alt="Faang" />
         </div>
       </div>
     </section>
     <div className="bg-primary bg-opacity-25">
-    <section id="what-we-offer" className="font-mono py-20 lg:pb-40 lg:pt-48">
+    <section id="what-we-offer" className="font-display py-20 lg:pb-40 lg:pt-48">
       <div className="container mx-auto text-center">
-        <h2 className="text-3xl lg:text-5xl font-semibold">What We Offer</h2>
+        <h2 className="text-3xl lg:text-5xl font-semibold">Идея</h2>
         <div className="flex flex-col sm:flex-row sm:-mx-3 mt-12">
           <div className="flex-1 px-3">
             <Card className="mb-8 bg-opacity-60 bg-white">
@@ -69,7 +69,7 @@ const Index = () => (
     <SplitSection
       id="program"
       primarySlot={
-        <div className="font-mono lg:pr-32 xl:pr-48">
+        <div className="font-display lg:pr-32 xl:pr-48">
           <h3 className="text-3xl font-semibold leading-tight">Еженедельные индивидуальные сессии</h3>
           <p className="mt-8 text-xl font-light leading-relaxed">
             Ментора встречаются с участниками индивидуально и определяют статус подготовки и успеваемость участника.
@@ -108,7 +108,7 @@ const Index = () => (
     <div className="bg-primary bg-opacity-25">
     <section id="mentors" className="font-mono py-20 lg:py-40">
       <div className="container mx-auto">
-        <LabelText className="mb-8 text-gray-600 text-center">Наши ментора</LabelText>
+        <LabelText className="mb-8 lg:text-5xl font-bold text-center">Наши ментора</LabelText>
         <div className="flex flex-col md:flex-row md:-mx-3">
           {customerData.slice(0, 3).map(customer => (
             <div key={customer.customerName} className="flex-1 px-3">
