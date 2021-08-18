@@ -1,6 +1,7 @@
 import React from 'react';
 import Button from '../components/Button';
 import Card from '../components/Card';
+import Card2 from '../components/Card2';
 import CustomerCard from '../components/CustomerCard';
 import LabelText from '../components/LabelText';
 import Layout from '../components/layout/Layout';
@@ -39,28 +40,28 @@ const Index = () => (
         <h2 className="text-3xl lg:text-5xl font-semibold">Идея</h2>
         <div className="flex flex-col sm:flex-row sm:-mx-3 mt-12">
           <div className="flex-1 px-3">
-            <Card className="mb-8 bg-opacity-60 bg-white">
+            <Card2 className="mb-8 bg-opacity-60 bg-white">
               <p className="font-semibold text-xl">#1</p>
               <p className="mt-4">
                 Оказываем всестороннюю <b> индивидуальную </b> поддержку студентам при подготовке к первой важной цели на пути в FAANG.
               </p>
-            </Card>
+            </Card2>
           </div>
           <div className="flex-1 px-3">
-            <Card className="mb-8 bg-opacity-60 bg-white">
+            <Card2 className="mb-8 bg-opacity-60 bg-white">
               <p className="font-semibold text-xl">#2</p>
               <p className="mt-4">
                 Предоставляем отработанную стратегию подготовки на опыте более 40 аппликантов предыдущих лет, <b> получивших в итоге offer в FAANG </b>.
               </p>
-            </Card>
+            </Card2>
           </div>
           <div className="flex-1 px-3">
-            <Card className="mb-8 bg-opacity-60 bg-white">
+            <Card2 className="mb-8 bg-opacity-60 bg-white">
               <p className="font-semibold text-xl">#3</p>
               <p className="mt-4">
                 Создаем идеальную атмосферу подготовки, включающую в себя обмен знанием и навыками, подтягиваем слабые и развиваем сильные стороны.
               </p>
-            </Card>
+            </Card2>
           </div>
         </div>
       </div>
@@ -72,7 +73,7 @@ const Index = () => (
         <div className="font-display lg:pr-32 xl:pr-48">
           <h3 className="text-3xl font-semibold leading-tight">Еженедельные индивидуальные сессии</h3>
           <p className="mt-8 text-xl font-light leading-relaxed">
-            Ментора встречаются с участниками индивидуально и определяют статус подготовки и успеваемость участника.
+            Ментора встречаются с участниками индивидуально и определяют статус подготовки и успеваемость участника. Составляют план работы на неделю вперёд.
           </p>
         </div>
       }
@@ -83,10 +84,10 @@ const Index = () => (
       primarySlot={
         <div className="font-mono lg:pl-32 xl:pl-48">
           <h3 className="text-3xl font-semibold leading-tight">
-            Еженедельные Mock Interview
+            Peer Mock Interviews in Groups
           </h3>
           <p className="mt-8 text-xl font-light leading-relaxed">
-            Ментора проводят mock interview участникам еженедельно, тут разбираются различные решения, проговариваются важные моменты интервью, работа над ошибками и тд.
+            Участники проводят bidirectional mock interviews, делятся фидбэком, советами и подходом к задачам. Ментора временами приводят собственный фидбэк.
           </p>
         </div>
       }
@@ -105,20 +106,47 @@ const Index = () => (
       }
       secondarySlot={<SvgCharts />}
     />
+    <SplitSection
+      reverseOrder
+      primarySlot={
+        <div className="font-mono lg:pl-32 xl:pl-48">
+          <h3 className="text-3xl font-semibold leading-tight">
+            Еженедельные Mock Interview
+          </h3>
+          <p className="mt-8 text-xl font-light leading-relaxed">
+            Для участников на продвинутых этапах процесса ментора проводят еженедельные mock interview, тут разбираются различные решения, проговариваются важные моменты интервью, работа над ошибками и тд.
+          </p>
+        </div>
+      }
+      secondarySlot={<SvgCharts />}
+    />
+    <SplitSection
+      primarySlot={
+        <div className="font-mono lg:pr-32 xl:pr-48">
+          <h3 className="text-3xl font-semibold leading-tight">
+            CV Review sessions
+          </h3>
+          <p className="mt-8 text-xl font-light leading-relaxed">
+            Сессии по ревью CV по советам рекруитеров и инженеров Google, Amazon, Palantor etc.
+          </p>
+        </div>
+      }
+      secondarySlot={<SvgCharts />}
+    />
     <div className="bg-primary bg-opacity-25">
-    <section id="mentors" className="font-mono py-20 lg:py-40">
+    <section id="mentors" className="font-mono py-20 lg:py-40 lg:px-40">
       <div className="container mx-auto">
-        <LabelText className="mb-8 lg:text-5xl font-bold text-center">Наши ментора</LabelText>
-        <div className="flex flex-col md:flex-row md:-mx-3">
-          {customerData.slice(0, 3).map(customer => (
-            <div key={customer.customerName} className="flex-1 px-3">
+        <h2 className="mb-8 lg:text-5xl font-bold text-center">Команда</h2>
+        <div className="flex flex-col md:flex-row md:-mx-3 lg:mx-8">
+          {customerData.slice(0, 2).map(customer => (
+            <div key={customer.customerName} className="flex-1 px-6">
               <CustomerCard customer={customer} />
             </div>
           ))}
         </div>
-        <div className="flex flex-col md:flex-row md:-mx-3">
-          {customerData.slice(3, 6).map(customer => (
-            <div key={customer.customerName} className="flex-1 px-3">
+        <div className="flex flex-col md:flex-row md:-mx-3 mt-4 lg:mx-8">
+          {customerData.slice(2, 4).map(customer => (
+            <div key={customer.customerName} className="flex-1 px-6">
               <CustomerCard customer={customer} />
             </div>
           ))}
