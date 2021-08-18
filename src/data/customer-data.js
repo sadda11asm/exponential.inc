@@ -1,15 +1,15 @@
 export default [
   {
-    title: 'Ментор 1го ранга',
-    content:
-      'Салам всем хохлам',
-    customerName: 'Алишер Султанов',
-    customerTitle: 'ГейДев Инженер в МоскваСити',
+    title: 'Автор программы',
+    customerDescription:
+      'Она - аналитик в компании BeInTech, создатель робота-сурдопереводчика для людей с ограниченными возможностями, автор четырех научных публикаций, спикер на конференциях по робототехнике в Сингапуре, Японии и США. Впечатляюще, не правда ли? Мы поговорили с Назерке о любви к программированию, работе над социальным проектом и гендерных стереотипах. ',
+    customerName: 'Назерке Калидолда',
+    customerTitle: 'Автор программы',
     customerImage: 'https://placeimg.com/150/150/people'
   },
   {
     title: 'Ментор 1го ранга',
-    content:
+    customerDescription:
       'Сплю один, никого не трогаю',
     customerName: 'Даулет Амирханов',
     customerTitle: 'Саксесс Инженер в Ботпресс',
@@ -17,7 +17,7 @@ export default [
   },
   {
     title: 'Ментор 1го ранга',
-    content:
+    customerDescription:
       'Ваша карьера это мои штанги.',
     customerName: 'Илья Ильин',
     customerTitle: 'Чемпион мира по атлеттике',
@@ -25,7 +25,7 @@ export default [
   },
   {
     title: 'Ментор 1го ранга',
-    content:
+    customerDescription:
       'Любого чему хотите научу. Атак.',
     customerName: 'Аян Гинет',
     customerTitle: 'Мастер С++',
@@ -33,7 +33,7 @@ export default [
   },
   {
     title: 'Ментор 1го ранга',
-    content:
+    customerDescription:
       'Приезжайте в Италию',
     customerName: 'Саадат Нурсултан',
     customerTitle: 'Магистр Наук',
@@ -41,7 +41,7 @@ export default [
   },
   {
     title: 'Ментор 1го ранга',
-    content:
+    customerDescription:
       'Миллиардер с соседней улицы',
     customerName: 'Темиржан Юсупов',
     customerTitle: 'Профессиональный фронтендер',

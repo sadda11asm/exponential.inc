@@ -1,5 +1,9 @@
 module.exports = {
   theme: {
+    fontFamily: {
+      body: ['Roboto', 'sans-serif'],
+      display: ['Rubik', 'sans-serif'],
+    },
     extend: {
       backgroundImage: theme => ({
         'google-office': "url('/src/images/google-office.jpg')",
@@ -7,9 +11,9 @@ module.exports = {
       }),
       colors: {
         primary: {
-          lighter: 'hsl(207, 73%, 52%)',
-          default: 'hsl(207, 73%, 57%)',
-          darker: 'hsl(207, 73%, 44%)'
+          lighter: '#c8a3b5',
+          default: '#2f4e68',
+          darker: '#f96d6d'
         }
       }
     }
