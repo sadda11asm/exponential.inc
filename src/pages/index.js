@@ -11,15 +11,26 @@ import customerData from '../data/customer-data';
 import HeroImage from '../svg/HeroImage';
 import SvgCharts from '../svg/SvgCharts';
 import faang from '../images/faang.png'
+import process_first from '../images/Mentorship.jpg'
+import process_second from '../images/peer-mock.png'
+import process_third from '../images/training-1.png'
+import process_fourth from '../images/personal.png'
+import process_fifth from '../images/feedback.jpg'
+
+
+
 
 import { useVisibility } from '../utils';
+import { Link } from 'gatsby';
 
 const Index = () => {
   const [ topmostSectionIsVisible, topmostSection ] = useVisibility(100);
 
   return (
     <Layout>
-      <Button className={`fixed mx-auto w-1/2 inset-x-0 bottom-0 mb-4 text-center ${ topmostSectionIsVisible ? 'invisible' : 'visible' }`}>Податься</Button>
+      <Link to="https://docs.google.com/forms/d/e/1FAIpQLSfEXdTmGSKaBnU_W-K95pV4xw_1Rca0ihzixFdbhDxYFCptqg/viewform?usp=sf_link">
+      <Button className={`fixed mx-auto w-1/2 inset-x-0 bottom-0 mb-4 text-center ${ topmostSectionIsVisible ? 'invisible' : 'visible' }`}>Подать заявку</Button>
+      </Link>
       <section className="font-display pt-20 md:pt-40 pb-40" ref={topmostSection}>
         <div className="container mx-auto px-10 lg:flex">
           <div className="text-center lg:text-left lg:w-1/2">
@@ -30,7 +41,9 @@ const Index = () => {
               Менторская программа для девушек подающих на стажировки в FAANG
             </p>
             <p className="mt-8 md:mt-12">
-              <Button size="lg">Подать заявку</Button>
+              <Link to="https://docs.google.com/forms/d/e/1FAIpQLSfEXdTmGSKaBnU_W-K95pV4xw_1Rca0ihzixFdbhDxYFCptqg/viewform?usp=sf_link">
+                <Button size="lg">Подать заявку</Button>
+              </Link>
             </p>
             <p className="mt-4 text-gray-600"></p>
           </div>
@@ -82,21 +95,21 @@ const Index = () => {
             </p>
           </div>
         }
-        secondarySlot={<SvgCharts />}
+        secondarySlot={<img src={process_first} alt="Faang" />}
       />
       <SplitSection
         reverseOrder
         primarySlot={
           <div className="font-mono lg:pl-32 xl:pl-48">
             <h3 className="text-3xl font-semibold leading-tight">
-              Peer Mock Interviews in Groups
+              Тренировочные 1:1 интервью в группах
             </h3>
             <p className="mt-8 text-xl font-light leading-relaxed">
               Участники проводят bidirectional mock interviews, делятся фидбэком, советами и подходом к задачам. Ментора временами приводят собственный фидбэк.
             </p>
           </div>
         }
-        secondarySlot={<SvgCharts />}
+        secondarySlot={<img src={process_second} alt="Faang" />}
       />
       <SplitSection
         primarySlot={
@@ -109,21 +122,21 @@ const Index = () => {
             </p>
           </div>
         }
-        secondarySlot={<SvgCharts />}
+        secondarySlot={<img src={process_third} alt="Faang" />}
       />
       <SplitSection
         reverseOrder
         primarySlot={
           <div className="font-mono lg:pl-32 xl:pl-48">
             <h3 className="text-3xl font-semibold leading-tight">
-              Еженедельные Mock Interview
+              Еженедельные персональные интервью
             </h3>
             <p className="mt-8 text-xl font-light leading-relaxed">
               Для участников на продвинутых этапах процесса ментора проводят еженедельные mock interview, тут разбираются различные решения, проговариваются важные моменты интервью, работа над ошибками и тд.
             </p>
           </div>
         }
-        secondarySlot={<SvgCharts />}
+        secondarySlot={<img src={process_fourth} alt="Faang" />}
       />
       <SplitSection
         primarySlot={
@@ -136,7 +149,7 @@ const Index = () => {
             </p>
           </div>
         }
-        secondarySlot={<SvgCharts />}
+        secondarySlot={<img src={process_fifth} alt="Faang" />}
       />
       <div className="bg-primary bg-opacity-25">
       <section id="mentors" className="font-mono py-20 lg:py-40 lg:px-40">
@@ -163,36 +176,157 @@ const Index = () => {
         <div className="container mx-auto text-center">
           <LabelText className="text-gray-600">Ваши результаты</LabelText>
           <div className="flex flex-col sm:flex-row mt-8 lg:px-24">
-            <div className="w-full sm:w-1/3">
+            <div className="w-full sm:w-1/3  mr-5">
               <StatsBox primaryText="+200%" secondaryText="Знания и навыки"  thirdText="Наши ментора делятся с вами своим ценным опытом."/>
             </div>
             <div className="w-full sm:w-1/3">
               <StatsBox primaryText="-50%" secondaryText="Общее время подготовки" thirdText="Вы идёте по уже протоптанной тропе."/>
             </div>
-            <div className="w-full sm:w-1/3">
+            <div className="w-full sm:w-1/3  ml-5">
               <StatsBox primaryText="+300%" secondaryText="Вера в себя" thirdText="Наши  ментора гарантируют, что вы имеете всё для победы."/>
             </div>
           </div>
           <div className="flex flex-col sm:flex-row mt-8 lg:px-24">
-            <div className="w-full sm:w-1/3">
-              <StatsBox primaryText="+200%" secondaryText="Боевой Дух"  thirdText="Наши ментора делятся с вами своим ценным опытом."/>
+            <div className="w-full sm:w-1/3 mr-5">
+              <StatsBox primaryText="+200%" secondaryText="Боевой Дух"  thirdText="Наша техническая и моральная поддержка стимулируют ваш дух."/>
             </div>
             <div className="w-full sm:w-1/3">
-              <StatsBox primaryText="+400%" secondaryText="Мотивация" thirdText="Вы идёте по уже протоптанной тропе."/>
+              <StatsBox primaryText="+400%" secondaryText="Мотивация" thirdText="Атмосфера которую мы создаём вдохновляет и мотивирует."/>
             </div>
-            <div className="w-full sm:w-1/3">
-              <StatsBox primaryText="-100%" secondaryText="Прокрастинация" thirdText="Наши  ментора гарантируют, что вы имеете всё для победы."/>
+            <div className="w-full sm:w-1/3 ml-5">
+              <StatsBox primaryText="-100%" secondaryText="Прокрастинация" thirdText="Наша программа порождает желание работать не покладая рук."/>
             </div>
           </div>
+        </div>
+      </section>
+      <section id= "faq" className="bg-primary bg-opacity-25 font-mono lg:py-20 lg:px-20">
+        <div>
+            <div className="container px-5 py-10 mx-auto">
+              <div className="text-center mb-20">
+                <h1 className="sm:text-3xl text-5xl text-center title-font text-gray-900 mb-4 font-bold">
+                  FAQ
+                </h1>
+              </div>
+              <div className="flex flex-wrap lg:w-4/5 sm:mx-auto sm:mb-2 -mx-2">
+                <div className="w-full lg:w-1/2 px-4 py-2">
+                  <details className="mb-4">
+                    <summary className="font-semibold  bg-gray-200 rounded-md py-2 px-4">
+                      Цена программы? Когда нужно платить?
+                    </summary>
+
+                    <span>
+                      <div className="font-medium  bg-white rounded-md py-2 px-4 mt-2">
+                      Платить за программу нужно только в случае успешного прохождения в компанию вашего выбора. Цена будет равна 15-20% процентам от вашей зарплаты на стажировке.
+                      </div>
+                    </span>
+                  </details>
+                  <details className="mb-4">
+                    <summary className="font-semibold bg-gray-200 rounded-md py-2 px-4">
+                      Как проходит процесс отбора на программу?
+                    </summary>
+
+                    <span>
+                      <div className="font-medium  bg-white rounded-md py-2 px-4 mt-2">
+                      После заполнения формы на сайте, участники прошедшие на интервью будут оповещены по почте. После интервью будет отобрано 30 окончательных участников.
+                      </div>
+                </span>
+                  </details>
+                  <details className="mb-4">
+                    <summary className="font-semibold  bg-gray-200 rounded-md py-2 px-4">
+                      Нужно ли находиться в определенном месте чтобы участвовать в программе?
+                    </summary>
+
+                    <span>
+                      <div className="font-medium  bg-white rounded-md py-2 px-4 mt-2">
+                      Программа проходит полностью онлайн. Нужно иметь лишь собственный компьютер с камерой, наушниками и выходом в интернет.
+                      </div>
+                    </span>
+                  </details>
+                </div>
+
+                <div className="w-full lg:w-1/2 px-4 py-2">
+                  <details className="mb-4">
+                    <summary className="font-semibold  bg-gray-200 rounded-md py-2 px-4">
+                      Длительность подготовки? Сколько раз в год проводится программа?
+                    </summary>
+
+                    <span>
+                      <div className="font-medium  bg-white rounded-md py-2 px-4 mt-2">
+                      Длительность программы будет адаптироваться под каждого участника индивидуально. Минимальный срок программы 3 месяца.
+                      </div>
+                    </span>
+                  </details>
+                  <details className="mb-4">
+                    <summary className="font-semibold bg-gray-200 rounded-md py-2 px-4">
+                      Сколько участников будет отобрано?
+                    </summary>
+
+                    <span>
+                      <div className="font-medium  bg-white rounded-md py-2 px-4 mt-2">
+                      По итогам интервью будет отобрано 30 участников программы.
+                      </div>
+                </span>
+                  </details>
+                  <details className="mb-4">
+                    <summary className="font-semibold  bg-gray-200 rounded-md py-2 px-4">
+                      Нужно ли мне быть студентом? Кто подходит под вашу программу?
+                    </summary>
+
+                    <span>
+                      <div className="font-medium  bg-white rounded-md py-2 px-4 mt-2">
+                      В этом году на программу принимаются только девушки обучающиеся на программах бакалавриата или магистратуры.
+                      </div>
+                    </span>
+                  </details>
+                </div>
+                {/*<div className="w-full lg:w-1/2 px-4 py-2">*/}
+                {/*  <details className="mb-4">*/}
+                {/*    <summary className="font-semibold  bg-gray-200 rounded-md py-2 px-4">*/}
+                {/*      Длительность подготовки? Сколько раз в год проводится программа?*/}
+                {/*    </summary>*/}
+
+                {/*    <span className="px-4">*/}
+                {/*      <div className="font-medium  bg-gray-100 rounded-md py-2 px-4">*/}
+                {/*      Длительность программы будет адаптироваться под каждого участника индивидуально. Минимальный срок программы 3 месяца.*/}
+                {/*      </div>*/}
+                {/*    </span>*/}
+                {/*  </details>*/}
+                {/*  <details className="mb-4">*/}
+                {/*    <summary className="font-semibold  bg-gray-200 rounded-md py-2 px-4">*/}
+                {/*      Сколько участников будет отобрано?*/}
+                {/*    </summary>*/}
+
+                {/*    <span className="px-4 py-2">*/}
+                {/*    <div className="font-medium  bg-gray-100 rounded-md py-2 px-4 mt-2">*/}
+                {/*    По итогам интервью будет отобрано 30 участников программы.*/}
+                {/*    </div>*/}
+                {/*</span>*/}
+                {/*  </details>*/}
+                {/*  <details className="mb-4">*/}
+                {/*    <summary className="font-semibold  bg-gray-200 rounded-md py-2 px-4">*/}
+                {/*      Нужно ли мне быть студентом? Кто подходит под вашу программу?*/}
+                {/*    </summary>*/}
+
+                {/*    <span className="px-4 py-2">*/}
+                {/*     <div className="font-medium  bg-gray-100 rounded-md py-2 px-4 mt-2">*/}
+                {/*    В этом году на программу принимаются только девушки обучающиеся на программах бакалавриата или магистратуры.*/}
+                {/*    </div>*/}
+                {/*</span>*/}
+                {/*  </details>*/}
+                {/*</div>*/}
+              </div>
+            </div>
         </div>
       </section>
       <section className="font-mono container mx-auto my-20 py-24 bg-gray-200 rounded-lg text-center bg-opacity-50">
         <h3 className="text-5xl font-semibold">Хотите стажировку в FAANG?</h3>
         <p className="mt-8 text-xl font-light">
-         Подавайте в Exponential Inc. и станьте одним из 20 учеников эксклюзивной программы.
+         Подавайте в Exponential и станьте одним из 30 учеников эксклюзивной программы!
         </p>
         <p className="mt-8">
-          <Button size="xl">Подать заявку</Button>
+          <Link to="https://docs.google.com/forms/d/e/1FAIpQLSfEXdTmGSKaBnU_W-K95pV4xw_1Rca0ihzixFdbhDxYFCptqg/viewform?usp=sf_link">
+            <Button size="xl">Подать заявку</Button>
+          </Link>
         </p>
       </section>
     </Layout>

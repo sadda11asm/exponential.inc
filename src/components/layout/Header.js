@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 import LogoIcon from '../../svg/LogoIcon';
 import Button from '../Button';
-import logo from '../../images/logo.png';
+import logo from '../../images/growth-2.png';
 import { Transition } from "@headlessui/react";
 
 
@@ -16,8 +16,8 @@ const Header = () => {
             <div className="flex items-center">
               <div className="flex-shrink-0 ">
                 <img
-                  className="h-8 w-8"
-                  src="https://tailwindui.com/img/logos/workflow-mark-indigo-500.svg"
+                  className="h-10 w-10"
+                  src={logo}
                   alt="Workflow"
                 />
               </div>
@@ -49,6 +49,13 @@ const Header = () => {
                     className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
                   >
                     Результаты
+                  </AnchorLink>
+
+                  <AnchorLink
+                    href="#faq"
+                    className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                  >
+                    FAQ
                   </AnchorLink>
                 </div>
               </div>

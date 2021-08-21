@@ -5,7 +5,7 @@ const Footer = () => (
     <div className="flex -mx-3">
       <div className="flex-1 px-3">
         <h2 className="text-lg font-semibold">About Us</h2>
-        <p className="mt-5">Ridiculus mus mauris vitae ultricies leo integer malesuada nunc.</p>
+        <p className="mt-5 pr-20">Менторская программа для девушек подающих на стажировки в FAANG</p>
       </div>
       <div className="flex-1 px-3">
         <h2 className="text-lg font-semibold">Important Links</h2>
@@ -22,13 +22,13 @@ const Footer = () => (
         <h2 className="text-lg font-semibold">Social Media</h2>
         <ul className="mt-4 leading-loose">
           <li>
-            <a href="https://dev.to/changoman">Dev.to</a>
+            <a href="http://instagram.com/exp.program">Instagram</a>
           </li>
           <li>
-            <a href="https://twitter.com/HuntaroSan">Twitter</a>
+            <a href="https://t.me/sadda11_asm">Telegram</a>
           </li>
           <li>
-            <a href="https://github.com/codebushi/gatsby-starter-lander">GitHub</a>
+            <a href="https://facebook.com">Facebook</a>
           </li>
         </ul>
       </div>

@@ -1,6 +1,6 @@
 export default [
   {
-    title: 'Автор программы',
+    title: 'Founder',
     customerDescription:
       'Она - аналитик в компании BeInTech, создатель робота-сурдопереводчика для людей с ограниченными возможностями, автор четырех научных публикаций, спикер на конференциях по робототехнике в Сингапуре, Японии и США. Впечатляюще, не правда ли? Мы поговорили с Назерке о любви к программированию, работе над социальным проектом и гендерных стереотипах. ',
     customerName: 'Назерке Калидолда',
@@ -8,27 +8,27 @@ export default [
     customerImage: 'https://placeimg.com/150/150/people'
   },
   {
-    title: 'Ментор 1го ранга',
+    title: 'Co-Founder, Mentor',
     customerDescription:
       'Сплю один, никого не трогаю',
-    customerName: 'Даулет Амирханов',
-    customerTitle: 'Саксесс Инженер в Ботпресс',
+    customerName: 'Саддам Асматуллаев',
+    customerTitle: 'Со-Автор программы, Ментор',
     customerImage: 'https://placeimg.com/150/150/people'
   },
   {
-    title: 'Ментор 1го ранга',
+    title: 'Co-Founder, Mentor',
     customerDescription:
       'Ваша карьера это мои штанги.',
-    customerName: 'Илья Ильин',
-    customerTitle: 'Чемпион мира по атлеттике',
+    customerName: 'Даулет Амирханов',
+    customerTitle: 'Со-Автор программы, Ментор',
     customerImage: 'https://placeimg.com/150/150/people'
   },
   {
-    title: 'Ментор 1го ранга',
+    title: 'Co-Founder, Mentor',
     customerDescription:
       'Любого чему хотите научу. Атак.',
-    customerName: 'Аян Гинет',
-    customerTitle: 'Мастер С++',
+    customerName: 'Алишер Султанов',
+    customerTitle: 'Со-Автор программы, Ментор',
     customerImage: 'https://placeimg.com/150/150/people'
   },
   {
