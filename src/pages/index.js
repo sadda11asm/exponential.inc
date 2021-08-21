@@ -11,7 +11,7 @@ import customerData from '../data/customer-data';
 import HeroImage from '../svg/HeroImage';
 import SvgCharts from '../svg/SvgCharts';
 import faang from '../images/faang.png'
-import process_first from '../images/Mentorship.jpg'
+import process_first from '../images/mentorship.jpg'
 import process_second from '../images/peer-mock.png'
 import process_third from '../images/training-1.png'
 import process_fourth from '../images/personal.png'
