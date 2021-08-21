@@ -176,24 +176,24 @@ const Index = () => {
         <div className="container mx-auto text-center">
           <LabelText className="text-gray-600">Ваши результаты</LabelText>
           <div className="flex flex-col sm:flex-row mt-8 lg:px-24">
-            <div className="w-full sm:w-1/3  mr-5">
+            <div className="w-full sm:w-1/3  lg:mr-5">
               <StatsBox primaryText="+200%" secondaryText="Знания и навыки"  thirdText="Наши ментора делятся с вами своим ценным опытом."/>
             </div>
             <div className="w-full sm:w-1/3">
               <StatsBox primaryText="-50%" secondaryText="Общее время подготовки" thirdText="Вы идёте по уже протоптанной тропе."/>
             </div>
-            <div className="w-full sm:w-1/3  ml-5">
+            <div className="w-full sm:w-1/3  lg:ml-5">
               <StatsBox primaryText="+300%" secondaryText="Вера в себя" thirdText="Наши  ментора гарантируют, что вы имеете всё для победы."/>
             </div>
           </div>
           <div className="flex flex-col sm:flex-row mt-8 lg:px-24">
-            <div className="w-full sm:w-1/3 mr-5">
+            <div className="w-full sm:w-1/3 lg:mr-5">
               <StatsBox primaryText="+200%" secondaryText="Боевой Дух"  thirdText="Наша техническая и моральная поддержка стимулируют ваш дух."/>
             </div>
             <div className="w-full sm:w-1/3">
               <StatsBox primaryText="+400%" secondaryText="Мотивация" thirdText="Атмосфера которую мы создаём вдохновляет и мотивирует."/>
             </div>
-            <div className="w-full sm:w-1/3 ml-5">
+            <div className="w-full sm:w-1/3 lg:ml-5">
               <StatsBox primaryText="-100%" secondaryText="Прокрастинация" thirdText="Наша программа порождает желание работать не покладая рук."/>
             </div>
           </div>
