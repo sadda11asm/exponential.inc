@@ -25,7 +25,6 @@ import { Link } from 'gatsby';
 
 const Index = () => {
   const [ topmostSectionIsVisible, topmostSection ] = useVisibility(100);
-  console.log('topmostSectionIsVisible', topmostSectionIsVisible)
 
   return (
     <Layout>
