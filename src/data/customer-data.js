@@ -11,12 +11,11 @@ export default [
       '• Forbes 30 under 30\n' +
       '• Google CodeU program participant, London UK 2015\n' +
       '• Winner at Booking WomenInTech Contest - 6th/1000+, Amsterdam, Netherlands 2016\n' +
-      '• Grace Hopper Celebration of Women in Computing(GHC) participant\n' +
-      '• Anita Borg organization scholar (by GHC), Orlando, FL, USA 2017\n' +
-      '• Published 4 science papers and presented them in Singapore, Japan, USA (Chicago) ' +
-      '  at ICRA, ICSR, HRI',
+      '• Grace Hopper Celebration of Women in Computing (GHC) participant as Anita Borg Scholar, Orlando, FL, USA 2017\n' +
+      '• Published 4 research papers\n' +
+      '• Speaker at ICRA, ICSR, HRI international conferences in Singapore, Japan, USA',
     customerName: 'Назерке Калидолда',
-    customerTitle: "Founder at L'Accent\n Nazarbayev University 18'",
+    customerTitle: "Founder at L’accent\n Nazarbayev University 18'",
     customerImage: nazerke
   },
   {
