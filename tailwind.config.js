@@ -1,10 +1,14 @@
-const defaultTheme = require('tailwindcss/defaultTheme')
+const { screens } = require('tailwindcss/defaultTheme')
 
 module.exports = {
   theme: {
     fontFamily: {
       body: ['Roboto', 'sans-serif'],
       display: ['Rubik', 'sans-serif'],
+    },
+    screens: {
+      xs: { max: '575px' },
+      ...screens,
     },
     extend: {
       backgroundImage: theme => ({
@@ -17,11 +21,7 @@ module.exports = {
           default: '#2f4e68',
           darker: '#f96d6d'
         }
-      }
-    },
-    screens: {
-      'xs': '300px',
-      ...defaultTheme.screens,
+      },
     },
   },
   variants: {},
