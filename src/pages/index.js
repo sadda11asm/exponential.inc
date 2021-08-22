@@ -30,7 +30,7 @@ const Index = () => {
   return (
     <Layout>
       <Link to="https://docs.google.com/forms/d/e/1FAIpQLSfEXdTmGSKaBnU_W-K95pV4xw_1Rca0ihzixFdbhDxYFCptqg/viewform?usp=sf_link">
-      <Button className={`fixed mx-auto w-1/2 inset-x-0 bottom-0 mb-4 text-center sm:${topmostSectionIsVisible ? 'invisible' : 'visible'} md:invisible`}>Подать заявку</Button>
+      <Button className={`fixed mx-auto w-1/2 inset-x-0 bottom-0 mb-4 text-center xs:${ topmostSectionIsVisible ? 'invisible': 'visible' } md:invisible`}>Подать заявку</Button>
       </Link>
       <section className="font-display pt-20 md:pt-40 pb-40" ref={topmostSection}>
         <div className="container mx-auto px-10 lg:flex">

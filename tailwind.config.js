@@ -1,3 +1,5 @@
+const defaultTheme = require('tailwindcss/defaultTheme')
+
 module.exports = {
   theme: {
     fontFamily: {
@@ -16,7 +18,11 @@ module.exports = {
           darker: '#f96d6d'
         }
       }
-    }
+    },
+    screens: {
+      'xs': '300px',
+      ...defaultTheme.screens,
+    },
   },
   variants: {},
   plugins: []
