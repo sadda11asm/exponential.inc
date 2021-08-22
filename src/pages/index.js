@@ -145,7 +145,7 @@ const Index = () => {
               CV Review sessions
             </h3>
             <p className="mt-8 text-xl font-light leading-relaxed">
-              Сессии по ревью CV по советам рекруитеров и инженеров Google, Amazon, Palantor etc.
+              Сессии по ревью CV по советам рекруитеров и инженеров Google, Amazon, Facebook etc.
             </p>
           </div>
         }
@@ -242,6 +242,17 @@ const Index = () => {
                       </div>
                     </span>
                   </details>
+                  <details className="mb-4">
+                    <summary className="font-semibold  bg-gray-200 rounded-md py-2 px-4">
+                      Когда дедлайн подачи?
+                    </summary>
+
+                    <span>
+                      <div className="font-medium  bg-white rounded-md py-2 px-4 mt-2">
+                      Дедлайн подачи 6 сентября 23:59 по времени Астаны. Начало программы - середина сентября.
+                      </div>
+                    </span>
+                  </details>
                 </div>
 
                 <div className="w-full lg:w-1/2 px-4 py-2">
@@ -252,7 +263,7 @@ const Index = () => {
 
                     <span>
                       <div className="font-medium  bg-white rounded-md py-2 px-4 mt-2">
-                      Длительность программы будет адаптироваться под каждого участника индивидуально. Минимальный срок программы 3 месяца.
+                      Длительность программы будет адаптироваться под каждого участника индивидуально. Срок программы - 3 месяца.
                       </div>
                     </span>
                   </details>
@@ -322,6 +333,9 @@ const Index = () => {
         <h3 className="text-5xl font-semibold">Хотите стажировку в FAANG?</h3>
         <p className="mt-8 text-xl font-light">
          Подавайте в Exponential и станьте одним из 30 учеников эксклюзивной программы!
+        </p>
+        <p className="mt-3 text-sm font-bold mx-auto">
+          Дедлайн подачи: 6 сентября 23:59 по времени Астаны
         </p>
         <p className="mt-8">
           <Link to="https://docs.google.com/forms/d/e/1FAIpQLSfEXdTmGSKaBnU_W-K95pV4xw_1Rca0ihzixFdbhDxYFCptqg/viewform?usp=sf_link">
