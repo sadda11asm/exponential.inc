@@ -43,8 +43,7 @@ export default [
       '• ABC Hack 2018 winner at Sberbank track\n' +
       '• HackNU 2018 winner at 021Labs track\n' +
       '• ABC Hack 2017 winner at Kazdream track\n' +
-      '• Ex-Research Assistant at Nazarbayev University, 2019\n' +
-      '• Published scientific paper in the field of applied machine learning (Berkeley, USA)\n',
+      '• Ex-Research Assistant at Nazarbayev University, 2019\n',
     customerName: 'Даулет Амирханов',
     customerTitle: 'Success Developer, Botpress\n Nazarbayev University 21\'',
     customerImage: daulet
