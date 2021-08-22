@@ -1,50 +1,65 @@
+import saddam from '../images/saddam.jpg'
+import nazerke from '../images/nazerke.jpg'
+import daulet from '../images/daulet.jpg'
+import alisher from '../images/alisher.jpg'
+
 export default [
   {
     title: 'Founder',
     customerDescription:
-      'Она - аналитик в компании BeInTech, создатель робота-сурдопереводчика для людей с ограниченными возможностями, автор четырех научных публикаций, спикер на конференциях по робототехнике в Сингапуре, Японии и США. Впечатляюще, не правда ли? Мы поговорили с Назерке о любви к программированию, работе над социальным проектом и гендерных стереотипах. ',
+      '• Ex-Software Engineer, Google (Paris, France)\n' +
+      '• Forbes 30 under 30\n' +
+      '• Google CodeU program participant, London UK 2015\n' +
+      '• Winner at Booking WomenInTech Contest - 6th/1000+, Amsterdam, Netherlands 2016\n' +
+      '• Grace Hopper Celebration of Women in Computing(GHC) participant\n' +
+      '• Anita Borg organization scholar (by GHC), Orlando, FL, USA 2017\n' +
+      '• Published 4 science papers and presented them in Singapore, Japan, USA (Chicago) ' +
+      '  at ICRA, ICSR, HRI',
     customerName: 'Назерке Калидолда',
-    customerTitle: 'Автор программы',
-    customerImage: 'https://placeimg.com/150/150/people'
+    customerTitle: "Founder at L'Accent\n Nazarbayev University 18'",
+    customerImage: nazerke
   },
   {
     title: 'Co-Founder, Mentor',
     customerDescription:
-      'Сплю один, никого не трогаю',
+      '• Ex-Software Engineer, Localyze (Hamburg, Germany)\n' +
+      '• Open Source Blockchain Developer, Scaffold-Eth \n' +
+      '• Passed to Software Engineering Internship at Stripe Dublin, 2020\n' +
+      '• Google Inside Look Scholar, Munich 2019\n' +
+      '• Top 9% at Google Kickstart 2020\n' +
+      '• ACM ICPC Semi-finals 3rd place 2020\n' +
+      '• Top 4-7th in ACM ICPC Kazakhstan Region 2018-2020\n' +
+      '• Winner at International HackNU hackathon x3 - BTSD track x2, 021labs track x1\n' +
+      '• Ex-mentor at nfactorial.school, method school',
     customerName: 'Саддам Асматуллаев',
-    customerTitle: 'Со-Автор программы, Ментор',
-    customerImage: 'https://placeimg.com/150/150/people'
+    customerTitle: 'Success Developer, Botpress\n Nazarbayev University 21\'',
+    customerImage: saddam
   },
   {
     title: 'Co-Founder, Mentor',
     customerDescription:
-      'Ваша карьера это мои штанги.',
+      '• Ex-Software Engineer, Demodesk (Munich, Germany) 2020\n' +
+      '• Backend Developer Intern, JetBrains TeamCity (Saint-Petersburg, Russia), 2020\n' +
+      '• Instructor, Microsoft DigiGirlz, 2019\n' +
+      '• ABC Hack 2018 winner at Sberbank track\n' +
+      '• HackNU 2018 winner at 021Labs track\n' +
+      '• Ex-Research Assitant at Nazarbayev University, 2019\n' +
+      '• ABC Hack 2017 winner at Kazdream track',
     customerName: 'Даулет Амирханов',
-    customerTitle: 'Со-Автор программы, Ментор',
-    customerImage: 'https://placeimg.com/150/150/people'
+    customerTitle: 'Success Developer, Botpress\n Nazarbayev University 21\'',
+    customerImage: daulet
   },
   {
     title: 'Co-Founder, Mentor',
     customerDescription:
-      'Любого чему хотите научу. Атак.',
+      '• Ex-Software Engineer at ROQED (Singapore)\n' +
+      '• Passed to Software Engineering Internship at NDB (London, UK)\n' +
+      '• Mentor at Nfactorial School\n' +
+      '• Kaspi Data Lab Graduate 2020' +
+      '• Ex-Research Assitant at Nazarbayev University, 2019\n' +
+      '• Published scientific paper in the field of applied machine learning (Berkeley, USA)\n',
     customerName: 'Алишер Султанов',
-    customerTitle: 'Со-Автор программы, Ментор',
-    customerImage: 'https://placeimg.com/150/150/people'
-  },
-  {
-    title: 'Ментор 1го ранга',
-    customerDescription:
-      'Приезжайте в Италию',
-    customerName: 'Саадат Нурсултан',
-    customerTitle: 'Магистр Наук',
-    customerImage: 'https://placeimg.com/150/150/people'
-  },
-  {
-    title: 'Ментор 1го ранга',
-    customerDescription:
-      'Миллиардер с соседней улицы',
-    customerName: 'Темиржан Юсупов',
-    customerTitle: 'Профессиональный фронтендер',
-    customerImage: 'https://placeimg.com/150/150/people'
+    customerTitle: 'Software Engineer at Infinite Art Solutions\n Nazarbayev University 21\'',
+    customerImage: alisher
   }
 ];
