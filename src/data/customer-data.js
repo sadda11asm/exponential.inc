@@ -42,8 +42,9 @@ export default [
       '• Instructor, Microsoft DigiGirlz, 2019\n' +
       '• ABC Hack 2018 winner at Sberbank track\n' +
       '• HackNU 2018 winner at 021Labs track\n' +
+      '• ABC Hack 2017 winner at Kazdream track\n' +
       '• Ex-Research Assistant at Nazarbayev University, 2019\n' +
-      '• ABC Hack 2017 winner at Kazdream track',
+      '• Published scientific paper in the field of applied machine learning (Berkeley, USA)\n',
     customerName: 'Даулет Амирханов',
     customerTitle: 'Success Developer, Botpress\n Nazarbayev University 21\'',
     customerImage: daulet
@@ -54,7 +55,7 @@ export default [
       '• Ex-Software Engineer at ROQED (Singapore)\n' +
       '• Passed to Software Engineering Internship at NDB (London, UK)\n' +
       '• Mentor at Nfactorial School\n' +
-      '• Kaspi Data Lab Graduate 2020' +
+      '• Kaspi Data Lab Graduate 2020\n' +
       '• Ex-Research Assistant at Nazarbayev University, 2019\n' +
       '• Published scientific paper in the field of applied machine learning (Berkeley, USA)\n',
     customerName: 'Алишер Султанов',
