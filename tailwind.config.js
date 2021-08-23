@@ -15,8 +15,8 @@ module.exports = {
           default: '#2f4e68',
           darker: '#f96d6d'
         }
-      }
-    }
+      },
+    },
   },
   variants: {},
   plugins: []

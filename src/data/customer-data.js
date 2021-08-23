@@ -11,12 +11,11 @@ export default [
       '• Forbes 30 under 30\n' +
       '• Google CodeU program participant, London UK 2015\n' +
       '• Winner at Booking WomenInTech Contest - 6th/1000+, Amsterdam, Netherlands 2016\n' +
-      '• Grace Hopper Celebration of Women in Computing(GHC) participant\n' +
-      '• Anita Borg organization scholar (by GHC), Orlando, FL, USA 2017\n' +
-      '• Published 4 science papers and presented them in Singapore, Japan, USA (Chicago) ' +
-      '  at ICRA, ICSR, HRI',
+      '• Grace Hopper Celebration of Women in Computing (GHC) participant as Anita Borg Scholar, Orlando, FL, USA 2017\n' +
+      '• Published 4 research papers\n' +
+      '• Speaker at ICRA, ICSR, HRI international conferences in Singapore, Japan, USA',
     customerName: 'Назерке Калидолда',
-    customerTitle: "Founder at L'Accent\n Nazarbayev University 18'",
+    customerTitle: "Founder at L’accent\n Nazarbayev University 18'",
     customerImage: nazerke
   },
   {
@@ -43,8 +42,8 @@ export default [
       '• Instructor, Microsoft DigiGirlz, 2019\n' +
       '• ABC Hack 2018 winner at Sberbank track\n' +
       '• HackNU 2018 winner at 021Labs track\n' +
-      '• Ex-Research Assitant at Nazarbayev University, 2019\n' +
-      '• ABC Hack 2017 winner at Kazdream track',
+      '• ABC Hack 2017 winner at Kazdream track\n' +
+      '• Ex-Research Assistant at Nazarbayev University, 2019\n',
     customerName: 'Даулет Амирханов',
     customerTitle: 'Success Developer, Botpress\n Nazarbayev University 21\'',
     customerImage: daulet
@@ -55,8 +54,8 @@ export default [
       '• Ex-Software Engineer at ROQED (Singapore)\n' +
       '• Passed to Software Engineering Internship at NDB (London, UK)\n' +
       '• Mentor at Nfactorial School\n' +
-      '• Kaspi Data Lab Graduate 2020' +
-      '• Ex-Research Assitant at Nazarbayev University, 2019\n' +
+      '• Kaspi Data Lab Graduate 2020\n' +
+      '• Ex-Research Assistant at Nazarbayev University, 2019\n' +
       '• Published scientific paper in the field of applied machine learning (Berkeley, USA)\n',
     customerName: 'Алишер Султанов',
     customerTitle: 'Software Engineer at Infinite Art Solutions\n Nazarbayev University 21\'',

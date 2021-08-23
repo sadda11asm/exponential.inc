@@ -2,7 +2,7 @@ import { useRef, useEffect, useState } from 'react';
 import { throttle } from 'lodash';
 
 export function useVisibility(offset = 0, throttleMilliseconds = 100) {
-    const [isVisible, setIsVisible] = useState(false);
+    const [isVisible, setIsVisible] = useState(true);
     const currentElement = useRef();
     
     const onScroll = throttle(() => {

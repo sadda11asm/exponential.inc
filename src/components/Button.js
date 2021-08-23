@@ -1,6 +1,7 @@
 import React from 'react';
 
 const sizes = {
+  sm: `py-2 px-4`,
   default: `py-3 px-8`,
   lg: `py-4 px-12`,
   xl: `py-5 px-16 text-lg`
