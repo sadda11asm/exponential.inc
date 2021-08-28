@@ -23,7 +23,7 @@ export default [
     customerDescription:
       '• Ex-Software Engineer, Localyze (Hamburg, Germany)\n' +
       '• Open Source Blockchain Developer, Scaffold-Eth \n' +
-      '• Passed to Software Engineering Internship at Stripe Dublin, 2020\n' +
+      '• Offer to Software Engineering Internship at Stripe Dublin, 2020\n' +
       '• Google Inside Look Scholar, Munich 2019\n' +
       '• Top 9% at Google Kickstart 2020\n' +
       '• ACM ICPC Semi-finals 3rd place 2020\n' +

@@ -8,6 +8,8 @@ import Layout from '../components/layout/Layout';
 import SplitSection from '../components/SplitSection';
 import StatsBox from '../components/StatsBox';
 import customerData from '../data/customer-data';
+import mentors from '../data/mentors';
+
 import HeroImage from '../svg/HeroImage';
 import SvgCharts from '../svg/SvgCharts';
 import faang from '../images/faang.png'
@@ -171,6 +173,38 @@ const Index = () => {
               </div>
             ))}
           </div>
+        </div>
+        <div className="container mx-auto">
+        <h2 className="mb-12 mt-8 lg:text-4xl font-bold text-center">Наши специализированные ментора</h2>
+        <div
+          className="flex overflow-x-scroll pb-2 hide-scroll-bar lg:mx-12"
+        >
+          <div
+            className="flex flex-nowrap mx-6"
+          >
+            {mentors.map(mentor => (
+              <div className="inline-block px-3">
+                <div
+                  className="w-64 h-64 max-w-xs overflow-hidden rounded-lg shadow-md bg-white hover:shadow-xl transition-shadow duration-300 ease-in-out"
+                >
+                  <div
+                    className="mt-15 h-44">
+                    <img className="object-scale-down w-full h-44"
+                         src={mentor.image}/>
+                  </div>
+                  <div className="mt-1.5 px-3">
+                    <h1 className="text-md text-center font-semibold">
+                      {mentor.name}
+                    </h1>
+                    <p className="text-xs text-gray-600 text-center whitespace-pre-line">
+                      {mentor.title}
+                    </p>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
         </div>
       </section>
       </div>
