@@ -7,12 +7,18 @@ import alibek from '../images/alibek.jpg'
 import dani from '../images/dani.jpg'
 import aliya from '../images/aliya.jpg'
 import tortay from '../images/tortay.jpg'
+import batyr from '../images/batyr.jpg'
 
 export default [
   {
     title: 'Software Engineer at Deepmind, London.\n Ex-Intern at Bloomberg, Frankfurt',
     name: 'Алия Рысбек',
     image: aliya
+  },
+  {
+    title: 'Software Engineer at Facebook, London',
+    name: 'Райхан Хассенова',
+    image: raikhan
   },
   {
     title: 'Android Engineer at Google, London.\n Ex-Intern at Google, Mountain View',
@@ -25,14 +31,14 @@ export default [
     image: narikbi
   },
   {
-    title: 'Software Engineer at Facebook, London',
-    name: 'Райхан Хассенова',
-    image: raikhan
-  },
-  {
     title: 'Site Reliability Engineer at Google, Dublin',
     name: 'Алихан Окас',
     image: alikhan
+  },
+  {
+    title: 'Quantative Researcher at Unnoted, Seoul',
+    name: 'Алишер Тортай',
+    image: tortay
   },
   {
     title: 'Network Engineer at Booking, Amsterdam',
@@ -40,7 +46,12 @@ export default [
     image: alibek
   },
   {
-    title: 'Ex-Google Intern, Zurich. \nInternship Offer from Facebook, London',
+    title: 'Software Engineer at Google,\n Mountain View',
+    name: 'Батырхан Орынкул',
+    image: batyr
+  },
+  {
+    title: 'Received internship offers from Google STEP, Facebook, Yandex',
     name: 'Аян Гинет',
     image: ayan
   },
@@ -48,10 +59,5 @@ export default [
     title: 'Internship offer from Microsoft, \nBelgrade and Yelp, London',
     name: 'Данекер Нургалиева',
     image: dani
-  },
-  {
-    title: 'Quantative Researcher at Unnoted, Seoul',
-    name: 'Алишер Тортай',
-    image: tortay
   }
 ];

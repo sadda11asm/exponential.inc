@@ -19,7 +19,7 @@ export default [
     customerImage: nazerke
   },
   {
-    title: 'Co-Founder, Mentor',
+    title: 'Co-Founder, Individual Mentor',
     customerDescription:
       '• Ex-Software Engineer, Localyze (Hamburg, Germany)\n' +
       '• Open Source Blockchain Developer, Scaffold-Eth \n' +
@@ -35,7 +35,7 @@ export default [
     customerImage: saddam
   },
   {
-    title: 'Co-Founder, Mentor',
+    title: 'Co-Founder, Individual Mentor',
     customerDescription:
       '• Ex-Software Engineer, Demodesk (Munich, Germany) 2020\n' +
       '• Backend Developer Intern, JetBrains TeamCity (Saint-Petersburg, Russia), 2020\n' +
@@ -49,7 +49,7 @@ export default [
     customerImage: daulet
   },
   {
-    title: 'Co-Founder, Mentor',
+    title: 'Co-Founder, Individual Mentor',
     customerDescription:
       '• Ex-Software Engineer at ROQED (Singapore)\n' +
       '• Passed to Software Engineering Internship at NDB (London, UK)\n' +

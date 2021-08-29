@@ -177,7 +177,7 @@ const Index = () => {
         <div className="container mx-auto">
         <h2 className="mb-12 mt-8 lg:text-4xl font-bold text-center">Наши специализированные ментора</h2>
         <div
-          className="flex overflow-x-scroll pb-2 hide-scroll-bar lg:mx-12"
+          className="flex overflow-x-scroll pb-2 hide-scroll-bar scrollbar-hide lg:mx-12"
         >
           <div
             className="flex flex-nowrap mx-6"
