@@ -19,11 +19,11 @@ export default [
     customerImage: nazerke
   },
   {
-    title: 'Co-Founder, Mentor',
+    title: 'Co-Founder, Individual Mentor',
     customerDescription:
       '• Ex-Software Engineer, Localyze (Hamburg, Germany)\n' +
       '• Open Source Blockchain Developer, Scaffold-Eth \n' +
-      '• Passed to Software Engineering Internship at Stripe Dublin, 2020\n' +
+      '• Offer to Software Engineering Internship at Stripe Dublin, 2020\n' +
       '• Google Inside Look Scholar, Munich 2019\n' +
       '• Top 9% at Google Kickstart 2020\n' +
       '• ACM ICPC Semi-finals 3rd place 2020\n' +
@@ -35,7 +35,7 @@ export default [
     customerImage: saddam
   },
   {
-    title: 'Co-Founder, Mentor',
+    title: 'Co-Founder, Individual Mentor',
     customerDescription:
       '• Ex-Software Engineer, Demodesk (Munich, Germany) 2020\n' +
       '• Backend Developer Intern, JetBrains TeamCity (Saint-Petersburg, Russia), 2020\n' +
@@ -49,7 +49,7 @@ export default [
     customerImage: daulet
   },
   {
-    title: 'Co-Founder, Mentor',
+    title: 'Co-Founder, Individual Mentor',
     customerDescription:
       '• Ex-Software Engineer at ROQED (Singapore)\n' +
       '• Passed to Software Engineering Internship at NDB (London, UK)\n' +
