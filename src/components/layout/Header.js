@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 import LogoIcon from '../../svg/LogoIcon';
 import Button from '../Button';
-import logo from '../../images/growth-2.png';
+import logo from '../../images/growth-3.png';
 import { Transition } from "@headlessui/react";
 import { Link } from 'gatsby';
 
@@ -10,7 +10,7 @@ const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
   return (
     <div className="sticky top-0">
-      <nav className="bg-gray-800">
+      <nav class="bg-primary">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:pl-20">
           <div className="flex items-center mx-auto justify-between h-16 lg:px-20 md:px-10">
             <div className="flex items-center">
@@ -61,7 +61,7 @@ const Header = () => {
               </div>
               <div className="invisible md:visible">
                   <Link to="https://docs.google.com/forms/d/e/1FAIpQLSfEXdTmGSKaBnU_W-K95pV4xw_1Rca0ihzixFdbhDxYFCptqg/viewform?usp=sf_link">
-                    <Button size="sm">Подать заявку</Button>
+                    <Button className="bg-primary-changed" size="sm">Подать заявку</Button>
                   </Link>
               </div>
             </div>

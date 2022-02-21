@@ -1,5 +1,4 @@
 import alikhan from '../images/alikhan.jpg'
-import anchik from '../images/anchik.jpg'
 import narikbi from '../images/narikbi.jpg'
 import raikhan from '../images/raikhan.jpg'
 import ayan from '../images/ayan.jpg'
@@ -19,11 +18,6 @@ export default [
     title: 'Software Engineer at Facebook, London',
     name: 'Райхан Хассенова',
     image: raikhan
-  },
-  {
-    title: 'Android Engineer at Google, London.\n Ex-Intern at Google, Mountain View',
-    name: 'Ануар Сериков',
-    image: anchik
   },
   {
     title: 'IOS Engineer at Booking, Amsterdam',

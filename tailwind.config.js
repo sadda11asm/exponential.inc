@@ -12,8 +12,9 @@ module.exports = {
       colors: {
         primary: {
           lighter: '#c8a3b5',
-          default: '#2f4e68',
-          darker: '#f96d6d'
+          default: '#132c48',
+          darker: '#f96d6d',
+          changed: '#2f4e68'
         }
       },
     },
