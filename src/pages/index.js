@@ -148,6 +148,10 @@ const Index = () => {
         </div>
       </section>
       </div>
+      <section id="how-it-works" className="font-mono py-20 lg:py-40 lg:px-40 text-center" style={{ backgroundColor: 'white' }}>
+        <h2 className="lg:text-5xl">Как это <span style={{ color: '#2778FD' }}>работает?</span></h2>
+        <p style={{ color: '#2778FD' }}>Посмотреть видео</p>
+      </section>
       <section id="value" className="font-mono py-20 lg:pt-32">
         <div className="container mx-auto text-center">
           <LabelText className="text-gray-600">Ваши результаты</LabelText>
