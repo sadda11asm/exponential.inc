@@ -17,17 +17,6 @@ const CustomerCard = ({ customer }) => {
       <div><text className="whitespace-pre-line font-display text-sm text-gray-600">{shortDescription}</text></div>
       <p className="mt-2" style={{ color: '#166EFF' }}>Подробнее</p>
     </div>
-    {/* <div className="flex items-center mt-8">
-      <img
-        className="w-16 h-16 mr-4 rounded-full"
-        src={customer.customerImage}
-        alt={customer.customerName}
-      />
-      <div>
-        <p>{customer.customerName}</p>
-        <p className="text-sm text-gray-600 whitespace-pre-line">{customer.customerTitle}</p>
-      </div>
-    </div> */}
   </Card>
   )
 };
