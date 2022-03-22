@@ -4,7 +4,7 @@ import ButtonLight from '../components/ButtonLight';
 import Card from '../components/Card';
 import Card2 from '../components/Card2';
 import YoutubeEmbed from "../components/YoutubeEmbed";
-import CustomerCard from '../components/CustomerCard';
+import MentorCard from '../components/MentorCard';
 import LabelText from '../components/LabelText';
 import Layout from '../components/layout/Layout';
 import SplitSection from '../components/SplitSection';
@@ -119,9 +119,9 @@ const Index = () => {
         <h2 className="mb-12 lg:text-5xl font-bold text-center">Команда</h2>
         <div className="container mx-auto">
           <div className="flex flex-col md:flex-row md:-mx-3 lg:mx-1">
-            {teamData.slice(0, 4).map(customer => (
-              <div key={customer.customerName} className="flex-1 px-6 flex flex-col">
-                <CustomerCard customer={customer} />
+            {teamData.map(mentor => (
+              <div key={mentor.customerName} className="flex-1 px-6 flex flex-col">
+                <MentorCard mentor={mentor} />
               </div>
             ))}
           </div>

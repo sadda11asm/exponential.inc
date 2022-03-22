@@ -6,38 +6,38 @@ import alisher from '../images/alisher.jpg'
 export default [
   {
     title: 'Founder',
-    customerDescription:
+    mentorDescription:
       'Founder at L’accent\n' +
       'Nazarbayev University 18’',
-    customerName: 'Назерке Калидолда',
-    customerTitle: "Founder at L’accent\n Nazarbayev University 18'",
-    customerImage: nazerke
+    mentorName: 'Назерке Калидолда',
+    mentorTitle: "Founder at L’accent\n Nazarbayev University 18'",
+    mentorImage: nazerke
   },
   {
     title: 'Co-Founder, Mentor',
-    customerDescription:
+    mentorDescription:
       'Success Developer, Botpress\n' +
       'Nazarbayev University 21',
-    customerName: 'Саддам Асматуллаев',
-    customerTitle: 'Success Developer, Botpress\n Nazarbayev University 21\'',
-    customerImage: saddam
+    mentorName: 'Саддам Асматуллаев',
+    mentorTitle: 'Success Developer, Botpress\n Nazarbayev University 21\'',
+    mentorImage: saddam
   },
   {
     title: 'Co-Founder, Mentor',
-    customerDescription:
+    mentorDescription:
       'Success Developer, Botpress\n' +
       'Nazarbayev University 21',
-    customerName: 'Даулет Амирханов',
-    customerTitle: 'Success Developer, Botpress\n Nazarbayev University 21\'',
-    customerImage: daulet
+    mentorName: 'Даулет Амирханов',
+    mentorTitle: 'Success Developer, Botpress\n Nazarbayev University 21\'',
+    mentorImage: daulet
   },
   {
     title: 'Co-Founder, Mentor',
-    customerDescription:
+    mentorDescription:
       'Software Engineer at Infinite Art Solutions\n' +
       'Nazarbayev University 21',
-    customerName: 'Алишер Султанов',
-    customerTitle: 'Software Engineer at Infinite Art Solutions\n Nazarbayev University 21\'',
-    customerImage: alisher
+    mentorName: 'Алишер Султанов',
+    mentorTitle: 'Software Engineer at Infinite Art Solutions\n Nazarbayev University 21\'',
+    mentorImage: alisher
   }
 ];
