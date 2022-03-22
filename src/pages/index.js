@@ -9,8 +9,8 @@ import LabelText from '../components/LabelText';
 import Layout from '../components/layout/Layout';
 import SplitSection from '../components/SplitSection';
 import StatsBox from '../components/StatsBox';
-import customerData from '../data/team';
-import mentors from '../data/specialized-mentors';
+import teamData from '../data/team';
+import specializedMentors from '../data/specialized-mentors';
 
 import HeroImage from '../svg/HeroImage';
 import SvgCharts from '../svg/SvgCharts';
@@ -119,7 +119,7 @@ const Index = () => {
         <h2 className="mb-12 lg:text-5xl font-bold text-center">Команда</h2>
         <div className="container mx-auto">
           <div className="flex flex-col md:flex-row md:-mx-3 lg:mx-1">
-            {customerData.slice(0, 4).map(customer => (
+            {teamData.slice(0, 4).map(customer => (
               <div key={customer.customerName} className="flex-1 px-6 flex flex-col">
                 <CustomerCard customer={customer} />
               </div>
@@ -134,7 +134,7 @@ const Index = () => {
           <div
             className="flex flex-nowrap mx-6"
           >
-            {mentors.map(mentor => (
+            {specializedMentors.map(mentor => (
               <div className="inline-block px-3">
                 <div
                   className="w-64 h-64 max-w-xs overflow-hidden rounded-lg shadow-md bg-white hover:shadow-xl transition-shadow duration-300 ease-in-out"
