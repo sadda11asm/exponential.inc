@@ -120,7 +120,7 @@ const Index = () => {
         <div className="container mx-auto">
           <div className="flex flex-col md:flex-row md:-mx-3 lg:mx-1">
             {teamData.map(mentor => (
-              <div key={mentor.customerName} className="flex-1 px-6 flex flex-col">
+              <div key={mentor.mentorName} className="flex-1 px-6 flex flex-col">
                 <MentorCard mentor={mentor} />
               </div>
             ))}
