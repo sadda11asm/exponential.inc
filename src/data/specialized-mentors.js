@@ -10,48 +10,57 @@ import batyr from '../images/batyr.jpg'
 
 export default [
   {
-    title: 'Software Engineer at Deepmind, London.\n Ex-Intern at Bloomberg, Frankfurt',
-    name: 'Алия Рысбек',
-    image: aliya
+    title: 'Mentor',
+    mentorDescription: 'Software Engineer at Deepmind, London',
+    mentorName: 'Алия Рысбек',
+    mentorImage: aliya
   },
   {
-    title: 'Software Engineer at Facebook, London',
-    name: 'Райхан Хассенова',
-    image: raikhan
+    title: 'Mentor',
+    mentorDescription: 'Software Engineer at Facebook, London',
+    mentorName: 'Райхан Хассенова',
+    mentorImage: raikhan
   },
   {
-    title: 'IOS Engineer at Booking, Amsterdam',
-    name: 'Нарикби Максут',
-    image: narikbi
+    title: 'Mentor',
+    mentorDescription: 'IOS Engineer at Booking, Amsterdam',
+    mentorName: 'Нарикби Максут',
+    mentorImage: narikbi
   },
   {
-    title: 'Site Reliability Engineer at Google, Dublin',
-    name: 'Алихан Окас',
-    image: alikhan
+    title: 'Mentor',
+    mentorDescription: 'Site Reliability Engineer at Google, Dublin',
+    mentorName: 'Алихан Окас',
+    mentorImage: alikhan
   },
   {
-    title: 'Quantative Researcher at Unnoted, Seoul',
-    name: 'Алишер Тортай',
-    image: tortay
+    title: 'Mentor',
+    mentorDescription: 'Quantative Researcher at Unnoted, Seoul',
+    mentorName: 'Алишер Тортай',
+    mentorImage: tortay
   },
   {
-    title: 'Network Engineer at Booking, Amsterdam',
-    name: 'Алибек Ергалиев',
-    image: alibek
+    title: 'Mentor',
+    mentorDescription: 'Network Engineer at Booking, Amsterdam',
+    mentorName: 'Алибек Ергалиев',
+    mentorImage: alibek
   },
   {
-    title: 'Software Engineer at Google,\n Mountain View',
-    name: 'Батырхан Орынкул',
-    image: batyr
+    title: 'Mentor',
+    mentorDescription: 'Software Engineer at Google,\n Mountain View',
+    mentorName: 'Батырхан Орынкул',
+    mentorImage: batyr
   },
   {
-    title: 'Received internship offers from Google STEP, Facebook, Yandex',
-    name: 'Аян Гинет',
-    image: ayan
+    title: 'Mentor',
+    mentorDescription: 'Received internship offers from Google STEP, Facebook, Yandex',
+    mentorName: 'Аян Гинет',
+    mentorImage: ayan
   },
   {
-    title: 'Internship offer from Microsoft, \nBelgrade and Yelp, London',
-    name: 'Данекер Нургалиева',
-    image: dani
+    title: 'Mentor',
+    mentorDescription: 'Internship offer from Microsoft, \nBelgrade and Yelp, London',
+    mentorName: 'Данекер Нургалиева',
+    mentorImage: dani
   }
 ];

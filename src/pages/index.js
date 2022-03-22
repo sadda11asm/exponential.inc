@@ -129,7 +129,7 @@ const Index = () => {
         <div className="container mx-auto">
         <h2 className="mb-12 mt-8 lg:text-3xl font-bold text-center">Специализированные <span style={{ color: '#166EFF' }}>ментора</span></h2>
         <div
-          className="flex overflow-x-scroll pb-2 hide-scroll-bar scrollbar-hide lg:mx-12"
+          className="flex overflow-x-scroll pb-2 hide-scroll-bar scrollbar-hide lg:mx-1"
         >
           <div
             className="flex flex-nowrap mx-6"
@@ -137,21 +137,9 @@ const Index = () => {
             {specializedMentors.map(mentor => (
               <div className="inline-block px-3">
                 <div
-                  className="w-64 h-64 max-w-xs overflow-hidden rounded-lg shadow-md bg-white hover:shadow-xl transition-shadow duration-300 ease-in-out"
+                  className="w-64 h-72 max-w-xs rounded-lg shadow-md bg-white hover:shadow-xl transition-shadow duration-300 ease-in-out"
                 >
-                  <div
-                    className="mt-15 h-44">
-                    <img className="object-scale-down w-full h-44"
-                         src={mentor.image}/>
-                  </div>
-                  <div className="mt-1.5 px-3">
-                    <h1 className="text-md text-center font-semibold">
-                      {mentor.name}
-                    </h1>
-                    <p className="text-xs text-gray-600 text-center whitespace-pre-line">
-                      {mentor.title}
-                    </p>
-                  </div>
+                  <MentorCard mentor={mentor}/>
                 </div>
               </div>
             ))}
