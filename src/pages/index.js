@@ -9,7 +9,7 @@ import LabelText from '../components/LabelText';
 import Layout from '../components/layout/Layout';
 import SplitSection from '../components/SplitSection';
 import StatsBox from '../components/StatsBox';
-import customerData from '../data/customer-data';
+import customerData from '../data/team-data';
 import mentors from '../data/mentors';
 
 import HeroImage from '../svg/HeroImage';
