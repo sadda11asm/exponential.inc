@@ -115,8 +115,8 @@ const Index = () => {
         secondarySlot={<img src={process_third} alt="Faang" />}
       />
       <div className="bg-primary bg-opacity-25">
-      <section id="mentors" className="font-mono py-20 lg:py-40 lg:px-40">
-        <h2 className="mb-8 lg:text-5xl font-bold text-center">Команда</h2>
+      <section id="mentors" className="font-mono py-20 lg:py-40 lg:px-40" style={{ backgroundColor: '#EFF2F6' }}>
+        <h2 className="mb-12 lg:text-5xl font-bold text-center">Команда</h2>
         <div className="container mx-auto">
           <div className="flex flex-col md:flex-row md:-mx-3 lg:mx-1">
             {customerData.slice(0, 4).map(customer => (
@@ -127,7 +127,7 @@ const Index = () => {
           </div>
         </div>
         <div className="container mx-auto">
-        <h2 className="mb-12 mt-8 lg:text-4xl font-bold text-center">Наши специализированные ментора</h2>
+        <h2 className="mb-12 mt-8 lg:text-3xl font-bold text-center">Специализированные <span style={{ color: '#166EFF' }}>ментора</span></h2>
         <div
           className="flex overflow-x-scroll pb-2 hide-scroll-bar scrollbar-hide lg:mx-12"
         >
