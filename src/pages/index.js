@@ -116,17 +116,10 @@ const Index = () => {
       />
       <div className="bg-primary bg-opacity-25">
       <section id="mentors" className="font-mono py-20 lg:py-40 lg:px-40">
+        <h2 className="mb-8 lg:text-5xl font-bold text-center">Команда</h2>
         <div className="container mx-auto">
-          <h2 className="mb-8 lg:text-5xl font-bold text-center">Команда</h2>
-          <div className="flex flex-col md:flex-row md:-mx-3 lg:mx-8">
-            {customerData.slice(0, 2).map(customer => (
-              <div key={customer.customerName} className="flex-1 px-6 flex flex-col">
-                <CustomerCard customer={customer} />
-              </div>
-            ))}
-          </div>
-          <div className="flex flex-col md:flex-row md:-mx-3 mt-4 lg:mx-8">
-            {customerData.slice(2, 4).map(customer => (
+          <div className="flex flex-col md:flex-row md:-mx-3 lg:mx-1">
+            {customerData.slice(0, 4).map(customer => (
               <div key={customer.customerName} className="flex-1 px-6 flex flex-col">
                 <CustomerCard customer={customer} />
               </div>
