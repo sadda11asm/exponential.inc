@@ -1,5 +1,6 @@
 import React from 'react';
 import Button from '../components/Button';
+import ButtonLight from '../components/ButtonLight';
 import Card from '../components/Card';
 import Card2 from '../components/Card2';
 import YoutubeEmbed from "../components/YoutubeEmbed";
@@ -323,18 +324,18 @@ const Index = () => {
             </div>
         </div>
       </section>
-      <section className="font-mono container mx-auto my-20 py-24 bg-gray-200 rounded-lg text-center bg-opacity-50">
-        <h3 className="text-5xl font-semibold">Хотите стажировку в FAANG?</h3>
-        <p className="mt-8 text-xl font-light">
+      <section className="font-mono pl-20  bg-mainblue text-white container mx-auto my-20 py-24 bg-gray-200 rounded-verylarge text-left">
+        <h3 className="text-5xl font-bold spacing-xl">Хотите стажировку в FAANG?</h3>
+        <p className="mt-3 text-xl font-normal">
          Подавайте в Exponential и станьте одним из 30 учеников эксклюзивной программы!
-        </p>
-        <p className="mt-3 text-sm font-bold mx-auto">
-          Дедлайн подачи: 6 сентября 23:59 по времени Астаны
         </p>
         <p className="mt-8">
           <Link to="https://docs.google.com/forms/d/e/1FAIpQLSfEXdTmGSKaBnU_W-K95pV4xw_1Rca0ihzixFdbhDxYFCptqg/viewform?usp=sf_link">
-            <Button size="xl">Подать заявку</Button>
+            <ButtonLight size = "xl">Подать заявку</ButtonLight>
           </Link>
+        </p>
+        <p className="mt-8 text-sm font-bold mx-auto">
+          Крайний срок 22 июля
         </p>
       </section>
     </Layout>
