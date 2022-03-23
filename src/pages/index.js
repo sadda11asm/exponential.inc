@@ -135,13 +135,11 @@ const Index = () => {
             className="flex flex-nowrap mx-6"
           >
             {specializedMentors.map(mentor => (
-              <div className="inline-block px-3">
                 <div
-                  className="w-64 h-72 max-w-xs rounded-lg shadow-md bg-white hover:shadow-xl transition-shadow duration-300 ease-in-out"
+                  className="w-64 mx-3 max-w-xs rounded-lg shadow-md bg-white hover:shadow-xl transition-shadow duration-300 ease-in-out"
                 >
                   <MentorCard mentor={mentor}/>
                 </div>
-              </div>
             ))}
           </div>
         </div>
