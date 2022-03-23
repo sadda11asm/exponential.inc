@@ -9,7 +9,7 @@ import { Link } from 'gatsby';
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
   return (
-    <div className="sticky top-0">
+    <div className="z-20 sticky top-0 font-body">
       <nav class="bg-primary">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:pl-20">
           <div className="flex items-center mx-auto justify-between h-16 lg:px-20 md:px-10">
@@ -25,44 +25,45 @@ const Header = () => {
                 <div className="ml-10 flex space-x-8">
                   <AnchorLink
                     href="#what-we-offer"
-                    className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                    className="text-gray-500 hover:bg-gray-700 hover:text-white px-3 my-5 py-1 rounded-md text-sm font-medium"
                   >
-                    Программа
-                  </AnchorLink>
-
-                  <AnchorLink
-                    href="#program"
-                    className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
-                  >
-                    Процесс
+                    Home
                   </AnchorLink>
 
                   <AnchorLink
                     href="#mentors"
-                    className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                    className="text-gray-500 hover:bg-gray-700 hover:text-white px-3 my-5 py-1 rounded-md text-sm font-medium"
                   >
-                    Команда
+                    Mentors
                   </AnchorLink>
 
                   <AnchorLink
-                    href="#value"
-                    className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                    href="#program"
+                    className="text-gray-500 hover:bg-gray-700 hover:text-white px-3 my-5 py-1 rounded-md text-sm font-medium"
                   >
-                    Результаты
+                    Program
+                  </AnchorLink>
+
+
+                  <AnchorLink
+                    href="#value"
+                    className="text-gray-500 hover:bg-gray-700 hover:text-white px-3 my-5 py-1 rounded-md text-sm font-medium"
+                  >
+                    Alumni
                   </AnchorLink>
 
                   <AnchorLink
                     href="#faq"
-                    className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                    className="text-gray-500 hover:bg-gray-700 hover:text-white px-3 my-5 py-1 rounded-md text-sm font-medium"
                   >
-                    FAQ
+                    Price
                   </AnchorLink>
+                  <div className="absolute right-0 transform -translate-x-1/2 z-20 invisible lg:visible py-3">
+                    <Link to="https://docs.google.com/forms/d/e/1FAIpQLSfEXdTmGSKaBnU_W-K95pV4xw_1Rca0ihzixFdbhDxYFCptqg/viewform?usp=sf_link">
+                      <Button className="bg-primary-changed w-48 py-2 rounded-big">Apply Now</Button>
+                    </Link>
+                  </div>
                 </div>
-              </div>
-              <div className="invisible md:visible">
-                  <Link to="https://docs.google.com/forms/d/e/1FAIpQLSfEXdTmGSKaBnU_W-K95pV4xw_1Rca0ihzixFdbhDxYFCptqg/viewform?usp=sf_link">
-                    <Button className="bg-primary-changed" size="sm">Подать заявку</Button>
-                  </Link>
               </div>
             </div>
             <div className="-mr-2 flex md:hidden">

@@ -14,7 +14,7 @@ import specializedMentors from '../data/specialized-mentors';
 
 import HeroImage from '../svg/HeroImage';
 import SvgCharts from '../svg/SvgCharts';
-import faang from '../images/faang.png'
+import circle from '../images/circle.png'
 import process_first from '../images/individual_mentorship.png'
 import process_second from '../images/strategy.png'
 import process_third from '../images/atmosphere.png'
@@ -32,31 +32,39 @@ const Index = () => {
 
   return (
     <Layout>
-      <Link to="https://docs.google.com/forms/d/e/1FAIpQLSfEXdTmGSKaBnU_W-K95pV4xw_1Rca0ihzixFdbhDxYFCptqg/viewform?usp=sf_link">
-      <div className="fixed mx-auto w-1/2 inset-x-0 bottom-0 mb-4 text-center">
-        <Button className={`${ topmostSectionIsVisible ? 'invisible md:invisible': 'visible md:invisible' }`}>Подать заявку</Button>
+      <div>
+        <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet"/>
       </div>
+      <Link to="https://docs.google.com/forms/d/e/1FAIpQLSfEXdTmGSKaBnU_W-K95pV4xw_1Rca0ihzixFdbhDxYFCptqg/viewform?usp=sf_link">
+        <div className="fixed mx-auto w-1/2 inset-x-0 bottom-0 mb-4 text-center">
+          <Button className={`${ topmostSectionIsVisible ? 'invisible md:invisible': 'visible md:invisible' }`}>Подать заявку</Button>
+        </div>
       </Link>
-      <section className="font-display pt-20 md:pt-40 pb-40" ref={topmostSection}>
-        <div className="container mx-auto px-10 lg:flex">
-          <div className="text-center lg:text-left lg:w-1/2">
-            <h1 className="text-4xl lg:text-5xl xl:text-6xl font-bold leading-none">
+      <section className="z-10 invisible lg:visible absolute right-0 rounded-l-largest bg-black lg:w-6/12">
+        <div className="lg:h-10"></div>
+      </section>
+      <section className="z-10 invisible lg:visible absolute mt-10 right-0 rounded-l-largest bg-primary-changed lg:w-6/12">
+        <img src={circle} alt="Circle" />
+      </section>
+      <section className="bg-black font-body lg:pt-40 pt-24 pb-24 md:pr-40 lg:w-8/12 rounded-br-largest" ref={topmostSection}>
+        <div className="container mx-auto px-10 lg:pl-10 lg:pr-20 lg:flex">
+          <div className="text-center text-white lg:text-left lg:ml-10 lg:mr-8">
+            <h1 className="text-3xl lg:text-4xl xl:text-5xl font-bold leading-none">
               Exponential
             </h1>
-            <p className="text-xl lg:text-2xl mt-6 font-light">
-              Менторская программа для девушек подающих на стажировки в FAANG
+            <p className="text-l lg:text-xl mt-6 lg:mr-10">
+              Mentorship program for software engineers and software engineering students applying to FAANGs
             </p>
             <p className="mt-8 md:mt-12">
               <Link to="https://docs.google.com/forms/d/e/1FAIpQLSfEXdTmGSKaBnU_W-K95pV4xw_1Rca0ihzixFdbhDxYFCptqg/viewform?usp=sf_link">
-                <Button size="lg">Подать заявку</Button>
+                <Button className="bg-primary-changed font-body w-64 rounded-big">Apply Now</Button>
               </Link>
             </p>
-            <p className="mt-4 text-gray-600"></p>
-          </div>
-          <div className='lg:w-1/2 lg:pl-12'>
-            <img src={faang} alt="Faang" />
           </div>
         </div>
+        <p className="mx-auto text-l lg:text-xl lg:mt-64 mt-40 lg:pl-20 lg:text-left text-center text-gray-600">
+          Apply before the deadline on July 22nd
+        </p>
       </section>
       <section className="font-display pt-20 md:pt-40 pb-40">
         <div className="container mx-auto px-10 lg:flex">
@@ -76,7 +84,7 @@ const Index = () => {
         id="program"
         primarySlot={
           <div className="font-mono lg:pr-32 xl:pr-48">
-            <h3 className="text-4xl font-bold leading-tight text-mainblue">Индивидальная 
+            <h3 className="text-4xl font-bold leading-tight text-mainblue">Индивидальная
 поддержка</h3>
             <p className="mt-4 text-2xl font-medium leading-relaxed">
               Студентам при подготовке к первой важной цели на пути в FAANG
@@ -90,11 +98,11 @@ const Index = () => {
         primarySlot={
           <div className="font-mono lg:pl-32 xl:pl-48">
             <h3 className="text-4xl font-bold leading-tight text-mainblue">
-            Отработанная 
-стратегия  
+            Отработанная
+стратегия
             </h3>
             <p className="mt-4 text-2xl font-medium leading-relaxed">
-            Подготовки на опыте более 40 аппликантов предыдущих лет, получивших в итоге offer 
+            Подготовки на опыте более 40 аппликантов предыдущих лет, получивших в итоге offer
 в FAANG
             </p>
           </div>
