@@ -129,35 +129,35 @@ const Header = () => {
                   href="#what-we-offer"
                   className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
                 >
-                  Программа
+                  Home
                 </AnchorLink>
 
                 <AnchorLink
                   href="#program"
                   className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
                 >
-                  Процесс
+                  Program
                 </AnchorLink>
 
                 <AnchorLink
                   href="#mentors"
                   className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
                 >
-                  Команда
+                  Mentors
                 </AnchorLink>
 
                 <AnchorLink
                   href="#value"
                   className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
                 >
-                  Результаты
+                  Alumni
                 </AnchorLink>
 
                 <AnchorLink
                   href="#faq"
                   className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
                 >
-                  FAQ
+                  Price
                 </AnchorLink>
               </div>
             </div>

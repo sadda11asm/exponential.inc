@@ -1,6 +1,7 @@
 module.exports = {
   theme: {
     fontFamily: {
+      sans: ['Poppins', 'sans-serif'],
       body: ['Poppins', 'sans-serif'],
       display: ['Rubik', 'sans-serif'],
     },
@@ -28,6 +29,7 @@ module.exports = {
       'full': '9999px',
       'big': '12px',
       'large': '36px',
+      'verylarge': '50px',
       'largest': '70px'
     }
   },
