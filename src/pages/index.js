@@ -4,13 +4,13 @@ import ButtonLight from '../components/ButtonLight';
 import Card from '../components/Card';
 import Card2 from '../components/Card2';
 import YoutubeEmbed from "../components/YoutubeEmbed";
-import CustomerCard from '../components/CustomerCard';
+import MentorCard from '../components/MentorCard';
 import LabelText from '../components/LabelText';
 import Layout from '../components/layout/Layout';
 import SplitSection from '../components/SplitSection';
 import StatsBox from '../components/StatsBox';
-import customerData from '../data/customer-data';
-import mentors from '../data/mentors';
+import teamData from '../data/team';
+import specializedMentors from '../data/specialized-mentors';
 
 import HeroImage from '../svg/HeroImage';
 import SvgCharts from '../svg/SvgCharts';
@@ -115,58 +115,41 @@ const Index = () => {
         secondarySlot={<img src={process_third} alt="Faang" />}
       />
       <div className="bg-primary bg-opacity-25">
-      <section id="mentors" className="font-mono py-20 lg:py-40 lg:px-40">
+      <section id="mentors" className="font-mono py-20 lg:py-40 lg:px-40" style={{ backgroundColor: '#EFF2F6' }}>
+        <h2 className="mb-12 lg:text-5xl font-bold text-center">Команда</h2>
         <div className="container mx-auto">
-          <h2 className="mb-8 lg:text-5xl font-bold text-center">Команда</h2>
-          <div className="flex flex-col md:flex-row md:-mx-3 lg:mx-8">
-            {customerData.slice(0, 2).map(customer => (
-              <div key={customer.customerName} className="flex-1 px-6 flex flex-col">
-                <CustomerCard customer={customer} />
-              </div>
-            ))}
-          </div>
-          <div className="flex flex-col md:flex-row md:-mx-3 mt-4 lg:mx-8">
-            {customerData.slice(2, 4).map(customer => (
-              <div key={customer.customerName} className="flex-1 px-6 flex flex-col">
-                <CustomerCard customer={customer} />
+          <div className="flex flex-col md:flex-row md:-mx-3 lg:mx-1">
+            {teamData.map(mentor => (
+              <div key={mentor.mentorName} className="flex-1 px-6 flex flex-col">
+                <MentorCard mentor={mentor} />
               </div>
             ))}
           </div>
         </div>
         <div className="container mx-auto">
-        <h2 className="mb-12 mt-8 lg:text-4xl font-bold text-center">Наши специализированные ментора</h2>
+        <h2 className="mb-12 mt-8 lg:text-3xl font-bold text-center">Специализированные <span style={{ color: '#166EFF' }}>ментора</span></h2>
         <div
-          className="flex overflow-x-scroll pb-2 hide-scroll-bar scrollbar-hide lg:mx-12"
+          className="flex overflow-x-scroll pb-2 hide-scroll-bar scrollbar-hide lg:mx-1"
         >
           <div
             className="flex flex-nowrap mx-6"
           >
-            {mentors.map(mentor => (
-              <div className="inline-block px-3">
+            {specializedMentors.map(mentor => (
                 <div
-                  className="w-64 h-64 max-w-xs overflow-hidden rounded-lg shadow-md bg-white hover:shadow-xl transition-shadow duration-300 ease-in-out"
+                  className="w-64 mx-3 max-w-xs rounded-lg shadow-md bg-white hover:shadow-xl transition-shadow duration-300 ease-in-out"
                 >
-                  <div
-                    className="mt-15 h-44">
-                    <img className="object-scale-down w-full h-44"
-                         src={mentor.image}/>
-                  </div>
-                  <div className="mt-1.5 px-3">
-                    <h1 className="text-md text-center font-semibold">
-                      {mentor.name}
-                    </h1>
-                    <p className="text-xs text-gray-600 text-center whitespace-pre-line">
-                      {mentor.title}
-                    </p>
-                  </div>
+                  <MentorCard mentor={mentor}/>
                 </div>
-              </div>
             ))}
           </div>
         </div>
         </div>
       </section>
       </div>
+      <section id="how-it-works" className="font-mono py-20 lg:py-40 lg:px-40 text-center" style={{ backgroundColor: 'white' }}>
+        <h2 className="lg:text-5xl">Как это <span style={{ color: '#2778FD' }}>работает?</span></h2>
+        <p style={{ color: '#2778FD' }}>Посмотреть видео</p>
+      </section>
       <section id="value" className="font-mono py-20 lg:pt-32">
         <div className="container mx-auto text-center">
           <LabelText className="text-gray-600">Ваши результаты</LabelText>
