@@ -36,6 +36,7 @@ import process_fifth from '../images/feedback.jpg'
 import { useVisibility } from '../utils';
 import { Link } from 'gatsby';
 
+
 const Index = () => {
   const [ topmostSectionIsVisible, topmostSection ] = useVisibility(100);
 
@@ -195,7 +196,12 @@ const Index = () => {
               </p>
               <p className="mt-5">
                   <span className="text-xl lg:text-2xl xl:text-3xl text-bold">
-                      <a href="https://codebushi.com" className="text-bold text-primary-changed"> Meet Exponential Graduates -> </a>
+                     <p>
+                       <Link to={`/alumni/`}>
+                         <a className="text-bold text-primary-changed"> Meet Exponential Graduates -> </a>
+                       </Link>
+                     </p>
+                      {/*<a className="text-bold text-primary-changed"> Meet Exponential Graduates -> </a>*/}
                   </span>
               </p>
             </div>
@@ -214,7 +220,11 @@ const Index = () => {
               </p>
               <p className="mt-5">
                   <span className="text-xl lg:text-2xl xl:text-3xl text-bold">
-                      <a href="https://codebushi.com" className="text-bold text-primary-changed"> Meet Exponential Graduates -> </a>
+                      <p>
+                       <Link to={`/alumni/`}>
+                         <a className="text-bold text-primary-changed"> Meet Exponential Graduates -> </a>
+                       </Link>
+                     </p>
                   </span>
               </p>
             </div>
