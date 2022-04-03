@@ -18,7 +18,12 @@ import circle from '../images/circle.png'
 import elipsis from '../images/elipsis.png'
 import blackcylinder from '../images/blackcylinder.png'
 import bluecylinder from '../images/bluecylinder.png'
-
+import f from '../images/f.png'
+import g from '../images/g.png'
+import go from '../images/go.png'
+import b from '../images/b.png'
+import d from '../images/d.png'
+import p from '../images/p.png'
 import process_first from '../images/individual_mentorship.png'
 import process_second from '../images/strategy.png'
 import process_third from '../images/atmosphere.png'
@@ -162,8 +167,8 @@ const Index = () => {
         <h2 className="lg:text-5xl">Как это <span style={{ color: '#2778FD' }}>работает?</span></h2>
         <p style={{ color: '#2778FD' }}>Посмотреть видео</p>
       </section>
-      <div className="invisible md:visible">
-        <section className="z-10 invisible md:visible md:absolute mt-24 pt-24 pr-16 right-0 rounded-l-largest w-4/12 flex flex-row">
+      <div className="hidden md:block mb-48">
+        <section className="z-10 md:absolute mt-24 pt-24 pr-16 right-0 rounded-l-largest w-4/12 flex flex-row">
           <div className="inline-block flex flex-col justify-end">
             <div className="text-center font-bold mb-4">
               12 offers
@@ -179,7 +184,7 @@ const Index = () => {
         </section>
         <section className="invisible md:visible z-10 inline-block mt-10 right-0 mr-48 rounded-l-largest w-2/12">
         </section>
-        <section id="value" className="invisible md:visible lg:pt-40 pt-24 pb-24 md:pr-40 w-full">
+        <section id="value" className="lg:pt-40 pt-24 pb-24 md:pr-40 w-full">
           <div className="container mx-auto mt-16 px-10 lg:pl-10 lg:pr-20 lg:flex">
             <div className="text-black text-left lg:ml-10 lg:mr-8">
               <h1 className="text-3xl lg:text-5xl xl:text-6xl font-bold leading-none">
@@ -197,8 +202,8 @@ const Index = () => {
           </div>
         </section>
       </div>
-      <div className="visible md:invisible">
-        <section id="value" className="visible md:invisible align-middle  lg:pt-40 pt-24 pb-24 md:pr-40 w-full">
+      <div className="md:hidden">
+        <section id="value" className="align-middle  lg:pt-40 pt-24 pb-24 md:pr-40 w-full">
           <div className="container mx-auto px-10 lg:pl-10 lg:pr-20 lg:flex">
             <div className="text-black text-left lg:ml-10 lg:mr-8">
               <h1 className="text-4xl lg:text-5xl xl:text-6xl font-bold leading-none">
@@ -215,7 +220,7 @@ const Index = () => {
             </div>
           </div>
         </section>
-        <section className="visible md:invisible mx-16 mt-4 mb-16 align-middle rounded-l-largest flex flex-row">
+        <section className="mx-16 mt-4 mb-16 align-middle rounded-l-largest flex flex-row">
           <div className="inline-block flex flex-col justify-between">
             <div className="text-center font-bold mb-4">
               12 offers
@@ -230,6 +235,19 @@ const Index = () => {
           </div>
         </section>
       </div>
+      <section id="companies" className="">
+        <h1 className="text-center text-xl lg:text-2xl xl:text-3xl font-bold leading-none">
+          Companies <span className="text-primary-changed"> our alumni  </span> work for
+        </h1>
+        <div className="flex flex-row max-w-full space-x-8 p-20 justify-center">
+          <img className="w-2/12" src={g} alt="g" />
+          <img className="w-2/12" src={f} alt="f" />
+          <img className="w-2/12" src={go} alt="go" />
+          <img className="w-2/12" src={d} alt="d" />
+          <img className="w-2/12" src={b} alt="b" />
+          <img className="w-2/12" src={p} alt="p" />
+        </div>
+      </section>
       <section id= "faq" className="bg-primary bg-opacity-25  lg:py-20 lg:px-20">
         <div>
             <div className="container px-5 py-10 mx-auto">
