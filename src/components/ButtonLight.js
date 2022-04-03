@@ -18,6 +18,7 @@ const ButtonLight = ({ children, className = '', size }) => {
         hover:bg-primary-darker
         rounded-lg
         text-mainblue
+        font-semibold
     `}
     >
       {children}
