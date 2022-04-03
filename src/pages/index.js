@@ -15,6 +15,7 @@ import specializedMentors from '../data/specialized-mentors';
 import HeroImage from '../svg/HeroImage';
 import SvgCharts from '../svg/SvgCharts';
 import circle from '../images/circle.png'
+import elipsis from '../images/elipsis.png'
 import process_first from '../images/individual_mentorship.png'
 import process_second from '../images/strategy.png'
 import process_third from '../images/atmosphere.png'
@@ -70,7 +71,7 @@ const Index = () => {
         <div className="container mx-auto px-10 lg:flex">
           <div className="container mx-auto text-center">
             <h1 className="text-3xl lg:text-5xl font-bold">
-              О <span className="text-mainblue"> программе </span>
+              About <span className="text-mainblue"> program </span>
             </h1>
             <p className="mt-8">
               <YoutubeEmbed className="mt-6" embedId="WSKKYy4iJs8" />
@@ -84,10 +85,9 @@ const Index = () => {
         id="program"
         primarySlot={
           <div className="font-mono lg:pr-32 xl:pr-48">
-            <h3 className="text-4xl font-bold leading-tight text-mainblue">Индивидальная
-поддержка</h3>
+            <h3 className="text-4xl font-bold leading-tight text-mainblue">Individual support</h3>
             <p className="mt-4 text-2xl font-medium leading-relaxed">
-              Студентам при подготовке к первой важной цели на пути в FAANG
+              for the stuidents on their way to the job at FAANG
             </p>
           </div>
         }
@@ -98,12 +98,10 @@ const Index = () => {
         primarySlot={
           <div className="font-mono lg:pl-32 xl:pl-48">
             <h3 className="text-4xl font-bold leading-tight text-mainblue">
-            Отработанная
-стратегия
+            Developed strategy
             </h3>
             <p className="mt-4 text-2xl font-medium leading-relaxed">
-            Подготовки на опыте более 40 аппликантов предыдущих лет, получивших в итоге offer
-в FAANG
+            based on the experience of 40 applicants, who landed a job offer at FAANG
             </p>
           </div>
         }
@@ -113,10 +111,10 @@ const Index = () => {
         primarySlot={
           <div className="font-mono lg:pr-32 xl:pr-48">
             <h3 className="text-4xl font-bold leading-tight text-mainblue">
-            Идеальная атмосфера
+            Perfect atmosphere
             </h3>
             <p className="mt-4 text-2xl font-medium leading-relaxed">
-            Подготовки, включающую в себя обмен знанием и навыками, подтягиваем слабые и развиваем сильные стороны
+            of preparation, including exchange of knowledge and experience, support of weak and improvement of strong sides
             </p>
           </div>
         }
@@ -315,19 +313,25 @@ const Index = () => {
             </div>
         </div>
       </section>
-      <section className="font-mono pl-20  bg-mainblue text-white container mx-auto my-20 py-24 bg-gray-200 rounded-verylarge text-left">
-        <h3 className="text-5xl font-bold spacing-xl">Хотите стажировку в FAANG?</h3>
-        <p className="mt-3 text-xl font-normal">
-         Подавайте в Exponential и станьте одним из 30 учеников эксклюзивной программы!
-        </p>
-        <p className="mt-8">
-          <Link to="https://docs.google.com/forms/d/e/1FAIpQLSfEXdTmGSKaBnU_W-K95pV4xw_1Rca0ihzixFdbhDxYFCptqg/viewform?usp=sf_link">
-            <ButtonLight size = "xl">Подать заявку</ButtonLight>
-          </Link>
-        </p>
-        <p className="mt-8 text-sm font-bold mx-auto">
-          Крайний срок 22 июля
-        </p>
+      <section className="font-mono lg:text-md lg:pt-20 lg:py-0 md:text-sm sm:text-xs py-20 pl-20 bg-mainblue text-white container mx-auto my-20 bg-gray-200 rounded-verylarge text-left">
+        <div className="flow-root">
+          <h3 className="text-5xl font-bold spacing-xl">Do you want an internship at FAANG?</h3>
+          <p className="mt-3 text-xl font-normal">
+          Join Exponential and become one of the 30 participants of our exclusive program!
+          </p>
+            
+              <div className="float-left">
+              <p className="mt-8 ">
+                <Link to="https://docs.google.com/forms/d/e/1FAIpQLSfEXdTmGSKaBnU_W-K95pV4xw_1Rca0ihzixFdbhDxYFCptqg/viewform?usp=sf_link">
+                  <ButtonLight size = "xl">Apply now</ButtonLight>
+                </Link>
+              </p>
+              <p className="mt-8 text-xl mx-auto">
+                Applications accepted until July 22
+              </p>
+              </div>
+              <img className="float-right hidden lg:block" src={elipsis} alt="Elipsis" />
+        </div>
       </section>
     </Layout>
   );
