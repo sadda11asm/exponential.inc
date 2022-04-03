@@ -1,7 +1,7 @@
 module.exports = {
   theme: {
     fontFamily: {
-      sans: ['Poppins', 'sans-serif'],
+      sans: ['Inter', 'sans-serif'],
       body: ['Poppins', 'sans-serif'],
       display: ['Rubik', 'sans-serif'],
     },
@@ -15,7 +15,8 @@ module.exports = {
           lighter: '#c8a3b5',
           default: '#132c48',
           darker: '#f96d6d',
-          changed: '#2f4e68', 
+          changed: '#2778FD',
+          dark: '#1B1C1E',
         },
         mainblue: '#2778FD'
       },

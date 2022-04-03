@@ -16,6 +16,14 @@ import HeroImage from '../svg/HeroImage';
 import SvgCharts from '../svg/SvgCharts';
 import circle from '../images/circle.png'
 import elipsis from '../images/elipsis.png'
+import blackcylinder from '../images/blackcylinder.png'
+import bluecylinder from '../images/bluecylinder.png'
+import f from '../images/f.png'
+import g from '../images/g.png'
+import go from '../images/go.png'
+import b from '../images/b.png'
+import d from '../images/d.png'
+import p from '../images/p.png'
 import process_first from '../images/individual_mentorship.png'
 import process_second from '../images/strategy.png'
 import process_third from '../images/atmosphere.png'
@@ -28,6 +36,7 @@ import process_fifth from '../images/feedback.jpg'
 import { useVisibility } from '../utils';
 import { Link } from 'gatsby';
 
+
 const Index = () => {
   const [ topmostSectionIsVisible, topmostSection ] = useVisibility(100);
 
@@ -35,6 +44,9 @@ const Index = () => {
     <Layout>
       <div>
         <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet"/>
+      </div>
+      <div>
+        <link href="https://fonts.googleapis.com/css?family=Inter" rel="stylesheet"/>
       </div>
       <Link to="https://docs.google.com/forms/d/e/1FAIpQLSfEXdTmGSKaBnU_W-K95pV4xw_1Rca0ihzixFdbhDxYFCptqg/viewform?usp=sf_link">
         <div className="fixed mx-auto w-1/2 inset-x-0 bottom-0 mb-4 text-center">
@@ -50,7 +62,7 @@ const Index = () => {
       <section className="bg-black font-body lg:pt-40 pt-24 pb-24 md:pr-40 lg:w-8/12 rounded-br-largest" ref={topmostSection}>
         <div className="container mx-auto px-10 lg:pl-10 lg:pr-20 lg:flex">
           <div className="text-center text-white lg:text-left lg:ml-10 lg:mr-8">
-            <h1 className="text-3xl lg:text-4xl xl:text-5xl font-bold leading-none">
+            <h1 className="text-4xl lg:text-5xl xl:text-6xl font-bold leading-none">
               Exponential
             </h1>
             <p className="text-l lg:text-xl mt-6 lg:mr-10">
@@ -64,10 +76,10 @@ const Index = () => {
           </div>
         </div>
         <p className="mx-auto text-l lg:text-xl lg:mt-64 mt-40 lg:pl-20 lg:text-left text-center text-gray-600">
-          Apply before the deadline on July 22nd
+          Apply before the deadline on <span className="text-white"> July 22nd  </span>
         </p>
       </section>
-      <section className="font-display pt-20 md:pt-40 pb-40">
+      <section id="what-we-offer" className=" pt-20 md:pt-40 pb-40">
         <div className="container mx-auto px-10 lg:flex">
           <div className="container mx-auto text-center">
             <h1 className="text-3xl lg:text-5xl font-bold">
@@ -84,7 +96,7 @@ const Index = () => {
       <SplitSection
         id="program"
         primarySlot={
-          <div className="font-mono lg:pr-32 xl:pr-48">
+          <div className=" lg:pr-32 xl:pr-48">
             <h3 className="text-4xl font-bold leading-tight text-mainblue">Individual support</h3>
             <p className="mt-4 text-2xl font-medium leading-relaxed">
               for the stuidents on their way to the job at FAANG
@@ -96,7 +108,7 @@ const Index = () => {
       <SplitSection
         reverseOrder
         primarySlot={
-          <div className="font-mono lg:pl-32 xl:pl-48">
+          <div className=" lg:pl-32 xl:pl-48">
             <h3 className="text-4xl font-bold leading-tight text-mainblue">
             Developed strategy
             </h3>
@@ -109,7 +121,7 @@ const Index = () => {
       />
       <SplitSection
         primarySlot={
-          <div className="font-mono lg:pr-32 xl:pr-48">
+          <div className=" lg:pr-32 xl:pr-48">
             <h3 className="text-4xl font-bold leading-tight text-mainblue">
             Perfect atmosphere
             </h3>
@@ -121,7 +133,7 @@ const Index = () => {
         secondarySlot={<img src={process_third} alt="Faang" />}
       />
       <div className="bg-primary bg-opacity-25">
-      <section id="mentors" className="font-mono py-20 lg:py-40 lg:px-40" style={{ backgroundColor: '#EFF2F6' }}>
+      <section id="mentors" className=" py-20 lg:py-40 lg:px-40" style={{ backgroundColor: '#EFF2F6' }}>
         <h2 className="mb-12 lg:text-5xl font-bold text-center">Команда</h2>
         <div className="container mx-auto">
           <div className="flex flex-col md:flex-row md:-mx-3 lg:mx-1">
@@ -152,38 +164,101 @@ const Index = () => {
         </div>
       </section>
       </div>
-      <section id="how-it-works" className="font-mono py-20 lg:py-40 lg:px-40 text-center" style={{ backgroundColor: 'white' }}>
+      <section id="how-it-works" className=" py-20 lg:py-40 lg:px-40 text-center" style={{ backgroundColor: 'white' }}>
         <h2 className="lg:text-5xl">Как это <span style={{ color: '#2778FD' }}>работает?</span></h2>
         <p style={{ color: '#2778FD' }}>Посмотреть видео</p>
       </section>
-      <section id="value" className="font-mono py-20 lg:pt-32">
-        <div className="container mx-auto text-center">
-          <LabelText className="text-gray-600">Ваши результаты</LabelText>
-          <div className="flex flex-col sm:flex-row mt-8 lg:px-24">
-            <div className="w-full sm:w-1/3  lg:mr-5">
-              <StatsBox primaryText="+200%" secondaryText="Знания и навыки"  thirdText="Наши ментора делятся с вами своим ценным опытом."/>
+      <div className="hidden md:block mb-48">
+        <section className="z-10 md:absolute mt-24 pt-24 pr-16 right-0 rounded-l-largest w-4/12 flex flex-row">
+          <div className="inline-block flex flex-col justify-end">
+            <div className="text-center font-bold mb-4">
+              12 offers
             </div>
-            <div className="w-full sm:w-1/3">
-              <StatsBox primaryText="-50%" secondaryText="Общее время подготовки" thirdText="Вы идёте по уже протоптанной тропе."/>
+            <img src={bluecylinder} alt="bluecylinder" />
+          </div>
+          <div className="inline-block ml-10 flex flex-col justify-end">
+            <div className="text-center font-bold mb-4">
+              24 participants
             </div>
-            <div className="w-full sm:w-1/3  lg:ml-5">
-              <StatsBox primaryText="+300%" secondaryText="Вера в себя" thirdText="Наши  ментора гарантируют, что вы имеете всё для победы."/>
+            <img src={blackcylinder} alt="blackcylinder" />
+          </div>
+        </section>
+        <section className="invisible md:visible z-10 inline-block mt-10 right-0 mr-48 rounded-l-largest w-2/12">
+        </section>
+        <section id="value" className="lg:pt-40 pt-24 pb-24 md:pr-40 w-full">
+          <div className="container mx-auto mt-16 px-10 lg:pl-10 lg:pr-20 lg:flex">
+            <div className="text-black text-left lg:ml-10 lg:mr-8">
+              <h1 className="text-3xl lg:text-5xl xl:text-6xl font-bold leading-none">
+                Exponential<span className="text-primary-changed"> Batch #1  </span>
+              </h1>
+              <p className="mt-3 text-4xl lg:text-5xl xl:text-6xl font-bold leading-none">
+                Results:
+              </p>
+              <p className="mt-5">
+                  <span className="text-xl lg:text-2xl xl:text-3xl text-bold">
+                     <p>
+                       <Link to={`/alumni/`}>
+                         <a className="text-bold text-primary-changed"> Meet Exponential Graduates -> </a>
+                       </Link>
+                     </p>
+                      {/*<a className="text-bold text-primary-changed"> Meet Exponential Graduates -> </a>*/}
+                  </span>
+              </p>
             </div>
           </div>
-          <div className="flex flex-col sm:flex-row mt-8 lg:px-24">
-            <div className="w-full sm:w-1/3 lg:mr-5">
-              <StatsBox primaryText="+200%" secondaryText="Боевой Дух"  thirdText="Наша техническая и моральная поддержка стимулируют ваш дух."/>
-            </div>
-            <div className="w-full sm:w-1/3">
-              <StatsBox primaryText="+400%" secondaryText="Мотивация" thirdText="Атмосфера которую мы создаём вдохновляет и мотивирует."/>
-            </div>
-            <div className="w-full sm:w-1/3 lg:ml-5">
-              <StatsBox primaryText="-100%" secondaryText="Прокрастинация" thirdText="Наша программа порождает желание работать не покладая рук."/>
+        </section>
+      </div>
+      <div className="md:hidden">
+        <section id="value" className="align-middle  lg:pt-40 pt-24 pb-24 md:pr-40 w-full">
+          <div className="container mx-auto px-10 lg:pl-10 lg:pr-20 lg:flex">
+            <div className="text-black text-left lg:ml-10 lg:mr-8">
+              <h1 className="text-4xl lg:text-5xl xl:text-6xl font-bold leading-none">
+                Exponential<span className="text-primary-changed"> Batch #1  </span>
+              </h1>
+              <p className="mt-3 text-4xl lg:text-5xl xl:text-6xl font-bold leading-none">
+                Results:
+              </p>
+              <p className="mt-5">
+                  <span className="text-xl lg:text-2xl xl:text-3xl text-bold">
+                      <p>
+                       <Link to={`/alumni/`}>
+                         <a className="text-bold text-primary-changed"> Meet Exponential Graduates -> </a>
+                       </Link>
+                     </p>
+                  </span>
+              </p>
             </div>
           </div>
+        </section>
+        <section className="mx-16 mt-4 mb-16 align-middle rounded-l-largest flex flex-row">
+          <div className="inline-block flex flex-col justify-between">
+            <div className="text-center font-bold mb-4">
+              12 offers
+            </div>
+            <img src={bluecylinder} alt="bluecylinder" />
+          </div>
+          <div className="inline-block ml-10 flex flex-col justify-between">
+            <div className="text-center font-bold mb-4">
+              24 participants
+            </div>
+            <img src={blackcylinder} alt="blackcylinder" />
+          </div>
+        </section>
+      </div>
+      <section id="companies" className="">
+        <h1 className="text-center text-xl lg:text-2xl xl:text-3xl font-bold leading-none">
+          Companies <span className="text-primary-changed"> our alumni  </span> work for
+        </h1>
+        <div className="flex flex-row max-w-full space-x-8 p-20 justify-center">
+          <img className="w-2/12" src={g} alt="g" />
+          <img className="w-2/12" src={f} alt="f" />
+          <img className="w-2/12" src={go} alt="go" />
+          <img className="w-2/12" src={d} alt="d" />
+          <img className="w-2/12" src={b} alt="b" />
+          <img className="w-2/12" src={p} alt="p" />
         </div>
       </section>
-      <section id= "faq" className="bg-primary bg-opacity-25 font-mono lg:py-20 lg:px-20">
+      <section id= "faq" className="bg-primary bg-opacity-25  lg:py-20 lg:px-20">
         <div>
             <div className="container px-5 py-10 mx-auto">
               <div className="text-center mb-20">
@@ -274,52 +349,17 @@ const Index = () => {
                     </span>
                   </details>
                 </div>
-                {/*<div className="w-full lg:w-1/2 px-4 py-2">*/}
-                {/*  <details className="mb-4">*/}
-                {/*    <summary className="font-semibold  bg-gray-200 rounded-md py-2 px-4">*/}
-                {/*      Длительность подготовки? Сколько раз в год проводится программа?*/}
-                {/*    </summary>*/}
-
-                {/*    <span className="px-4">*/}
-                {/*      <div className="font-medium  bg-gray-100 rounded-md py-2 px-4">*/}
-                {/*      Длительность программы будет адаптироваться под каждого участника индивидуально. Минимальный срок программы 3 месяца.*/}
-                {/*      </div>*/}
-                {/*    </span>*/}
-                {/*  </details>*/}
-                {/*  <details className="mb-4">*/}
-                {/*    <summary className="font-semibold  bg-gray-200 rounded-md py-2 px-4">*/}
-                {/*      Сколько участников будет отобрано?*/}
-                {/*    </summary>*/}
-
-                {/*    <span className="px-4 py-2">*/}
-                {/*    <div className="font-medium  bg-gray-100 rounded-md py-2 px-4 mt-2">*/}
-                {/*    По итогам интервью будет отобрано 30 участников программы.*/}
-                {/*    </div>*/}
-                {/*</span>*/}
-                {/*  </details>*/}
-                {/*  <details className="mb-4">*/}
-                {/*    <summary className="font-semibold  bg-gray-200 rounded-md py-2 px-4">*/}
-                {/*      Нужно ли мне быть студентом? Кто подходит под вашу программу?*/}
-                {/*    </summary>*/}
-
-                {/*    <span className="px-4 py-2">*/}
-                {/*     <div className="font-medium  bg-gray-100 rounded-md py-2 px-4 mt-2">*/}
-                {/*    В этом году на программу принимаются только девушки обучающиеся на программах бакалавриата или магистратуры.*/}
-                {/*    </div>*/}
-                {/*</span>*/}
-                {/*  </details>*/}
-                {/*</div>*/}
               </div>
             </div>
         </div>
       </section>
-      <section className="font-mono lg:text-md lg:pt-20 lg:py-0 md:text-sm sm:text-xs py-20 pl-20 bg-mainblue text-white container mx-auto my-20 bg-gray-200 rounded-verylarge text-left">
+      <section className="lg:text-md lg:pt-20 lg:py-0 md:text-sm sm:text-xs py-20 pl-20 bg-mainblue text-white container mx-auto my-20 bg-gray-200 rounded-verylarge text-left">
         <div className="flow-root">
           <h3 className="text-5xl font-bold spacing-xl">Do you want an internship at FAANG?</h3>
           <p className="mt-3 text-xl font-normal">
           Join Exponential and become one of the 30 participants of our exclusive program!
           </p>
-            
+
               <div className="float-left">
               <p className="mt-8 ">
                 <Link to="https://docs.google.com/forms/d/e/1FAIpQLSfEXdTmGSKaBnU_W-K95pV4xw_1Rca0ihzixFdbhDxYFCptqg/viewform?usp=sf_link">
