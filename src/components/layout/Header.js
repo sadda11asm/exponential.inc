@@ -9,8 +9,8 @@ import { Link } from 'gatsby';
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
   return (
-    <div className="z-20 sticky top-0 font-body">
-      <nav class="bg-primary">
+    <div className="z-30 sticky top-0 font-body shadow-2xl">
+      <nav class="bg-black">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:pl-20">
           <div className="flex items-center mx-auto justify-between h-16 lg:px-20 md:px-10">
             <div className="flex items-center">
