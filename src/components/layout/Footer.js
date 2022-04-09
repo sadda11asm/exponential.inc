@@ -1,5 +1,7 @@
 import React from 'react';
 import ButtonLight from '../ButtonLight';
+import rocket_logo from '../../images/transparent_rocket_logo.png';
+import insta_logo from '../../images/transparent_insta_logo.png';
 
 import { Link } from 'gatsby';
 
@@ -22,7 +24,7 @@ const Footer = () => (
       </div>
       <div>
         <div className="pt-10 flex flex-row">
-          <div className="w-14">logo</div>
+          <div className="w-14"><img src={rocket_logo} width="45"/></div>
           <div className="w-14 pl-12 pr-20">
             <div><Link to="">Mentors</Link></div>
             <div><Link to="">Graduates</Link></div>
@@ -33,7 +35,7 @@ const Footer = () => (
             <div><Link to="">Press&Media</Link></div>
           </div>
           <div className="flex-1">
-            <div className="float-right">insta</div>
+            <div className="float-right"><img src={insta_logo} width="45"/></div>
           </div>
         </div>
         <div className="mt-16">
