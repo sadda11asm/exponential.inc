@@ -18,7 +18,8 @@ module.exports = {
           changed: '#2778FD',
           dark: '#1B1C1E',
         },
-        mainblue: '#2778FD'
+        mainblue: '#2778FD',
+        dark: '#1B1C1E',
       },
     },
     borderRadius: {
