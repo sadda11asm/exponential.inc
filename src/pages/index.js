@@ -353,17 +353,17 @@ const Index = () => {
             </div>
         </div>
       </section>
-      <section className="lg:text-md lg:pt-20 lg:py-0 md:text-sm sm:text-xs py-20 pl-20 bg-mainblue text-white container mx-auto my-20 bg-gray-200 rounded-verylarge text-left">
+      <section className="lg:text-md lg:pt-20 lg:py-0 lg:pl-20 md:text-sm sm:text-xs py-20 pl-10 bg-mainblue text-white container mx-auto my-20 bg-gray-200 rounded-verylarge text-left">
         <div className="flow-root">
-          <h3 className="text-5xl font-bold spacing-xl">Do you want an internship at FAANG?</h3>
-          <p className="mt-3 text-xl font-normal">
+          <h3 className="sm:text-2xl md:text-5xl font-bold spacing-xl">Do you want an internship at FAANG?</h3>
+          <p className="mt-3 text-xl font-normal sm:text-l sm:max-w-sm">
           Join Exponential and become one of the 30 participants of our exclusive program!
           </p>
 
               <div className="float-left">
               <p className="mt-8 ">
                 <Link to="https://docs.google.com/forms/d/e/1FAIpQLSfEXdTmGSKaBnU_W-K95pV4xw_1Rca0ihzixFdbhDxYFCptqg/viewform?usp=sf_link">
-                  <ButtonLight size = "xl">Apply now</ButtonLight>
+                  <ButtonLight className="sm:py-4 sm:px-26 sm:text-md md:py-5 md:px-32 md:text-lg rounded-lg">Apply now</ButtonLight>
                 </Link>
               </p>
               <p className="mt-8 text-xl mx-auto">
