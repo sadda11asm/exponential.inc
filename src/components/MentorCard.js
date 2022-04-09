@@ -1,7 +1,9 @@
 import React from 'react';
 import Card from './Card';
 
-const MentorCard = ({ mentor }) => {
+import { Link } from 'gatsby';
+
+const MentorCard = ({ mentor, link }) => {
   const shortDescription = mentor.mentorDescription.split('\n').slice(0, 2).join('\n');
 
   return (
@@ -14,8 +16,16 @@ const MentorCard = ({ mentor }) => {
         alt={mentor.mentorName}
       />
       <p>{mentor.mentorName}</p>
-      <div><text className="whitespace-pre-line font-display text-sm text-gray-600">{shortDescription}</text></div>
-      <p className="mt-2" style={{ color: '#166EFF' }}>Подробнее</p>
+      <div className="mb-4"><text className="whitespace-pre-line font-display text-sm text-gray-600">{shortDescription}</text></div>
+      <div className="absolute inset-x-0 bottom-0">
+        {link ? 
+        <>
+          <Link to={link}>
+          <p className="mt-2" style={{ color: '#166EFF' }}>Подробнее</p>
+        </Link>
+        </> : <p className="mt-2" style={{ color: '#166EFF' }}>Подробнее</p>}
+        <div className="mt-3 w-full h-2" style={{ backgroundColor: '#166EFF' }}></div>
+      </div>
     </div>
   </Card>
   )

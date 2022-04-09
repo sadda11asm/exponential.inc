@@ -8,7 +8,6 @@ const Card = ({ className, children }) => (
     }}
   >
     {children}
-    <div className="absolute inset-x-0 bottom-0 w-full h-2" style={{ backgroundColor: '#166EFF' }}></div>
   </div>
 );
 
