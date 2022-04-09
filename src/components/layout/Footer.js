@@ -2,6 +2,7 @@ import React from 'react';
 import ButtonLight from '../ButtonLight';
 import rocket_logo from '../../images/transparent_rocket_logo.png';
 import insta_logo from '../../images/transparent_insta_logo.png';
+import './Footer.css'
 
 import { Link } from 'gatsby';
 
@@ -35,7 +36,7 @@ const Footer = () => (
             <div><Link to="">Press&Media</Link></div>
           </div>
           <div className="flex-1">
-            <div className="float-right"><img src={insta_logo} width="45"/></div>
+            <div className="float-right"><Link to="https://www.instagram.com/exp.program/" target="_blank"><img src={insta_logo} width="45"/></Link></div>
           </div>
         </div>
         <div className="mt-16">
