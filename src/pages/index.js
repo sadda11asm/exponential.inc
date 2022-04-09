@@ -49,9 +49,9 @@ const Index = () => {
       <div>
         <link href="https://fonts.googleapis.com/css?family=Inter" rel="stylesheet"/>
       </div>
-      <Link to="https://docs.google.com/forms/d/e/1FAIpQLSfEXdTmGSKaBnU_W-K95pV4xw_1Rca0ihzixFdbhDxYFCptqg/viewform?usp=sf_link">
+      <Link className={`${ topmostSectionIsVisible ? 'invisible md:invisible': 'visible md:invisible' }`} to="https://docs.google.com/forms/d/e/1FAIpQLSfEXdTmGSKaBnU_W-K95pV4xw_1Rca0ihzixFdbhDxYFCptqg/viewform?usp=sf_link">
         <div className="fixed mx-auto w-1/2 inset-x-0 bottom-0 mb-4 text-center">
-          <Button className={`${ topmostSectionIsVisible ? 'invisible md:invisible': 'visible md:invisible' }`}>Подать заявку</Button>
+          <Button>Подать заявку</Button>
         </div>
       </Link>
       <section className="z-10 invisible lg:visible absolute right-0 rounded-l-largest bg-black lg:w-6/12">
