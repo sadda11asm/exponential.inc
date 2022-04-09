@@ -20,10 +20,10 @@ const MentorCard = ({ mentor, link }) => {
       <div className="absolute inset-x-0 bottom-0">
         {link ? 
         <>
-          <Link to={link}>
-          <p className="mt-2" style={{ color: '#166EFF' }}>Подробнее</p>
+          <Link to={link} target="_blank">
+          <p className="mt-2" style={{ color: '#166EFF' }}>Resume</p>
         </Link>
-        </> : <p className="mt-2" style={{ color: '#166EFF' }}>Подробнее</p>}
+        </> : <p className="mt-2" style={{ color: '#166EFF' }}>Resume</p>}
         <div className="mt-3 w-full h-2" style={{ backgroundColor: '#166EFF' }}></div>
       </div>
     </div>

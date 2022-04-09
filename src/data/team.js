@@ -9,7 +9,7 @@ export default [
     mentorDescription:
       'Founder at L’accent\n' +
       'Nazarbayev University 18’',
-    mentorName: 'Назерке Калидолда',
+    mentorName: 'Nazerke Kalidolda',
     mentorTitle: "Founder at L’accent\n Nazarbayev University 18'",
     mentorImage: nazerke,
     bioLink: 'https://linkedin.com/in/kalidolda',
@@ -19,7 +19,7 @@ export default [
     mentorDescription:
       'Success Developer, Botpress\n' +
       'Nazarbayev University 21',
-    mentorName: 'Саддам Асматуллаев',
+    mentorName: 'Saddam Asmatullayev',
     mentorTitle: 'Success Developer, Botpress\n Nazarbayev University 21\'',
     mentorImage: saddam,
     bioLink: 'https://linkedin.com/in/sadda11asm',
@@ -29,7 +29,7 @@ export default [
     mentorDescription:
       'Success Developer, Botpress\n' +
       'Nazarbayev University 21',
-    mentorName: 'Даулет Амирханов',
+    mentorName: 'Daulet Amirkhanov',
     mentorTitle: 'Success Developer, Botpress\n Nazarbayev University 21\'',
     mentorImage: daulet,
     bioLink: 'https://linkedin.com/in/damirkhanov',
@@ -39,7 +39,7 @@ export default [
     mentorDescription:
       'Software Engineer at Infinite Art Solutions\n' +
       'Nazarbayev University 21',
-    mentorName: 'Алишер Султанов',
+    mentorName: 'Alisher Sultanov',
     mentorTitle: 'Software Engineer at Infinite Art Solutions\n Nazarbayev University 21\'',
     mentorImage: alisher,
     bioLink: 'https://linkedin.com/in/alisher-sultanov-2132a916a',

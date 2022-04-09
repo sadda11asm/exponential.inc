@@ -135,7 +135,7 @@ const Index = () => {
       />
       <div className="bg-primary bg-opacity-25">
       <section id="mentors" className="font-mono py-20 lg:py-40" style={{ backgroundColor: '#EFF2F6' }}>
-        <h2 className="mb-12 lg:text-5xl font-bold text-center">Команда</h2>
+        <h2 className="mb-12 lg:text-5xl font-bold text-center">Team</h2>
         <div className="container mx-auto">
           <div className="flex flex-col md:flex-row md:-mx-3 lg:mx-1">
             {teamData.map(mentor => (
