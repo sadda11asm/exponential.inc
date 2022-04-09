@@ -1,12 +1,12 @@
-import alikhan from '../images/alikhan.jpg'
-import narikbi from '../images/narikbi.jpg'
-import raikhan from '../images/raikhan.jpg'
-import ayan from '../images/ayan.jpg'
-import alibek from '../images/alibek.jpg'
-import dani from '../images/dani.jpg'
-import aliya from '../images/aliya.jpg'
-import tortay from '../images/tortay.jpg'
-import batyr from '../images/batyr.jpg'
+import alikhan from '../images/specialized-mentors/alikhan-cropped.jpg'
+import narikbi from '../images/specialized-mentors/narikbi-cropped.jpg'
+import raikhan from '../images/specialized-mentors/raikhan-cropped.jpg'
+import ayan from '../images/specialized-mentors/ayan-cropped.jpg'
+import alibek from '../images/specialized-mentors/alibek-cropped.jpg'
+import dani from '../images/specialized-mentors/dani-cropped.jpg'
+import aliya from '../images/specialized-mentors/aliya-cropped.jpg'
+import tortay from '../images/specialized-mentors/tortay-cropped.jpg'
+import batyr from '../images/specialized-mentors/batyr-cropped.jpg'
 
 export default [
   {
