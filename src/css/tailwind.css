@@ -11,6 +11,15 @@ a:hover {
 
 @tailwind utilities;
 
+@layer utilities {
+  details > summary {
+    list-style: none;
+  }
+  details > summary::-webkit-details-marker {
+    display: none;
+  }
+}
+
 @font-face {
   font-family: 'Poppins';
   font-style: normal;
