@@ -10,7 +10,8 @@ import Layout from '../components/layout/Layout';
 import SplitSection from '../components/SplitSection';
 import StatsBox from '../components/StatsBox';
 import teamData from '../data/team';
-import specializedMentors from '../data/specialized-mentors';
+import specializedMentorsData from '../data/specialized-mentors';
+import SpecializedMentors from '../components/SpecializedMentors';
 
 import HeroImage from '../svg/HeroImage';
 import SvgCharts from '../svg/SvgCharts';
@@ -48,9 +49,9 @@ const Index = () => {
       <div>
         <link href="https://fonts.googleapis.com/css?family=Inter" rel="stylesheet"/>
       </div>
-      <Link to="https://docs.google.com/forms/d/e/1FAIpQLSfEXdTmGSKaBnU_W-K95pV4xw_1Rca0ihzixFdbhDxYFCptqg/viewform?usp=sf_link">
+      <Link className={`${ topmostSectionIsVisible ? 'invisible md:invisible': 'visible md:invisible' }`} to="https://docs.google.com/forms/d/e/1FAIpQLSfEXdTmGSKaBnU_W-K95pV4xw_1Rca0ihzixFdbhDxYFCptqg/viewform?usp=sf_link">
         <div className="fixed mx-auto w-1/2 inset-x-0 bottom-0 mb-4 text-center">
-          <Button className={`${ topmostSectionIsVisible ? 'invisible md:invisible': 'visible md:invisible' }`}>Подать заявку</Button>
+          <Button>Подать заявку</Button>
         </div>
       </Link>
       <section className="z-10 invisible lg:visible absolute right-0 rounded-l-largest bg-black lg:w-6/12">
@@ -133,40 +134,23 @@ const Index = () => {
         secondarySlot={<img src={process_third} alt="Faang" />}
       />
       <div className="bg-primary bg-opacity-25">
-      <section id="mentors" className=" py-20 lg:py-40 lg:px-40" style={{ backgroundColor: '#EFF2F6' }}>
-        <h2 className="mb-12 lg:text-5xl font-bold text-center">Команда</h2>
+      <section id="mentors" className="font-mono py-20 lg:py-40" style={{ backgroundColor: '#EFF2F6' }}>
+        <h2 className="mb-12 lg:text-5xl font-bold text-center">Team</h2>
         <div className="container mx-auto">
           <div className="flex flex-col md:flex-row md:-mx-3 lg:mx-1">
             {teamData.map(mentor => (
               <div key={mentor.mentorName} className="flex-1 px-6 flex flex-col">
-                <MentorCard mentor={mentor} />
+                <MentorCard mentor={mentor} link={mentor.bioLink}/>
               </div>
             ))}
           </div>
         </div>
-        <div className="container mx-auto">
-        <h2 className="mb-12 mt-8 lg:text-3xl font-bold text-center">Специализированные <span style={{ color: '#166EFF' }}>ментора</span></h2>
-        <div
-          className="flex overflow-x-scroll pb-2 hide-scroll-bar scrollbar-hide lg:mx-1"
-        >
-          <div
-            className="flex flex-nowrap mx-6"
-          >
-            {specializedMentors.map(mentor => (
-                <div
-                  className="w-64 mx-3 max-w-xs rounded-lg shadow-md bg-white hover:shadow-xl transition-shadow duration-300 ease-in-out"
-                >
-                  <MentorCard mentor={mentor}/>
-                </div>
-            ))}
-          </div>
-        </div>
-        </div>
+        <SpecializedMentors specializedMentors={specializedMentorsData}/>
       </section>
       </div>
       <section id="how-it-works" className=" py-20 lg:py-40 lg:px-40 text-center" style={{ backgroundColor: 'white' }}>
-        <h2 className="lg:text-5xl">Как это <span style={{ color: '#2778FD' }}>работает?</span></h2>
-        <p style={{ color: '#2778FD' }}>Посмотреть видео</p>
+        <h2 className="lg:text-5xl">How does it <span style={{ color: '#2778FD' }}>work?</span></h2>
+        <Link to="" target="_blank"><p style={{ color: '#2778FD' }}>Watch video</p></Link>
       </section>
       <div className="hidden md:block mb-48">
         <section className="z-10 md:absolute mt-24 pt-24 pr-16 right-0 rounded-l-largest w-4/12 flex flex-row">
