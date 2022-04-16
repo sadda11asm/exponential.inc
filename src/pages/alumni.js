@@ -5,25 +5,47 @@ import React from 'react';
 import { useVisibility } from '../utils';
 import { Link } from 'gatsby';
 import Layout from '../components/layout/Layout'
-import teamData from '../data/team';
+import alumniData from '../data/alumni';
 import AlumniCard from '../components/AlumniCard';
 
 
 const Alumni = () => {
 
+  const finalData = [];
+  let tempData = [];
+  for (let i = 0; i <= alumniData.length; i++) {
+    if (i == alumniData.length) {
+      finalData.push(tempData);
+      break;
+    }
+    console.log(i);
+    if (i % 3 == 0) {
+      if (tempData.length) finalData.push(tempData);
+      tempData = [alumniData[i]];
+    } else {
+      tempData.push(alumniData[i]);
+    }
+  }
+
+  console.log(finalData)
 
   return (
     <Layout>
       <div className="container mx-auto my-48">
-        <h2 className="lg:text-5xl font-bold text-center">Выпускники</h2>
+        <h2 className="lg:text-5xl font-bold font-sans text-center">Выпускники</h2>
         <h2 className="lg:text-2xl font-bold text-center text-primary-changed mb-12 ">batch #1</h2>
-        <div className="flex flex-col md:flex-row md:-mx-3 lg:mx-1">
-          {teamData.map(mentor => (
-            <div key={mentor.mentorName} className="flex-1 px-6 flex flex-col">
-              <AlumniCard mentor={mentor} />
+        {
+          finalData.map(data => (
+            <div className="flex flex-col md:flex-row md:-mx-3 lg:mx-1">
+              {data.map(mentor => (
+                <div key={mentor.mentorName} className="md:w-4/12 px-6 flex flex-col">
+                  <AlumniCard mentor={mentor} link={mentor.bioLink} />
+                </div>
+              ))}
             </div>
-          ))}
-        </div>
+            )
+          )
+        }
       </div>
     </Layout>
   );
