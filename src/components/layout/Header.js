@@ -46,6 +46,10 @@ const Header = () => {
                     Alumni
                   </Link>
 
+                  <Link className="text-gray-500 hover:bg-gray-700 hover:text-white px-3 my-5 py-1 rounded-md text-sm font-medium" to={`/blog/`}>
+                    Blog
+                  </Link>
+
                   <AnchorLink
                     href="#faq"
                     className="text-gray-500 hover:bg-gray-700 hover:text-white px-3 my-5 py-1 rounded-md text-sm font-medium"
@@ -139,6 +143,10 @@ const Header = () => {
 
                 <Link className="text-gray-500 hover:bg-gray-700 hover:text-white px-3 my-5 py-1 rounded-md text-sm font-medium" to={`/alumni/`}>
                   Alumni
+                </Link>
+
+                <Link className="text-gray-500 hover:bg-gray-700 hover:text-white px-3 my-5 py-1 rounded-md text-sm font-medium" to={`/blog/`}>
+                  Blog
                 </Link>
 
                 <AnchorLink
