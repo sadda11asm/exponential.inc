@@ -25,7 +25,7 @@ const AlumniCard = ({ mentor, link }) => {
       </div>
       <div className="flex flex-col justify-between">
         <div className="mb-4"><p className="mt-4 text-left text-sm font-semibold">{mentor.title}</p></div>
-        <blockquote className="p-4 text-left border-l-4 bg-neutral-200 border-primary-changed quote text-sm">
+        <blockquote className="pl-3 text-left border-l-4 bg-neutral-200 border-primary-changed quote text-sm">
           <p className="mb-2">
             {mentor.quote}
           </p>
