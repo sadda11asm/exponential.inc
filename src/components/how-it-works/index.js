@@ -7,7 +7,7 @@ import YoutubeIcon from '../../../assets/youtube_icon.svg';
 
 function getWindowDimensions() {
   const isBrowser = () => typeof window !== "undefined"
-  const { innerWidth: width, innerHeight: height } = isBrowser() ? window : null;
+  const { innerWidth: width, innerHeight: height } = isBrowser() ? window :  { innerWidth: 1536, innerHeight: 748 };
     return {
       width,
       height
