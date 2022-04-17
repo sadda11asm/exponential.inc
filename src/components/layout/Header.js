@@ -23,12 +23,9 @@ const Header = () => {
               </div>
               <div className="hidden md:block px-48">
                 <div className="ml-10 flex space-x-8">
-                  <AnchorLink
-                    href="#what-we-offer"
-                    className="text-gray-500 hover:bg-gray-700 hover:text-white px-3 my-5 py-1 rounded-md text-sm font-medium"
-                  >
+                  <Link className="text-gray-500 hover:bg-gray-700 hover:text-white px-3 my-5 py-1 rounded-md text-sm font-medium" to={`/`}>
                     Home
-                  </AnchorLink>
+                  </Link>
 
                   <AnchorLink
                     href="#mentors"
@@ -45,12 +42,13 @@ const Header = () => {
                   </AnchorLink>
 
 
-                  <AnchorLink
-                    href="#value"
-                    className="text-gray-500 hover:bg-gray-700 hover:text-white px-3 my-5 py-1 rounded-md text-sm font-medium"
-                  >
+                  <Link className="text-gray-500 hover:bg-gray-700 hover:text-white px-3 my-5 py-1 rounded-md text-sm font-medium" to={`/alumni/`}>
                     Alumni
-                  </AnchorLink>
+                  </Link>
+
+                  <Link className="text-gray-500 hover:bg-gray-700 hover:text-white px-3 my-5 py-1 rounded-md text-sm font-medium" to={`/blog/`}>
+                    Blog
+                  </Link>
 
                   <AnchorLink
                     href="#faq"
@@ -125,12 +123,9 @@ const Header = () => {
           {(ref) => (
             <div className="md:hidden" id="mobile-menu">
               <div ref={ref} className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-                <AnchorLink
-                  href="#what-we-offer"
-                  className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
-                >
+                <Link className="text-gray-500 hover:bg-gray-700 hover:text-white px-3 my-5 py-1 rounded-md text-sm font-medium" to={`/`}>
                   Home
-                </AnchorLink>
+                </Link>
 
                 <AnchorLink
                   href="#program"
@@ -146,12 +141,13 @@ const Header = () => {
                   Mentors
                 </AnchorLink>
 
-                <AnchorLink
-                  href="#value"
-                  className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
-                >
+                <Link className="text-gray-500 hover:bg-gray-700 hover:text-white px-3 my-5 py-1 rounded-md text-sm font-medium" to={`/alumni/`}>
                   Alumni
-                </AnchorLink>
+                </Link>
+
+                <Link className="text-gray-500 hover:bg-gray-700 hover:text-white px-3 my-5 py-1 rounded-md text-sm font-medium" to={`/blog/`}>
+                  Blog
+                </Link>
 
                 <AnchorLink
                   href="#faq"
