@@ -58,6 +58,10 @@ const Header = () => {
                   >
                     Price
                   </AnchorLink>
+
+                  <Link className="text-gray-500 hover:bg-gray-700 hover:text-white px-3 my-5 py-1 rounded-md text-sm font-medium" to={`/program`}>
+                    Calendar
+                  </Link>
                   <div className="absolute right-0 transform -translate-x-1/2 z-20 invisible lg:visible py-3">
                     <Link to="https://docs.google.com/forms/d/e/1FAIpQLSfEXdTmGSKaBnU_W-K95pV4xw_1Rca0ihzixFdbhDxYFCptqg/viewform?usp=sf_link">
                       <Button className="bg-primary-changed w-48 py-2 rounded-big">Apply Now</Button>
