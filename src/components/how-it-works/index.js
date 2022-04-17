@@ -6,7 +6,8 @@ import MobileHowItWorksSteps from '../../../assets/mobile_how_it_works_steps.svg
 import YoutubeIcon from '../../../assets/youtube_icon.svg';
 
 function getWindowDimensions() {
-    const { innerWidth: width, innerHeight: height } = window;
+  const isBrowser = () => typeof window !== "undefined"
+  const { innerWidth: width, innerHeight: height } = isBrowser() ? window : null;
     return {
       width,
       height
@@ -15,16 +16,16 @@ function getWindowDimensions() {
 
   function useWindowDimensions() {
     const [windowDimensions, setWindowDimensions] = useState(getWindowDimensions());
-  
+
     useEffect(() => {
       function handleResize() {
         setWindowDimensions(getWindowDimensions());
       }
-  
+
       window.addEventListener('resize', handleResize);
       return () => window.removeEventListener('resize', handleResize);
     }, []);
-  
+
     return windowDimensions;
   }
 
