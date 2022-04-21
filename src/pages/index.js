@@ -1,20 +1,14 @@
 import React from 'react';
 import Button from '../components/Button';
 import ButtonLight from '../components/ButtonLight';
-import Card from '../components/Card';
-import Card2 from '../components/Card2';
 import YoutubeEmbed from "../components/YoutubeEmbed";
 import MentorCard from '../components/MentorCard';
-import LabelText from '../components/LabelText';
 import Layout from '../components/layout/Layout';
 import SplitSection from '../components/SplitSection';
-import StatsBox from '../components/StatsBox';
 import teamData from '../data/team';
 import specializedMentorsData from '../data/specialized-mentors';
 import SpecializedMentors from '../components/SpecializedMentors';
 
-import HeroImage from '../svg/HeroImage';
-import SvgCharts from '../svg/SvgCharts';
 import circle from '../images/circle.png'
 import elipsis from '../images/elipsis.png'
 import blackcylinder from '../images/blackcylinder.png'
@@ -28,11 +22,8 @@ import p from '../images/p.png'
 import process_first from '../images/individual_mentorship.png'
 import process_second from '../images/strategy.png'
 import process_third from '../images/atmosphere.png'
-import process_fourth from '../images/personal.png'
-import process_fifth from '../images/feedback.jpg'
 
-
-
+import WeekInMentorship from '../components/a-week-in-mentorship';
 
 import { useVisibility } from '../utils';
 import { Link } from 'gatsby';
@@ -151,6 +142,7 @@ const Index = () => {
       </div>
       <section id="how-it-works" className="pt-20 lg:px-40 text-center" style={{ backgroundColor: 'white' }}>
         <HowItWorks/>
+        <WeekInMentorship/>
       </section>
       <div className="hidden md:block mb-48">
         <section className="z-10 md:absolute mt-24 pt-24 pr-16 right-0 rounded-l-largest w-4/12 flex flex-row">
