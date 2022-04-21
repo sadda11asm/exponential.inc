@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 import LogoIcon from '../../svg/LogoIcon';
 import Button from '../Button';
-import logo from '../../images/growth-3.png';
+import logo from '../../images/favicon.png';
 import { Transition } from "@headlessui/react";
 import { Link } from 'gatsby';
 
