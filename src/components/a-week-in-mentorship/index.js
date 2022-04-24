@@ -1,12 +1,11 @@
 import React from 'react';
-import Layout from '../components/layout/Layout';
+import Layout from '../layout/Layout';
 
-import Calendar from '../../assets/calendar.svg';
+import Calendar from '../../../assets/calendar.svg';
 
-const Program = () => {
+const WeekInMentorship = () => {
     return (
-        <Layout>
-            <div className="mt-16 mb-16 container mx-auto">
+            <div className="mt-16 container mx-auto">
                 <div className="text-center font-mono">
                     <h1 className="text-4xl font-bold">A week in the mentorship</h1>
                     <hr style={{ width: '50%', margin: '0 auto', border: '0.5px solid #166EFF' }}/>
@@ -14,8 +13,7 @@ const Program = () => {
                 </div>
                 <Calendar className="mt-8"/>
             </div>
-        </Layout>
     );
 };
 
-export default Program;
+export default WeekInMentorship;
