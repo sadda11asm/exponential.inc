@@ -1,6 +1,6 @@
 import React from 'react';
 import ButtonLight from '../ButtonLight';
-import logo from '../../images/favicon.ico';
+import logo from '../../images/transparent_exp_logo.png';
 import insta_logo from '../../images/transparent_insta_logo.png';
 import './Footer.css'
 
