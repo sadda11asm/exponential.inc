@@ -13,6 +13,7 @@ import circle from '../images/circle.png'
 import elipsis from '../images/elipsis.png'
 import blackcylinder from '../images/blackcylinder.png'
 import bluecylinder from '../images/bluecylinder.png'
+import pricebackground from '../images/price_background.png'
 import f from '../images/f.png'
 import g from '../images/g.png'
 import go from '../images/go.png'
@@ -372,6 +373,20 @@ const Index = () => {
             </div>
         </div>
       </section>
+
+      <section id="price" className=" py-10 lg:px-40 text-center" style={{ backgroundColor: 'white' }}>
+        <h2 className="text-5xl bold">Price</h2>
+        <h3 className="font-medium">Payment is required only in the case of a succesful offer from a company.</h3>
+        <div class="relative grid overflow-hidden place-items-center py-20 rounded-lg">
+          <img class="object-cover lg:w-6/12 w-8/12" src={pricebackground} alt="Price Background"/>
+
+          <div class="absolute top-10 left-10">
+            <h4 class="mb-3 lg:text-5xl text-3xl text-mainblue font-semibold tracking-tight">15-20%</h4>
+            <p>from your job offer</p>
+          </div>
+        </div>
+      </section>
+
       <div className="md:w-full w-11/12 lg:text-md lg:pt-20 lg:py-0 lg:pl-20 md:text-sm text-xs sm:text-xs md:py-20 py-5 px-6 bg-mainblue text-white container mx-10 my-10 mx-auto md:my-20 rounded-big text-left">
         <div className="flow-root">
           <h3 className="sm:text-2xl md:text-5xl text-sm font-bold spacing-xl">Do you want an internship at FAANG?</h3>
