@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useLayoutEffect } from 'react';
 import { Link } from 'gatsby';
 
 import LargeHowItWorksSteps from '../../../assets/large_how_it_works_steps.svg';
@@ -17,7 +17,7 @@ function getWindowDimensions() {
   function useWindowDimensions() {
     const [windowDimensions, setWindowDimensions] = useState(getWindowDimensions());
 
-    useEffect(() => {
+    useLayoutEffect(() => {
       function handleResize() {
         setWindowDimensions(getWindowDimensions());
       }
