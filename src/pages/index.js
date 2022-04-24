@@ -1,14 +1,20 @@
 import React from 'react';
 import Button from '../components/Button';
 import ButtonLight from '../components/ButtonLight';
+import Card from '../components/Card';
+import Card2 from '../components/Card2';
 import YoutubeEmbed from "../components/YoutubeEmbed";
 import MentorCard from '../components/MentorCard';
+import LabelText from '../components/LabelText';
 import Layout from '../components/layout/Layout';
 import SplitSection from '../components/SplitSection';
+import StatsBox from '../components/StatsBox';
 import teamData from '../data/team';
 import specializedMentorsData from '../data/specialized-mentors';
 import SpecializedMentors from '../components/SpecializedMentors';
 
+import HeroImage from '../svg/HeroImage';
+import SvgCharts from '../svg/SvgCharts';
 import circle from '../images/circle.png'
 import elipsis from '../images/elipsis.png'
 import blackcylinder from '../images/blackcylinder.png'
@@ -23,12 +29,14 @@ import p from '../images/p.png'
 import process_first from '../images/individual_mentorship.png'
 import process_second from '../images/strategy.png'
 import process_third from '../images/atmosphere.png'
+import process_fourth from '../images/personal.png'
+import process_fifth from '../images/feedback.jpg'
 
-import WeekInMentorship from '../components/a-week-in-mentorship';
+
+
 
 import { useVisibility } from '../utils';
 import { Link } from 'gatsby';
-import HowItWorks from '../components/how-it-works';
 
 
 const Index = () => {
@@ -141,15 +149,15 @@ const Index = () => {
         <SpecializedMentors specializedMentors={specializedMentorsData}/>
       </section>
       </div>
-      <section id="how-it-works" className="pt-20 lg:px-40 text-center" style={{ backgroundColor: 'white' }}>
-        <HowItWorks/>
-        <WeekInMentorship/>
+      <section id="how-it-works" className=" py-20 lg:py-40 lg:px-40 text-center" style={{ backgroundColor: 'white' }}>
+        <h2 className="lg:text-5xl">How does it <span style={{ color: '#2778FD' }}>work?</span></h2>
+        <Link to="" target="_blank"><p style={{ color: '#2778FD' }}>Watch video</p></Link>
       </section>
       <div className="hidden md:block mb-48">
         <section className="z-10 md:absolute mt-24 pt-24 pr-16 right-0 rounded-l-largest w-4/12 flex flex-row">
           <div className="inline-block flex flex-col justify-end">
             <div className="text-center font-bold mb-4">
-              15 offers
+              12 offers
             </div>
             <img src={bluecylinder} alt="bluecylinder" />
           </div>
@@ -210,7 +218,7 @@ const Index = () => {
         <section className="mx-16 mt-4 mb-16 align-middle rounded-l-largest flex flex-row">
           <div className="inline-block flex flex-col justify-between">
             <div className="text-center font-bold mb-4">
-              15 offers
+              12 offers
             </div>
             <img src={bluecylinder} alt="bluecylinder" />
           </div>
@@ -371,19 +379,6 @@ const Index = () => {
                 </div>
               </div>
             </div>
-        </div>
-      </section>
-
-      <section id="price" className=" py-10 lg:px-40 text-center" style={{ backgroundColor: 'white' }}>
-        <h2 className="text-5xl bold">Price</h2>
-        <h3 className="font-medium">Payment is required only in the case of a succesful offer from a company.</h3>
-        <div class="relative grid overflow-hidden place-items-center py-20 rounded-lg">
-          <img class="object-cover lg:w-6/12 w-8/12" src={pricebackground} alt="Price Background"/>
-
-          <div class="absolute top-10 left-10">
-            <h4 class="mb-3 lg:text-5xl text-3xl text-mainblue font-semibold tracking-tight">15-20%</h4>
-            <p>from your job offer</p>
-          </div>
         </div>
       </section>
 
