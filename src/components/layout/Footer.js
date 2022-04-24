@@ -46,23 +46,23 @@ const Footer = () => (
       </div>
       <div>
         <div className="pt-10 px-8 flex flex-row">
-        <img className="w-8 h-8 flex-shrink-0" src={logo}/>
-          <div className="w-14 pl-4">
+        <div className="w-8 h-8 flex-shrink-0"><img src={logo} style={{ marginTop: "5px" }}/></div>
+          <div className="w-14 pl-4 md:pl-12">
             <div><Link to="">Mentors</Link></div>
             <div><Link to="">Graduates</Link></div>
             <div><Link to="">Pricing</Link></div>
           </div>
-          <div className="w-14 pl-4">
+          <div className="w-14 pl-4 md:pl-20">
             <div><Link to="">Blog</Link></div>
             <div><Link to="">Press&Media</Link></div>
           </div>
           <div className="flex-1">
-            <Link className="float-right w-8 h-8 flex-shrink-0" to="https://www.instagram.com/exp.program/" target="_blank"><img src={insta_logo}/></Link>
+            <Link className="float-right w-12 h-8 flex-shrink-0" to="https://www.instagram.com/exp.program/" target="_blank"><img src={insta_logo}/></Link>
           </div>
         </div>
         <div className="mt-16 px-8 text-sm">
-          <span>Made by exp-program. All rights reserved.</span>
-          <span className="ml-4">Terms</span>
+          <span className="block md:inline">Made by exp-program. All rights reserved.</span>
+          <span className="md:ml-4">Terms</span>
           <span> · </span>
           <span>Privacy Policy</span>
         </div>
