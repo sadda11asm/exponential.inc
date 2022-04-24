@@ -3,7 +3,32 @@ import nazerke from '../images/nazerke.jpg'
 import daulet from '../images/daulet.jpg'
 import alisher from '../images/alisher.jpg'
 
+/* Daulet mentees photos */
+
+import amina from '../images/alumni/amina.jpg'
+import mokhira from '../images/alumni/mokhira.jpg'
+
+/* /Daulet mentees photos */
+
+const dauletMentees = [
+  {
+    title: 'Software Engineering Intern at Goldman Sachs, London',
+    quote: 'Огромное спасибо команде Exponential. Я получила работу мечты :)\n',
+    name: 'Amina Kobenova',
+    image: amina,
+    bioLink: 'https://linkedin.com/in/kalidolda',
+  },
+  {
+    title: 'New Grad at Meta, London',
+    quote: 'Exponential team the best <3\n',
+    name: 'Mokhira Atashikova',
+    image: mokhira,
+    bioLink: 'https://linkedin.com/in/kalidolda',
+  },
+];
+
 export default [
+  ...dauletMentees,
   {
     title: 'Software Engineering Intern at Palantir, London',
     quote: 'Ex-Software Engineer, Localyze (Hamburg, Germany)\n' +
