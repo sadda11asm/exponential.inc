@@ -7,37 +7,37 @@ export default [
   {
     title: 'Founder',
     mentorDescription:
-      'Founder at L’accent\n' +
+      'Ex-Software Engineer at Google\n' +
       'Nazarbayev University 18’',
     mentorName: 'Nazerke Kalidolda',
-    mentorTitle: "Founder at L’accent\n Nazarbayev University 18'",
+    mentorTitle: "Ex-Software Engineer at Google, Paris\n Nazarbayev University 18\'",
     mentorImage: nazerke,
     bioLink: 'https://linkedin.com/in/kalidolda',
   },
   {
     title: 'Co-Founder, Mentor',
     mentorDescription:
-      'Success Developer, Botpress\n' +
+      'Software Engineer at Meta\n' +
       'Nazarbayev University 21',
     mentorName: 'Saddam Asmatullayev',
-    mentorTitle: 'Success Developer, Botpress\n Nazarbayev University 21\'',
+    mentorTitle: 'Software Engineer at Meta\n Nazarbayev University 21\'',
     mentorImage: saddam,
     bioLink: 'https://linkedin.com/in/sadda11asm',
   },
   {
     title: 'Co-Founder, Mentor',
     mentorDescription:
-      'Success Developer, Botpress\n' +
+      'Software Engineer at Meta\n' +
       'Nazarbayev University 21',
     mentorName: 'Daulet Amirkhanov',
-    mentorTitle: 'Success Developer, Botpress\n Nazarbayev University 21\'',
+    mentorTitle: 'Software Engineer at Meta\n Nazarbayev University 21\'',
     mentorImage: daulet,
     bioLink: 'https://linkedin.com/in/damirkhanov',
   },
   {
     title: 'Co-Founder, Mentor',
     mentorDescription:
-      'Software Engineer at Infinite Art Solutions\n' +
+      'Software Engineer at Meta\n' +
       'Nazarbayev University 21',
     mentorName: 'Alisher Sultanov',
     mentorTitle: 'Software Engineer at Infinite Art Solutions\n Nazarbayev University 21\'',
