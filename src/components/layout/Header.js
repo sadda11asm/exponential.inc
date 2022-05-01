@@ -27,19 +27,19 @@ const Header = () => {
                     Home
                   </Link>
 
-                  <AnchorLink
-                    href="#mentors"
+                  <Link
+                    to="/#mentors"
                     className="text-gray-500 hover:bg-gray-700 hover:text-white px-3 my-5 py-1 rounded-md text-sm font-medium"
                   >
                     Mentors
-                  </AnchorLink>
+                  </Link>
 
-                  <AnchorLink
-                    href="#program"
+                  <Link
+                    to="/#program"
                     className="text-gray-500 hover:bg-gray-700 hover:text-white px-3 my-5 py-1 rounded-md text-sm font-medium"
                   >
                     Program
-                  </AnchorLink>
+                  </Link>
 
 
                   <Link className="text-gray-500 hover:bg-gray-700 hover:text-white px-3 my-5 py-1 rounded-md text-sm font-medium" to={`/alumni/`}>
@@ -50,12 +50,16 @@ const Header = () => {
                     Blog
                   </Link>
 
-                  <AnchorLink
-                    href="#faq"
+                  <Link className="text-gray-500 hover:bg-gray-700 hover:text-white px-3 my-5 py-1 rounded-md text-sm font-medium" to={`/blog/`}>
+                    Media About Us
+                  </Link>
+
+                  <Link
+                    to="/#faq"
                     className="text-gray-500 hover:bg-gray-700 hover:text-white px-3 my-5 py-1 rounded-md text-sm font-medium"
                   >
-                    Price
-                  </AnchorLink>
+                    FAQ
+                  </Link>
 
                   <div className="absolute right-0 transform -translate-x-1/2 z-20 invisible lg:visible py-3">
                     <Link to="https://docs.google.com/forms/d/e/1FAIpQLSfEXdTmGSKaBnU_W-K95pV4xw_1Rca0ihzixFdbhDxYFCptqg/viewform?usp=sf_link">
@@ -129,33 +133,33 @@ const Header = () => {
                 </Link>
 
                 <AnchorLink
-                  href="#program"
+                  to="/#program"
                   className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
                 >
                   Program
                 </AnchorLink>
 
-                <AnchorLink
-                  href="#mentors"
+                <Link
+                  to="/#mentors"
                   className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
                 >
                   Mentors
-                </AnchorLink>
+                </Link>
 
-                <Link className="text-gray-500 hover:bg-gray-700 hover:text-white px-3 my-5 py-1 rounded-md text-sm font-medium" to={`/alumni/`}>
+                <Link className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium" to={`/alumni/`}>
                   Alumni
                 </Link>
 
-                <Link className="text-gray-500 hover:bg-gray-700 hover:text-white px-3 my-5 py-1 rounded-md text-sm font-medium" to={`/blog/`}>
+                <Link className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium" to={`/blog/`}>
                   Blog
                 </Link>
 
-                <AnchorLink
-                  href="#faq"
+                <Link
+                  to="/#faq"
                   className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
                 >
-                  Price
-                </AnchorLink>
+                  FAQ
+                </Link>
               </div>
             </div>
           )}

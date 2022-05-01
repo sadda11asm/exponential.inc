@@ -1,7 +1,10 @@
 import saddam from '../images/saddam.jpg'
 import nazerke from '../images/nazerke.jpg'
-import daulet from '../images/daulet.jpg'
+import aselK from '../images/aselK.jpg'
 import alisher from '../images/alisher.jpg'
+import naziya from '../images/naziya.jpg'
+import madina from '../images/madina.jpg'
+
 
 /* Daulet mentees photos */
 
@@ -30,7 +33,7 @@ const dauletMentees = [
 export default [
   ...dauletMentees,
   {
-    title: 'Software Engineering Intern at Palantir, London',
+    title: 'Incoming Software Engineering Intern at Palantir, Bloomberg & Amazon',
     quote: 'Ex-Software Engineer, Localyze (Hamburg, Germany)\n' +
       '              Open Source Blockchain Developer, Scaffold-Eth\n' +
       '              Offer to Software Engineering Internship at Stripe Dublin, 2020\n' +
@@ -41,7 +44,7 @@ export default [
     bioLink: 'https://linkedin.com/in/kalidolda',
   },
   {
-    title: 'Software Engineering Intern at Amazon, London',
+    title: 'Incoming Software Engineering Intern at Deepmind, Google & Amazon',
     quote: 'Ex-Software Engineer, Localyze (Hamburg, Germany)\n' +
       '              Open Source Blockchain Developer, Scaffold-Eth\n' +
       '              Offer to Software Engineering Internship at Stripe Dublin, 2020\n' +
@@ -52,18 +55,14 @@ export default [
     bioLink: 'https://linkedin.com/in/kalidolda',
   },
   {
-    title: 'Software Engineering Intern at Google, Korea',
-    quote: 'Ex-Software Engineer, Localyze (Hamburg, Germany)\n' +
-      '              Open Source Blockchain Developer, Scaffold-Eth\n' +
-      '              Offer to Software Engineering Internship at Stripe Dublin, 2020\n' +
-      '              Google Inside Look Scholar, Munich 2019\n' +
-      '              Top 9% at Google Kickstart 2020',
+    title: 'Incoming Software Engineering Intern at Google & Amazon',
+    quote: 'Exponential helped me speed up the process of getting my dream internship so that I could only focus on the key things for each company. Also, the mentors were always willing to help and answer any question.',
     name: 'Assel Katayeva',
-    image: daulet,
+    image: aselK,
     bioLink: 'https://linkedin.com/in/kalidolda',
   },
   {
-    title: 'Software Engineering Intern at Google, Zurich',
+    title: 'Incoming STEP Intern at Google, Zurich',
     quote: 'Ex-Software Engineer, Localyze (Hamburg, Germany)\n' +
       '              Open Source Blockchain Developer, Scaffold-Eth\n' +
       '              Offer to Software Engineering Internship at Stripe Dublin, 2020\n' +
@@ -74,29 +73,25 @@ export default [
     bioLink: 'https://linkedin.com/in/kalidolda',
   },
   {
-    title: 'Software Engineering Intern at Google, Poland',
+    title: 'Incoming STEP Intern at Google, Poland',
     quote: 'Ex-Software Engineer, Localyze (Hamburg, Germany)\n' +
       '              Open Source Blockchain Developer, Scaffold-Eth\n' +
       '              Offer to Software Engineering Internship at Stripe Dublin, 2020\n' +
       '              Google Inside Look Scholar, Munich 2019\n' +
       '              Top 9% at Google Kickstart 2020',
-    name: 'Aidana Shelemba',
+    name: 'Aidana ...',
     image: alisher,
     bioLink: 'https://linkedin.com/in/kalidolda',
   },
   {
-    title: 'Software Engineering Intern at Meta, London',
-    quote: 'Ex-Software Engineer, Localyze (Hamburg, Germany)\n' +
-      '              Open Source Blockchain Developer, Scaffold-Eth\n' +
-      '              Offer to Software Engineering Internship at Stripe Dublin, 2020\n' +
-      '              Google Inside Look Scholar, Munich 2019\n' +
-      '              Top 9% at Google Kickstart 2020',
+    title: 'Incoming Software Engineering Intern at Meta, London',
+    quote: "I am very grateful to be a part of the Exponential program. Before joining the program, the process of getting an internship seemed very complicated and confusing: I didn’t know where to start and what to do. But under the supervision of mentors, it became straightforward. Following the plan constructed for me by my mentor, I didn't even notice how I got my dream offer. I really felt that our mentors cared about us and did their best to support us.",
     name: 'Madina Yeleukina',
-    image: saddam,
+    image: madina,
     bioLink: 'https://linkedin.com/in/kalidolda',
   },
   {
-    title: 'Software Engineering Intern at Google, Zurich',
+    title: 'Incoming STEP Intern at Google, Zurich',
     quote: 'Ex-Software Engineer, Localyze (Hamburg, Germany)\n' +
       '              Open Source Blockchain Developer, Scaffold-Eth\n' +
       '              Offer to Software Engineering Internship at Stripe Dublin, 2020\n' +
@@ -107,14 +102,32 @@ export default [
     bioLink: 'https://linkedin.com/in/kalidolda',
   },
   {
-    title: 'Software Engineer at Meta, London',
+    title: 'Incoming Software Engineer at Meta, London',
+    quote: "Before joining Exponential, I did not consider a career in big tech. The application process and interviews made me anxious since I did not have people to consult. The program gave me an opportunity to meet new people with similar goals and receive advice on the hiring process. These two contributed to a sense of community and accountability that kept me focused on my goal",
+    name: 'Naziya Sabrkyzy',
+    image: naziya,
+    bioLink: 'https://linkedin.com/in/kalidolda',
+  },
+  {
+    title: 'Incoming Software Engineering Intern at Goldman Sachs, London',
+    quote: 'Ex-Software Engineer, Localyze (Hamburg, Germany)\n' +
+'              Open Source Blockchain Developer, Scaffold-Eth\n' +
+'              Offer to Software Engineering Internship at Stripe Dublin, 2020\n' +
+'              Google Inside Look Scholar, Munich 2019\n' +
+'              Top 9% at Google Kickstart 2020',
+    name: 'Amina Kobenova',
+    image: saddam,
+    bioLink: 'https://linkedin.com/in/kalidolda',
+  },
+  {
+    title: 'Incoming Software Engineer at Meta, London',
     quote: 'Ex-Software Engineer, Localyze (Hamburg, Germany)\n' +
       '              Open Source Blockchain Developer, Scaffold-Eth\n' +
       '              Offer to Software Engineering Internship at Stripe Dublin, 2020\n' +
       '              Google Inside Look Scholar, Munich 2019\n' +
       '              Top 9% at Google Kickstart 2020',
-    name: 'Naziya Sabrkyzy',
-    image: saddam,
+    name: 'Mokhira Atashikova',
+    image: nazerke,
     bioLink: 'https://linkedin.com/in/kalidolda',
   },
 ];
