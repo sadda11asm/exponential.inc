@@ -30,17 +30,16 @@ function getWindowDimensions() {
   }
 
 const HowItWorks = () => {
-    const { width } = useWindowDimensions();
-
-    return (
-        <>
-            <h2 className="sm:text-4xl lg:text-5xl">How does it <span style={{ color: '#2778FD' }}>work?</span></h2>
-            <Link to="" target="_blank"><span className="inline-block" style={{ color: '#2778FD' }}>Watch video</span> <YoutubeIcon className="inline-block"/> </Link>
-            <div className="mt-8">
-                { width >= 1536 ? <LargeHowItWorksSteps className="mx-auto"/> : <MobileHowItWorksSteps className="mx-auto"/> }
-            </div>
-        </>
-    );
+  return (
+    <>
+      <h2 className="sm:text-4xl lg:text-5xl">How does it <span style={{ color: '#2778FD' }}>work?</span></h2>
+      <Link to="" target="_blank"><span className="inline-block" style={{ color: '#2778FD' }}>Watch video</span> <YoutubeIcon className="inline-block"/> </Link>
+      <div className="mt-8">
+        <LargeHowItWorksSteps className="hidden md:block mx-auto"/>
+        <MobileHowItWorksSteps className="md:hidden mx-auto"/>
+      </div>
+    </>
+  );
 };
 
 export default HowItWorks;
