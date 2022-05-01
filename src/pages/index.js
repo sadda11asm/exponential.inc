@@ -90,8 +90,8 @@ const Index = () => {
         id="program"
         primarySlot={
           <div className=" lg:pr-32 xl:pr-48">
-            <h3 className="text-4xl font-bold leading-tight text-mainblue">Individual support</h3>
-            <p className="mt-4 text-2xl font-medium leading-relaxed">
+            <h3 className="md:text-4xl text-2xl font-bold leading-tight text-mainblue">Individual support</h3>
+            <p className="mt-4 md:text-2xl text-sm font-medium leading-relaxed">
               for the stuidents on their way to the job at FAANG
             </p>
           </div>
@@ -102,10 +102,10 @@ const Index = () => {
         reverseOrder
         primarySlot={
           <div className=" lg:pl-32 xl:pl-48">
-            <h3 className="text-4xl font-bold leading-tight text-mainblue">
+            <h3 className="md:text-4xl text-2xl font-bold leading-tight text-mainblue">
             Developed strategy
             </h3>
-            <p className="mt-4 text-2xl font-medium leading-relaxed">
+            <p className="mt-4 md:text-2xl text-sm font-medium leading-relaxed">
             based on the experience of 40 applicants, who landed a job offer at FAANG
             </p>
           </div>
@@ -115,10 +115,10 @@ const Index = () => {
       <SplitSection
         primarySlot={
           <div className=" lg:pr-32 xl:pr-48">
-            <h3 className="text-4xl font-bold leading-tight text-mainblue">
+            <h3 className="md:text-4xl text-2xl font-bold leading-tight text-mainblue">
             Perfect atmosphere
             </h3>
-            <p className="mt-4 text-2xl font-medium leading-relaxed">
+            <p className="mt-4 md:text-2xl text-sm font-medium leading-relaxed">
             of preparation, including exchange of knowledge and experience, support of weak and improvement of strong sides
             </p>
           </div>
@@ -127,7 +127,7 @@ const Index = () => {
       />
       <div className="bg-primary bg-opacity-25">
       <section id="mentors" className="font-mono py-20 lg:py-40" style={{ backgroundColor: '#EFF2F6' }}>
-        <h2 className="mb-12 lg:text-5xl font-bold text-center">Team</h2>
+        <h2 className="mb-12 md:text-5xl text-2xl font-bold text-center">Team</h2>
         <div className="container mx-auto">
           <div className="flex flex-col md:flex-row md:-mx-3 lg:mx-1">
             {teamData.map(mentor => (
@@ -330,7 +330,7 @@ const Index = () => {
                       </div>
                     </summary>
                     <span>
-                      <div className="font-medium text-sm text-xs md:text-sm md:px-32 bg-primary-light rounded-md pb-6 px-4">
+                      <div className="font-medium md:text-sm text-xs md:text-sm md:px-32 bg-primary-light rounded-md pb-6 px-4">
                         Duration of the program is adjusted indivually, with shortest duration of 3 month.
                       </div>
                     </span>
@@ -372,9 +372,9 @@ const Index = () => {
             </div>
         </div>
       </section>
-      <div className="lg:text-md lg:pt-20 lg:py-0 lg:pl-20 md:text-sm text-xs sm:text-xs md:py-20 py-5 px-6 bg-mainblue text-white container mx-10 my-10 mx-auto md:my-20 rounded-big text-left">
+      <div className="md:w-full w-11/12 lg:text-md lg:pt-20 lg:py-0 lg:pl-20 md:text-sm text-xs sm:text-xs md:py-20 py-5 px-6 bg-mainblue text-white container mx-10 my-10 mx-auto md:my-20 rounded-big text-left">
         <div className="flow-root">
-          <h3 className="sm:text-2xl md:text-5xl text-xs font-bold spacing-xl">Do you want an internship at FAANG?</h3>
+          <h3 className="sm:text-2xl md:text-5xl text-sm font-bold spacing-xl">Do you want an internship at FAANG?</h3>
           <p className="mt-3 md:text-xl text-xs font-normal sm:text-l sm:max-w-sm">
           Join Exponential and become one of the 30 participants of our exclusive program!
           </p>
@@ -382,7 +382,7 @@ const Index = () => {
               <div className="float-left">
               <p className="mt-8 ">
                 <Link to="https://docs.google.com/forms/d/e/1FAIpQLSfEXdTmGSKaBnU_W-K95pV4xw_1Rca0ihzixFdbhDxYFCptqg/viewform?usp=sf_link">
-                  <ButtonLight className="sm:py-4 sm:px-26 sm:text-md md:py-5 md:px-32 md:text-lg text-xs rounded-lg">Apply now</ButtonLight>
+                  <ButtonLight className="sm:py-4 sm:px-26 sm:text-md md:py-5 md:px-32 md:text-lg text-sm rounded-lg">Apply now</ButtonLight>
                 </Link>
               </p>
               <p className="mt-8 md:text-xl text-xs mx-auto">
