@@ -41,6 +41,9 @@ const Header = () => {
                     Program
                   </Link>
 
+                  <Link className="text-gray-500 hover:bg-gray-700 hover:text-white px-3 my-5 py-1 rounded-md text-sm font-medium" to={`/price/`}>
+                    Price
+                  </Link>
 
                   <Link className="text-gray-500 hover:bg-gray-700 hover:text-white px-3 my-5 py-1 rounded-md text-sm font-medium" to={`/alumni/`}>
                     Alumni
@@ -61,8 +64,8 @@ const Header = () => {
                     FAQ
                   </Link>
 
-                  <Link className="text-gray-500 hover:bg-gray-700 hover:text-white px-3 my-5 py-1 rounded-md text-sm font-medium" to={`/price/`}>
-                    Price
+                  <Link className="text-gray-500 hover:bg-gray-700 hover:text-white px-3 my-5 py-1 rounded-md text-sm font-medium" to={`/media/`}>
+                    Media about us
                   </Link>
 
                   <div className="absolute right-0 transform -translate-x-1/2 z-20 invisible lg:visible py-3">
@@ -154,6 +157,10 @@ const Header = () => {
                   Alumni
                 </Link>
 
+                <Link className="text-gray-500 hover:bg-gray-700 hover:text-white px-3 my-5 py-1 rounded-md text-sm font-medium" to={`/price/`}>
+                    Price
+                </Link>
+
                 <Link className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium" to={`/blog/`}>
                   Blog
                 </Link>
@@ -165,8 +172,8 @@ const Header = () => {
                   FAQ
                 </Link>
 
-                <Link className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium" to={`/price/`}>
-                  Price
+                <Link className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium" to={`/media/`}>
+                  Media about us
                 </Link>
               </div>
             </div>
