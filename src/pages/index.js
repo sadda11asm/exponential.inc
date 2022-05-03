@@ -32,6 +32,9 @@ import process_third from '../images/atmosphere.png'
 import process_fourth from '../images/personal.png'
 import process_fifth from '../images/feedback.jpg'
 
+import WeekInMentorship from '../components/a-week-in-mentorship';
+import HowItWorks from '../components/how-it-works';
+
 
 
 
@@ -149,15 +152,15 @@ const Index = () => {
         <SpecializedMentors specializedMentors={specializedMentorsData}/>
       </section>
       </div>
-      <section id="how-it-works" className=" py-20 lg:py-40 lg:px-40 text-center" style={{ backgroundColor: 'white' }}>
-        <h2 className="lg:text-5xl">How does it <span style={{ color: '#2778FD' }}>work?</span></h2>
-        <Link to="" target="_blank"><p style={{ color: '#2778FD' }}>Watch video</p></Link>
+      <section id="how-it-works" className="pt-20 lg:px-40 text-center" style={{ backgroundColor: 'white' }}>
+        <HowItWorks/>
+        <WeekInMentorship/>
       </section>
       <div className="hidden md:block mb-48">
         <section className="z-10 md:absolute mt-24 pt-24 pr-16 right-0 rounded-l-largest w-4/12 flex flex-row">
           <div className="inline-block flex flex-col justify-end">
             <div className="text-center font-bold mb-4">
-              12 offers
+             15 offers
             </div>
             <img src={bluecylinder} alt="bluecylinder" />
           </div>
