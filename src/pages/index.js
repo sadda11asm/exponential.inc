@@ -221,7 +221,7 @@ const Index = () => {
         <section className="mx-16 mt-4 mb-16 align-middle rounded-l-largest flex flex-row">
           <div className="inline-block flex flex-col justify-between">
             <div className="text-center font-bold mb-4">
-              12 offers
+              15 offers
             </div>
             <img src={bluecylinder} alt="bluecylinder" />
           </div>
