@@ -15,15 +15,15 @@ import mokhira from '../images/alumni/mokhira.jpg'
 
 const dauletMentees = [
   {
-    title: 'Software Engineering Intern at Goldman Sachs, London',
-    quote: 'Огромное спасибо команде Exponential. Я получила работу мечты :)\n',
+    title: 'Incoming Software Engineering Intern at Goldman Sachs, London',
+    quote: 'Exponential дал мне возможность находиться в кругу целеустремлённых девушек, которые тоже начинают карьеру в tech. Для меня очень важно быть частью коммьюнити, куда можно обратиться за помощью и советом, и Еxponential был идеальным вариантом для этого. Огромное спасибо Назерке и всем менторам за поддержку в процессе!\n',
     name: 'Amina Kobenova',
     image: amina,
     bioLink: 'https://linkedin.com/in/kalidolda',
   },
   {
-    title: 'New Grad at Meta, London',
-    quote: 'Exponential team the best <3\n',
+    title: 'Incoming Software Engineer at Meta, London',
+    quote: 'Менторство в мой последний год бакалавра стало крайне полезным ресурсом для выстраивания дальнейшей карьеры. До Exponential у меня не было достаточно знаний по тому, как нужно готовиться к интервью на технические вакансии и на чем надо акцентироваться. Благодаря программе я научилась решать задачи уровней medium и hard на leetcode, выстраивать и проговаривать логику решения, составлять краткий, но информативный CV, и узнала, что ожидается от кандидатов на поведенческом интервью. Кроме всего этого, благодаря поддержке и вере ментора, я поборола страх подачи в компании FAANG. Основной прогресс, конечно же, зависел от собственных усилий, но менторство поспособствовало держаться цели и придало чувство командной работы над нею.\n',
     name: 'Mokhira Atashikova',
     image: mokhira,
     bioLink: 'https://linkedin.com/in/kalidolda',
