@@ -53,7 +53,7 @@ const Header = () => {
                     Blog
                   </Link>
 
-                  <Link className="text-gray-500 hover:bg-gray-700 hover:text-white px-3 my-5 py-1 rounded-md text-sm font-medium" to={`/blog/`}>
+                  <Link className="text-gray-500 hover:bg-gray-700 hover:text-white px-3 my-5 py-1 rounded-md text-sm font-medium" to={`/media/`}>
                     Media About Us
                   </Link>
 
@@ -62,10 +62,6 @@ const Header = () => {
                     className="text-gray-500 hover:bg-gray-700 hover:text-white px-3 my-5 py-1 rounded-md text-sm font-medium"
                   >
                     FAQ
-                  </Link>
-
-                  <Link className="text-gray-500 hover:bg-gray-700 hover:text-white px-3 my-5 py-1 rounded-md text-sm font-medium" to={`/media/`}>
-                    Media about us
                   </Link>
 
                   <div className="absolute right-0 transform -translate-x-1/2 z-20 invisible lg:visible py-3">
