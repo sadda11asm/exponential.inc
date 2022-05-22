@@ -21,7 +21,11 @@ module.exports = {
         },
         mainblue: '#2778FD',
         dark: '#1B1C1E',
+        grey: "#EFF2F6",
       },
+      width: {
+        '96' : '24rem',
+      }
     },
     borderRadius: {
       'none': '0',
