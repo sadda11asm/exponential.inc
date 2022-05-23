@@ -11,7 +11,12 @@ import madina from '../images/madina.jpg'
 import amina from '../images/alumni/amina.jpg'
 import mokhira from '../images/alumni/mokhira.jpg'
 
-/* /Daulet mentees photos */
+/* /Alisher mentees photos */
+
+import kristina from '../images/kristina.jpg'
+import adema from '../images/adema.jpg'
+import nursezim from '../images/nursezim.jpg'
+import julia from '../images/julia.jpg'
 
 const dauletMentees = [
   {
@@ -34,25 +39,17 @@ export default [
   ...dauletMentees,
   {
     title: 'Incoming Software Engineering Intern at Palantir, Bloomberg & Amazon',
-    quote: 'Ex-Software Engineer, Localyze (Hamburg, Germany)\n' +
-      '              Open Source Blockchain Developer, Scaffold-Eth\n' +
-      '              Offer to Software Engineering Internship at Stripe Dublin, 2020\n' +
-      '              Google Inside Look Scholar, Munich 2019\n' +
-      '              Top 9% at Google Kickstart 2020',
+    quote: 'Разобраться в процессе подач на стажировки и подготовки к собеседованиям - задача довольно сложная, но когда есть личный ментор, готовый в любой момент ответить на все волнующие тебя вопросы, помочь и поддержать, то она уже не кажется столь непосильной. Для меня менторство - один из главных плюсов программы Exponential.',
     name: 'Kristina Shelemba',
-    image: nazerke,
-    bioLink: 'https://linkedin.com/in/kalidolda',
+    image: kristina,
+    bioLink: 'https://kr.linkedin.com/in/kristina-shelemba',
   },
   {
     title: 'Incoming Software Engineering Intern at Deepmind, Google & Amazon',
-    quote: 'Ex-Software Engineer, Localyze (Hamburg, Germany)\n' +
-      '              Open Source Blockchain Developer, Scaffold-Eth\n' +
-      '              Offer to Software Engineering Internship at Stripe Dublin, 2020\n' +
-      '              Google Inside Look Scholar, Munich 2019\n' +
-      '              Top 9% at Google Kickstart 2020',
+    quote: 'The program really helps you to get from level zero to offer level. There are like millions of lifehacks along the way that you can learn from mentors and participants. I really like this experience sharing, because otherwise you would have to learn them on your own in several years. In addition, mentors are great to identify your weaknesses and help you to work on them! They also keep you safe from rabbit holes(aka topics you dont need).',
     name: 'Adema Yergara',
-    image: saddam,
-    bioLink: 'https://linkedin.com/in/kalidolda',
+    image: adema,
+    bioLink: 'https://kz.linkedin.com/in/ademayergara',
   },
   {
     title: 'Incoming Software Engineering Intern at Google & Amazon',
@@ -63,25 +60,10 @@ export default [
   },
   {
     title: 'Incoming STEP Intern at Google, Zurich',
-    quote: 'Ex-Software Engineer, Localyze (Hamburg, Germany)\n' +
-      '              Open Source Blockchain Developer, Scaffold-Eth\n' +
-      '              Offer to Software Engineering Internship at Stripe Dublin, 2020\n' +
-      '              Google Inside Look Scholar, Munich 2019\n' +
-      '              Top 9% at Google Kickstart 2020',
+    quote: 'До программы я слышала много советов и разных выступлений о том, как подаваться на стажировки. Но советы это одно, а совсем другое когда есть человек, который помогает везде и направляет. К тому же процесс подготовки проходит в прекрасном коммьюнити людей.',
     name: 'Julia Barko',
-    image: alisher,
-    bioLink: 'https://linkedin.com/in/kalidolda',
-  },
-  {
-    title: 'Incoming STEP Intern at Google, Poland',
-    quote: 'Ex-Software Engineer, Localyze (Hamburg, Germany)\n' +
-      '              Open Source Blockchain Developer, Scaffold-Eth\n' +
-      '              Offer to Software Engineering Internship at Stripe Dublin, 2020\n' +
-      '              Google Inside Look Scholar, Munich 2019\n' +
-      '              Top 9% at Google Kickstart 2020',
-    name: 'Aidana ...',
-    image: alisher,
-    bioLink: 'https://linkedin.com/in/kalidolda',
+    image: julia,
+    bioLink: 'https://kz.linkedin.com/in/julia-barko-16bb411b3',
   },
   {
     title: 'Incoming Software Engineering Intern at Meta, London',
@@ -92,14 +74,10 @@ export default [
   },
   {
     title: 'Incoming STEP Intern at Google, Zurich',
-    quote: 'Ex-Software Engineer, Localyze (Hamburg, Germany)\n' +
-      '              Open Source Blockchain Developer, Scaffold-Eth\n' +
-      '              Offer to Software Engineering Internship at Stripe Dublin, 2020\n' +
-      '              Google Inside Look Scholar, Munich 2019\n' +
-      '              Top 9% at Google Kickstart 2020',
+    quote: 'Exponential Program is an exceptional opportunity for young people starting their career in tech. Participants get precise on point feedback and support from highly competent mentors. While participating in the program I could gain valuable knowledge in all aspects of the application process including resume building, problem solving, handling behavioural questions, tricks and tips on preparation in general and many more. After all, the Exponential program gives you a community of incredibly smart and ambitious people, who share the same goal and passion, which eventually leads you to an inevitable success.',
     name: 'Nursezim Kurmanaliyeva',
-    image: alisher,
-    bioLink: 'https://linkedin.com/in/kalidolda',
+    image: nursezim,
+    bioLink: 'https://hu.linkedin.com/in/nursezim-kurmanalieva-5417a2206',
   },
   {
     title: 'Incoming Software Engineer at Meta, London',

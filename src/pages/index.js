@@ -1,18 +1,25 @@
 import React from 'react';
 import Button from '../components/Button';
 import ButtonLight from '../components/ButtonLight';
+import Card from '../components/Card';
+import Card2 from '../components/Card2';
 import YoutubeEmbed from "../components/YoutubeEmbed";
 import MentorCard from '../components/MentorCard';
+import LabelText from '../components/LabelText';
 import Layout from '../components/layout/Layout';
 import SplitSection from '../components/SplitSection';
+import StatsBox from '../components/StatsBox';
 import teamData from '../data/team';
 import specializedMentorsData from '../data/specialized-mentors';
 import SpecializedMentors from '../components/SpecializedMentors';
 
+import HeroImage from '../svg/HeroImage';
+import SvgCharts from '../svg/SvgCharts';
 import circle from '../images/circle.png'
 import elipsis from '../images/elipsis.png'
 import blackcylinder from '../images/blackcylinder.png'
 import bluecylinder from '../images/bluecylinder.png'
+import pricebackground from '../images/price_background.png'
 import f from '../images/f.png'
 import g from '../images/g.png'
 import go from '../images/go.png'
@@ -22,12 +29,17 @@ import p from '../images/p.png'
 import process_first from '../images/individual_mentorship.png'
 import process_second from '../images/strategy.png'
 import process_third from '../images/atmosphere.png'
+import process_fourth from '../images/personal.png'
+import process_fifth from '../images/feedback.jpg'
 
 import WeekInMentorship from '../components/a-week-in-mentorship';
+import HowItWorks from '../components/how-it-works';
+
+
+
 
 import { useVisibility } from '../utils';
 import { Link } from 'gatsby';
-import HowItWorks from '../components/how-it-works';
 
 
 const Index = () => {
@@ -148,7 +160,7 @@ const Index = () => {
         <section className="z-10 md:absolute mt-24 pt-24 pr-16 right-0 rounded-l-largest w-4/12 flex flex-row">
           <div className="inline-block flex flex-col justify-end">
             <div className="text-center font-bold mb-4">
-              15 offers
+             15 offers
             </div>
             <img src={bluecylinder} alt="bluecylinder" />
           </div>
@@ -372,6 +384,7 @@ const Index = () => {
             </div>
         </div>
       </section>
+
       <div className="md:w-full w-11/12 lg:text-md lg:pt-20 lg:py-0 lg:pl-20 md:text-sm text-xs sm:text-xs md:py-20 py-5 px-6 bg-mainblue text-white container mx-10 my-10 mx-auto md:my-20 rounded-big text-left">
         <div className="flow-root">
           <h3 className="sm:text-2xl md:text-5xl text-sm font-bold spacing-xl">Do you want an internship at FAANG?</h3>

@@ -41,6 +41,9 @@ const Header = () => {
                     Program
                   </Link>
 
+                  <Link className="text-gray-500 hover:bg-gray-700 hover:text-white px-3 my-5 py-1 rounded-md text-sm font-medium" to={`/price/`}>
+                    Price
+                  </Link>
 
                   <Link className="text-gray-500 hover:bg-gray-700 hover:text-white px-3 my-5 py-1 rounded-md text-sm font-medium" to={`/alumni/`}>
                     Alumni
@@ -50,7 +53,7 @@ const Header = () => {
                     Blog
                   </Link>
 
-                  <Link className="text-gray-500 hover:bg-gray-700 hover:text-white px-3 my-5 py-1 rounded-md text-sm font-medium" to={`/blog/`}>
+                  <Link className="text-gray-500 hover:bg-gray-700 hover:text-white px-3 my-5 py-1 rounded-md text-sm font-medium" to={`/media/`}>
                     Media About Us
                   </Link>
 
@@ -150,6 +153,10 @@ const Header = () => {
                   Alumni
                 </Link>
 
+                <Link className="text-gray-500 hover:bg-gray-700 hover:text-white px-3 my-5 py-1 rounded-md text-sm font-medium" to={`/price/`}>
+                    Price
+                </Link>
+
                 <Link className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium" to={`/blog/`}>
                   Blog
                 </Link>
@@ -159,6 +166,10 @@ const Header = () => {
                   className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
                 >
                   FAQ
+                </Link>
+
+                <Link className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium" to={`/media/`}>
+                  Media about us
                 </Link>
               </div>
             </div>
