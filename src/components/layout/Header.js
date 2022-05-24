@@ -131,16 +131,16 @@ const Header = () => {
           {(ref) => (
             <div className="md:hidden" id="mobile-menu">
               <div ref={ref} className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-                <Link className="text-gray-500 hover:bg-gray-700 hover:text-white px-3 my-5 py-1 rounded-md text-sm font-medium" to={`/`}>
+                <Link className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium" to={`/`}>
                   Home
                 </Link>
 
-                <AnchorLink
+                <Link
                   to="/#program"
                   className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
                 >
                   Program
-                </AnchorLink>
+                </Link>
 
                 <Link
                   to="/#mentors"
@@ -153,7 +153,7 @@ const Header = () => {
                   Alumni
                 </Link>
 
-                <Link className="text-gray-500 hover:bg-gray-700 hover:text-white px-3 my-5 py-1 rounded-md text-sm font-medium" to={`/price/`}>
+                <Link className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium" to={`/price/`}>
                     Price
                 </Link>
 

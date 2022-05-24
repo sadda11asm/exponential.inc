@@ -52,7 +52,7 @@ const Footer = () => (
             <div><Link to="/alumni">Graduates</Link></div>
             <div><Link to="">Pricing</Link></div>
           </div>
-          <div className="w-14 pl-4 md:pl-20">
+          <div className="w-14 pl-4 md:pl-12  md:text-sm text-xs">
             <div><Link to="/blog">Blog</Link></div>
             <div><Link to="">Press&Media</Link></div>
           </div>
