@@ -1,23 +1,39 @@
 import React from 'react';
 import Button from '../components/Button';
+import ButtonLight from '../components/ButtonLight';
 import Card from '../components/Card';
 import Card2 from '../components/Card2';
-import CustomerCard from '../components/CustomerCard';
+import YoutubeEmbed from "../components/YoutubeEmbed";
+import MentorCard from '../components/MentorCard';
 import LabelText from '../components/LabelText';
 import Layout from '../components/layout/Layout';
 import SplitSection from '../components/SplitSection';
 import StatsBox from '../components/StatsBox';
-import customerData from '../data/customer-data';
-import mentors from '../data/mentors';
+import teamData from '../data/team';
+import specializedMentorsData from '../data/specialized-mentors';
+import SpecializedMentors from '../components/SpecializedMentors';
 
 import HeroImage from '../svg/HeroImage';
 import SvgCharts from '../svg/SvgCharts';
-import faang from '../images/faang.png'
-import process_first from '../images/mentorship.jpg'
-import process_second from '../images/peer-mock.png'
-import process_third from '../images/training-1.png'
+import circle from '../images/circle.png'
+import elipsis from '../images/elipsis.png'
+import blackcylinder from '../images/blackcylinder.png'
+import bluecylinder from '../images/bluecylinder.png'
+import pricebackground from '../images/price_background.png'
+import f from '../images/f.png'
+import g from '../images/g.png'
+import go from '../images/go.png'
+import b from '../images/b.png'
+import d from '../images/d.png'
+import p from '../images/p.png'
+import process_first from '../images/individual_mentorship.png'
+import process_second from '../images/strategy.png'
+import process_third from '../images/atmosphere.png'
 import process_fourth from '../images/personal.png'
 import process_fifth from '../images/feedback.jpg'
+
+import WeekInMentorship from '../components/a-week-in-mentorship';
+import HowItWorks from '../components/how-it-works';
 
 
 
@@ -25,77 +41,70 @@ import process_fifth from '../images/feedback.jpg'
 import { useVisibility } from '../utils';
 import { Link } from 'gatsby';
 
+
 const Index = () => {
   const [ topmostSectionIsVisible, topmostSection ] = useVisibility(100);
 
   return (
     <Layout>
-      <Link to="https://docs.google.com/forms/d/e/1FAIpQLSfEXdTmGSKaBnU_W-K95pV4xw_1Rca0ihzixFdbhDxYFCptqg/viewform?usp=sf_link">
-      <div className="fixed mx-auto w-1/2 inset-x-0 bottom-0 mb-4 text-center">
-        <Button className={`${ topmostSectionIsVisible ? 'invisible md:invisible': 'visible md:invisible' }`}>Подать заявку</Button>
+      <div>
+        <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet"/>
       </div>
+      <div>
+        <link href="https://fonts.googleapis.com/css?family=Inter" rel="stylesheet"/>
+      </div>
+      <Link className={`${ topmostSectionIsVisible ? 'invisible md:invisible': 'visible md:invisible' }`} to="https://docs.google.com/forms/d/e/1FAIpQLSfEXdTmGSKaBnU_W-K95pV4xw_1Rca0ihzixFdbhDxYFCptqg/viewform?usp=sf_link">
+        <div className="fixed mx-auto w-1/2 inset-x-0 bottom-0 mb-4 text-center">
+          <Button>Apply now</Button>
+        </div>
       </Link>
-      <section className="font-display pt-20 md:pt-40 pb-40" ref={topmostSection}>
-        <div className="container mx-auto px-10 lg:flex">
-          <div className="text-center lg:text-left lg:w-1/2">
+      <section className="z-10 invisible lg:visible absolute right-0 rounded-l-largest bg-black lg:w-6/12">
+        <div className="lg:h-10"></div>
+      </section>
+      <section className="z-10 invisible lg:visible absolute mt-10 right-0 rounded-l-largest bg-primary-changed lg:w-6/12">
+        <img src={circle} alt="Circle" />
+      </section>
+      <section className="bg-black font-body lg:pt-40 pt-24 pb-24 md:pr-40 lg:w-8/12 rounded-br-largest" ref={topmostSection}>
+        <div className="container mx-auto px-10 lg:pl-10 lg:pr-20 lg:flex">
+          <div className="text-center text-white lg:text-left lg:ml-10 lg:mr-8">
             <h1 className="text-4xl lg:text-5xl xl:text-6xl font-bold leading-none">
               Exponential
             </h1>
-            <p className="text-xl lg:text-2xl mt-6 font-light">
-              Менторская программа для девушек подающих на стажировки в FAANG
+            <p className="text-l lg:text-xl mt-6 lg:mr-10">
+              Mentorship program for software engineers and software engineering students applying to FAANGs
             </p>
             <p className="mt-8 md:mt-12">
               <Link to="https://docs.google.com/forms/d/e/1FAIpQLSfEXdTmGSKaBnU_W-K95pV4xw_1Rca0ihzixFdbhDxYFCptqg/viewform?usp=sf_link">
-                <Button size="lg">Подать заявку</Button>
+                <Button className="bg-primary-changed font-body w-64 rounded-big">Apply Now</Button>
               </Link>
             </p>
-            <p className="mt-4 text-gray-600"></p>
           </div>
-          <div className='lg:w-1/2 lg:pl-12'>
-            <img src={faang} alt="Faang" />
+        </div>
+        <p className="mx-auto text-l lg:text-xl lg:mt-64 mt-40 lg:pl-20 lg:text-left text-center text-gray-600">
+          Apply before the deadline on <span className="text-white"> July 22nd  </span>
+        </p>
+      </section>
+      <section id="what-we-offer" className=" pt-20 md:pt-40 pb-40">
+        <div className="container mx-auto px-10 lg:flex">
+          <div className="container mx-auto text-center">
+            <h1 className="text-3xl lg:text-5xl font-bold">
+              About <span className="text-mainblue"> program </span>
+            </h1>
+            <p className="mt-8">
+              <YoutubeEmbed className="md:h-full md:w-full h-20 md:mt-6 mt-2" embedId="WSKKYy4iJs8" />
+            </p>
           </div>
         </div>
       </section>
       <div className="bg-primary bg-opacity-25">
-      <section id="what-we-offer" className="font-display py-20 lg:pb-40 lg:pt-48">
-        <div className="container mx-auto text-center">
-          <h2 className="text-3xl lg:text-5xl font-semibold">Программа</h2>
-          <div className="flex flex-col sm:flex-row sm:-mx-3 mt-12">
-            <div className="flex-1 px-3">
-              <Card2 className="mb-8 bg-opacity-60 bg-white">
-                <p className="font-semibold text-xl">#1</p>
-                <p className="mt-4">
-                  Оказываем всестороннюю <b> индивидуальную </b> поддержку студентам при подготовке к первой важной цели на пути в FAANG.
-                </p>
-              </Card2>
-            </div>
-            <div className="flex-1 px-3">
-              <Card2 className="mb-8 bg-opacity-60 bg-white">
-                <p className="font-semibold text-xl">#2</p>
-                <p className="mt-4">
-                  Предоставляем отработанную стратегию подготовки на опыте более 40 аппликантов предыдущих лет, <b> получивших в итоге offer в FAANG </b>.
-                </p>
-              </Card2>
-            </div>
-            <div className="flex-1 px-3">
-              <Card2 className="mb-8 bg-opacity-60 bg-white">
-                <p className="font-semibold text-xl">#3</p>
-                <p className="mt-4">
-                  Создаем идеальную атмосферу подготовки, включающую в себя обмен знанием и навыками, подтягиваем слабые и развиваем сильные стороны.
-                </p>
-              </Card2>
-            </div>
-          </div>
-        </div>
-      </section>
       </div>
       <SplitSection
         id="program"
         primarySlot={
-          <div className="font-display lg:pr-32 xl:pr-48">
-            <h3 className="text-3xl font-semibold leading-tight">Еженедельные индивидуальные сессии</h3>
-            <p className="mt-8 text-xl font-light leading-relaxed">
-              Ментора встречаются с участниками индивидуально и определяют статус подготовки и успеваемость участника. Составляют план работы на неделю вперёд.
+          <div className=" lg:pr-32 xl:pr-48">
+            <h3 className="md:text-4xl text-2xl font-bold leading-tight text-mainblue">Individual support</h3>
+            <p className="mt-4 md:text-2xl text-sm font-medium leading-relaxed">
+              for the stuidents on their way to the job at FAANG
             </p>
           </div>
         }
@@ -104,12 +113,12 @@ const Index = () => {
       <SplitSection
         reverseOrder
         primarySlot={
-          <div className="font-mono lg:pl-32 xl:pl-48">
-            <h3 className="text-3xl font-semibold leading-tight">
-              Тренировочные 1:1 интервью в группах
+          <div className=" lg:pl-32 xl:pl-48">
+            <h3 className="md:text-4xl text-2xl font-bold leading-tight text-mainblue">
+            Developed strategy
             </h3>
-            <p className="mt-8 text-xl font-light leading-relaxed">
-              Участники проводят bidirectional mock interviews, делятся фидбэком, советами и подходом к задачам. Ментора временами приводят собственный фидбэк.
+            <p className="mt-4 md:text-2xl text-sm font-medium leading-relaxed">
+            based on the experience of 40 applicants, who landed a job offer at FAANG
             </p>
           </div>
         }
@@ -117,268 +126,285 @@ const Index = () => {
       />
       <SplitSection
         primarySlot={
-          <div className="font-mono lg:pr-32 xl:pr-48">
-            <h3 className="text-3xl font-semibold leading-tight">
-              Подготовка по специализированной стратегии
+          <div className=" lg:pr-32 xl:pr-48">
+            <h3 className="md:text-4xl text-2xl font-bold leading-tight text-mainblue">
+            Perfect atmosphere
             </h3>
-            <p className="mt-8 text-xl font-light leading-relaxed">
-              Предоставляется уникальная стратегия подготовки к алгоритмическим интервью, покрытие важных тем и часто-встречающихся алгоритмов.
+            <p className="mt-4 md:text-2xl text-sm font-medium leading-relaxed">
+            of preparation, including exchange of knowledge and experience, support of weak and improvement of strong sides
             </p>
           </div>
         }
         secondarySlot={<img src={process_third} alt="Faang" />}
       />
-      <SplitSection
-        reverseOrder
-        primarySlot={
-          <div className="font-mono lg:pl-32 xl:pl-48">
-            <h3 className="text-3xl font-semibold leading-tight">
-              Еженедельные персональные интервью
-            </h3>
-            <p className="mt-8 text-xl font-light leading-relaxed">
-              Для участников на продвинутых этапах процесса ментора проводят еженедельные mock interview, тут разбираются различные решения, проговариваются важные моменты интервью, работа над ошибками и тд.
-            </p>
-          </div>
-        }
-        secondarySlot={<img src={process_fourth} alt="Faang" />}
-      />
-      <SplitSection
-        primarySlot={
-          <div className="font-mono lg:pr-32 xl:pr-48">
-            <h3 className="text-3xl font-semibold leading-tight">
-              CV Review sessions
-            </h3>
-            <p className="mt-8 text-xl font-light leading-relaxed">
-              Сессии по ревью CV по советам рекруитеров и инженеров Google, Amazon, Facebook etc.
-            </p>
-          </div>
-        }
-        secondarySlot={<img src={process_fifth} alt="Faang" />}
-      />
       <div className="bg-primary bg-opacity-25">
-      <section id="mentors" className="font-mono py-20 lg:py-40 lg:px-40">
+      <section id="mentors" className="font-mono py-20 lg:py-40" style={{ backgroundColor: '#EFF2F6' }}>
+        <h2 className="mb-12 md:text-5xl text-2xl font-bold text-center">Team</h2>
         <div className="container mx-auto">
-          <h2 className="mb-8 lg:text-5xl font-bold text-center">Команда</h2>
-          <div className="flex flex-col md:flex-row md:-mx-3 lg:mx-8">
-            {customerData.slice(0, 2).map(customer => (
-              <div key={customer.customerName} className="flex-1 px-6 flex flex-col">
-                <CustomerCard customer={customer} />
-              </div>
-            ))}
-          </div>
-          <div className="flex flex-col md:flex-row md:-mx-3 mt-4 lg:mx-8">
-            {customerData.slice(2, 4).map(customer => (
-              <div key={customer.customerName} className="flex-1 px-6 flex flex-col">
-                <CustomerCard customer={customer} />
+          <div className="flex flex-col md:flex-row md:-mx-3 lg:mx-1">
+            {teamData.map(mentor => (
+              <div key={mentor.mentorName} className="flex-1 px-6 flex flex-col">
+                <MentorCard mentor={mentor} link={mentor.bioLink}/>
               </div>
             ))}
           </div>
         </div>
-        <div className="container mx-auto">
-        <h2 className="mb-12 mt-8 lg:text-4xl font-bold text-center">Наши специализированные ментора</h2>
-        <div
-          className="flex overflow-x-scroll pb-2 hide-scroll-bar scrollbar-hide lg:mx-12"
-        >
-          <div
-            className="flex flex-nowrap mx-6"
-          >
-            {mentors.map(mentor => (
-              <div className="inline-block px-3">
-                <div
-                  className="w-64 h-64 max-w-xs overflow-hidden rounded-lg shadow-md bg-white hover:shadow-xl transition-shadow duration-300 ease-in-out"
-                >
-                  <div
-                    className="mt-15 h-44">
-                    <img className="object-scale-down w-full h-44"
-                         src={mentor.image}/>
-                  </div>
-                  <div className="mt-1.5 px-3">
-                    <h1 className="text-md text-center font-semibold">
-                      {mentor.name}
-                    </h1>
-                    <p className="text-xs text-gray-600 text-center whitespace-pre-line">
-                      {mentor.title}
-                    </p>
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-        </div>
+        <SpecializedMentors specializedMentors={specializedMentorsData}/>
       </section>
       </div>
-      <section id="value" className="font-mono py-20 lg:pt-32">
-        <div className="container mx-auto text-center">
-          <LabelText className="text-gray-600">Ваши результаты</LabelText>
-          <div className="flex flex-col sm:flex-row mt-8 lg:px-24">
-            <div className="w-full sm:w-1/3  lg:mr-5">
-              <StatsBox primaryText="+200%" secondaryText="Знания и навыки"  thirdText="Наши ментора делятся с вами своим ценным опытом."/>
+      <section id="how-it-works" className="pt-20 lg:px-40 text-center" style={{ backgroundColor: 'white' }}>
+        <HowItWorks/>
+        <WeekInMentorship/>
+      </section>
+      <div className="hidden md:block mb-48">
+        <section className="z-10 md:absolute mt-24 pt-24 pr-16 right-0 rounded-l-largest w-4/12 flex flex-row">
+          <div className="inline-block flex flex-col justify-end">
+            <div className="text-center font-bold mb-4">
+             15 offers
             </div>
-            <div className="w-full sm:w-1/3">
-              <StatsBox primaryText="-50%" secondaryText="Общее время подготовки" thirdText="Вы идёте по уже протоптанной тропе."/>
+            <img src={bluecylinder} alt="bluecylinder" />
+          </div>
+          <div className="inline-block ml-10 flex flex-col justify-end">
+            <div className="text-center font-bold mb-4">
+              24 participants
             </div>
-            <div className="w-full sm:w-1/3  lg:ml-5">
-              <StatsBox primaryText="+300%" secondaryText="Вера в себя" thirdText="Наши  ментора гарантируют, что вы имеете всё для победы."/>
+            <img src={blackcylinder} alt="blackcylinder" />
+          </div>
+        </section>
+        <section className="invisible md:visible z-10 inline-block mt-10 right-0 mr-48 rounded-l-largest w-2/12">
+        </section>
+        <section id="value" className="lg:pt-40 pt-24 pb-24 md:pr-40 w-full">
+          <div className="container mx-auto mt-16 px-10 lg:pl-10 lg:pr-20 lg:flex">
+            <div className="text-black text-left lg:ml-10 lg:mr-8">
+              <h1 className="text-3xl lg:text-5xl xl:text-6xl font-bold leading-none">
+                Exponential<span className="text-primary-changed"> Batch #1  </span>
+              </h1>
+              <p className="mt-3 text-4xl lg:text-5xl xl:text-6xl font-bold leading-none">
+                Results:
+              </p>
+              <p className="mt-5">
+                  <span className="text-xl lg:text-2xl xl:text-3xl text-bold">
+                     <p>
+                       <Link to={`/alumni/`}>
+                         <a className="text-bold text-primary-changed"> Meet Exponential Graduates -> </a>
+                       </Link>
+                     </p>
+                      {/*<a className="text-bold text-primary-changed"> Meet Exponential Graduates -> </a>*/}
+                  </span>
+              </p>
             </div>
           </div>
-          <div className="flex flex-col sm:flex-row mt-8 lg:px-24">
-            <div className="w-full sm:w-1/3 lg:mr-5">
-              <StatsBox primaryText="+200%" secondaryText="Боевой Дух"  thirdText="Наша техническая и моральная поддержка стимулируют ваш дух."/>
-            </div>
-            <div className="w-full sm:w-1/3">
-              <StatsBox primaryText="+400%" secondaryText="Мотивация" thirdText="Атмосфера которую мы создаём вдохновляет и мотивирует."/>
-            </div>
-            <div className="w-full sm:w-1/3 lg:ml-5">
-              <StatsBox primaryText="-100%" secondaryText="Прокрастинация" thirdText="Наша программа порождает желание работать не покладая рук."/>
+        </section>
+      </div>
+      <div className="md:hidden">
+        <section id="value" className="align-middle  lg:pt-40 pt-24 pb-24 md:pr-40 w-full">
+          <div className="container mx-auto px-10 lg:pl-10 lg:pr-20 lg:flex">
+            <div className="text-black text-left lg:ml-10 lg:mr-8">
+              <h1 className="text-4xl lg:text-5xl xl:text-6xl font-bold leading-none">
+                Exponential<span className="text-primary-changed"> Batch #1  </span>
+              </h1>
+              <p className="mt-3 text-4xl lg:text-5xl xl:text-6xl font-bold leading-none">
+                Results:
+              </p>
+              <p className="mt-5">
+                  <span className="text-xl lg:text-2xl xl:text-3xl text-bold">
+                      <p>
+                       <Link to={`/alumni/`}>
+                         <a className="text-bold text-primary-changed"> Meet Exponential Graduates -> </a>
+                       </Link>
+                     </p>
+                  </span>
+              </p>
             </div>
           </div>
+        </section>
+        <section className="mx-16 mt-4 mb-16 align-middle rounded-l-largest flex flex-row">
+          <div className="inline-block flex flex-col justify-between">
+            <div className="text-center font-bold mb-4">
+              15 offers
+            </div>
+            <img src={bluecylinder} alt="bluecylinder" />
+          </div>
+          <div className="inline-block ml-10 flex flex-col justify-between">
+            <div className="text-center font-bold mb-4">
+              24 participants
+            </div>
+            <img src={blackcylinder} alt="blackcylinder" />
+          </div>
+        </section>
+      </div>
+      <section id="companies" className="">
+        <h1 className="text-center text-xl lg:text-2xl xl:text-3xl font-bold leading-none">
+          Companies <span className="text-primary-changed"> our alumni  </span> work for
+        </h1>
+        <div className="md:hidden flex flex-row max-w-full space-x-8 mt-10 px-10 pt-5 justify-center">
+          <img className="w-4/12" src={g} alt="g" />
+          <img className="w-4/12" src={f} alt="f" />
+          <img className="w-4/12" src={go} alt="go" />
+        </div>
+        <div className="md:hidden flex flex-row max-w-full space-x-8 px-10 pb-5 justify-center">
+          <img className="w-4/12" src={d} alt="d" />
+          <img className="w-4/12" src={b} alt="b" />
+          <img className="w-4/12" src={p} alt="p" />
+        </div>
+        <div className="flex flex-row max-w-full space-x-8 p-20 justify-center invisible md:visible">
+          <img className="w-2/12" src={g} alt="g" />
+          <img className="w-2/12" src={f} alt="f" />
+          <img className="w-2/12" src={go} alt="go" />
+          <img className="w-2/12" src={d} alt="d" />
+          <img className="w-2/12" src={b} alt="b" />
+          <img className="w-2/12" src={p} alt="p" />
         </div>
       </section>
-      <section id= "faq" className="bg-primary bg-opacity-25 font-mono lg:py-20 lg:px-20">
+
+      <section id= "faq" className="lg:py-20 lg:px-20">
         <div>
-            <div className="container px-5 py-10 mx-auto">
+            <div className="container py-10 mx-auto">
               <div className="text-center mb-20">
-                <h1 className="sm:text-3xl text-5xl text-center title-font text-gray-900 mb-4 font-bold">
-                  FAQ
+                <h1 className="text-xl sm:text-3xl md:text-5xl text-center title-font text-gray-900 mb-4 font-bold">
+                  <span style={{ color: '#2778FD' }}> Questions </span> and answers
                 </h1>
               </div>
-              <div className="flex flex-wrap lg:w-4/5 sm:mx-auto sm:mb-2 -mx-2">
-                <div className="w-full lg:w-1/2 px-4 py-2">
+              <div className="mx-auto sm:mb-2 -mx-2">
+                <div className="px-4 py-2 text-sm md:text-xl">
                   <details className="mb-4">
-                    <summary className="font-semibold  bg-gray-200 rounded-md py-2 px-4">
-                      Цена программы? Когда нужно платить?
+                    <summary className="font-semibold  bg-primary-light text-mainblue rounded-md py-2 md:py-6 px-4">
+                      <div className="container mx-auto px-2 md:px-8 items-center flex flex-row">
+                        <span className="flex items-center justify-center w-12 h-12 text-xl font-bold">01</span>
+                        <div className={`lg:mt-0 w-full px-8 lg:w-1/2`}>
+                          Price of the program? How much do I need to pay?
+                        </div>
+                        <span className="flex items-center ml-auto justify-center text-black w-12 h-12 text-xl font-bold bg-white rounded-full">+</span>
+                      </div>
                     </summary>
-
                     <span>
-                      <div className="font-medium  bg-white rounded-md py-2 px-4 mt-2">
-                      Платить за программу нужно только в случае успешного прохождения в компанию вашего выбора. Цена будет равна 15-20% процентам от вашей зарплаты на стажировке.
+                      <div className="font-medium text-xs md:text-sm md:px-32 bg-primary-light rounded-md pb-6 px-4">
+                      You need to pay only if you get an offer from the company of your choice. Price will be equal to 15-20 percent of your monthly salary.
                       </div>
                     </span>
                   </details>
                   <details className="mb-4">
-                    <summary className="font-semibold bg-gray-200 rounded-md py-2 px-4">
-                      Как проходит процесс отбора на программу?
-                    </summary>
-
-                    <span>
-                      <div className="font-medium  bg-white rounded-md py-2 px-4 mt-2">
-                      После заполнения формы на сайте, участники прошедшие на интервью будут оповещены по почте. После интервью будет отобрано 30 окончательных участников.
+                    <summary className="font-semibold  bg-primary-light text-mainblue rounded-md py-2 md:py-6 px-4">
+                      <div className="container mx-auto px-2 md:px-8 items-center flex flex-row">
+                        <span className="flex items-center justify-center w-12 h-12 text-xl font-bold">02</span>
+                        <div className={`lg:mt-0 w-full px-8 lg:w-1/2`}>
+                          How candidate selection for the program works?
+                        </div>
+                        <span className="flex items-center ml-auto justify-center text-black w-12 h-12 text-xl font-bold bg-white rounded-full">+</span>
                       </div>
-                </span>
-                  </details>
-                  <details className="mb-4">
-                    <summary className="font-semibold  bg-gray-200 rounded-md py-2 px-4">
-                      Нужно ли находиться в определенном месте чтобы участвовать в программе?
                     </summary>
-
                     <span>
-                      <div className="font-medium  bg-white rounded-md py-2 px-4 mt-2">
-                      Программа проходит полностью онлайн. Нужно иметь лишь собственный компьютер с камерой, наушниками и выходом в интернет.
+                      <div className="font-medium text-xs md:text-sm md:px-32 bg-primary-light rounded-md pb-6 px-4">
+                        After filling out the form on the site, succesful candidates will be notified through email. After interview step 30 final candidates will be selected.
                       </div>
                     </span>
                   </details>
                   <details className="mb-4">
-                    <summary className="font-semibold  bg-gray-200 rounded-md py-2 px-4">
-                      Когда дедлайн подачи?
+                    <summary className="font-semibold  bg-primary-light text-mainblue rounded-md py-2 md:py-6 px-4">
+                      <div className="container mx-auto px-2 md:px-8 items-center flex flex-row">
+                        <span className="flex items-center justify-center w-12 h-12 text-xl font-bold">03</span>
+                        <div className={`lg:mt-0 w-full px-8 lg:w-1/2`}>
+                          Does program require my physical presence at any step?
+                        </div>
+                        <span className="flex items-center ml-auto justify-center text-black w-12 h-12 text-xl font-bold bg-white rounded-full">+</span>
+                      </div>
                     </summary>
-
                     <span>
-                      <div className="font-medium  bg-white rounded-md py-2 px-4 mt-2">
-                      Дедлайн подачи 6 сентября 23:59 по времени Астаны. Начало программы - середина сентября.
+                      <div className="font-medium text-xs md:text-sm md:px-32 bg-primary-light rounded-md pb-6 px-4">
+                        Entire program is conducted online. Candidates only need a laptop with an internet access, webcam and microphone.
+                      </div>
+                    </span>
+                  </details>
+                  <details className="mb-4">
+                    <summary className="font-semibold  bg-primary-light text-mainblue rounded-md py-2 md:py-6 px-4">
+                      <div className="container mx-auto px-2 md:px-8 items-center flex flex-row">
+                        <span className="flex items-center justify-center w-12 h-12 text-xl font-bold">04</span>
+                        <div className={`lg:mt-0 w-full px-8 lg:w-1/2`}>
+                          When is the deadline for the application?
+                        </div>
+                        <span className="flex items-center ml-auto justify-center text-black w-12 h-12 text-xl font-bold bg-white rounded-full">+</span>
+                      </div>
+                    </summary>
+                    <span>
+                      <div className="font-medium text-xs md:text-sm md:px-32 bg-primary-light rounded-md pb-6 px-4">
+                        Deadline for the application is July 22nd 23:59 Astana time. Program starts in September.
+                      </div>
+                    </span>
+                  </details>
+                  <details className="mb-4">
+                    <summary className="font-semibold  bg-primary-light text-mainblue rounded-md py-2 md:py-6 px-4">
+                      <div className="container mx-auto px-2 md:px-8 items-center flex flex-row">
+                        <span className="flex items-center justify-center w-12 h-12 text-xl font-bold">05</span>
+                        <div className={`lg:mt-0 w-full px-8 lg:w-1/2`}>
+                          Duration of the mentorship? How many times is program coducted throughout the year?
+                        </div>
+                        <span className="flex items-center ml-auto justify-center text-black w-12 h-12 text-xl font-bold bg-white rounded-full">+</span>
+                      </div>
+                    </summary>
+                    <span>
+                      <div className="font-medium md:text-sm text-xs md:text-sm md:px-32 bg-primary-light rounded-md pb-6 px-4">
+                        Duration of the program is adjusted indivually, with shortest duration of 3 month.
+                      </div>
+                    </span>
+                  </details>
+                  <details className="mb-4">
+                    <summary className="font-semibold  bg-primary-light text-mainblue rounded-md py-2 md:py-6 px-4">
+                      <div className="container mx-auto px-2 md:px-8 items-center flex flex-row">
+                        <span className="flex items-center justify-center w-12 h-12 text-xl font-bold">06</span>
+                        <div className={`lg:mt-0 w-full px-8 lg:w-1/2`}>
+                          How many participants are selected in the end?
+                        </div>
+                        <span className="flex items-center ml-auto justify-center text-black w-12 h-12 text-xl font-bold bg-white rounded-full">+</span>
+                      </div>
+                    </summary>
+                    <span>
+                      <div className="font-medium text-xs md:text-sm md:px-32 bg-primary-light rounded-md pb-6 px-4">
+                        After the interview step 30 final participants are selected.
+                      </div>
+                    </span>
+                  </details>
+                  <details className="mb-4">
+                    <summary className="font-semibold  bg-primary-light text-mainblue rounded-md py-2 md:py-6 px-4">
+                      <div className="container mx-auto px-2 md:px-8 items-center flex flex-row">
+                        <span className="flex items-center justify-center w-12 h-12 text-xl font-bold">07</span>
+                        <div className={`lg:mt-0 w-full px-8 lg:w-1/2`}>
+                          Do I need to be a student at university? Who are eligible for participation?
+                        </div>
+                        <span className="flex items-center ml-auto justify-center text-black w-12 h-12 text-xl font-bold bg-white rounded-full">+</span>
+                      </div>
+                    </summary>
+                    <span>
+                      <div className="font-medium text-xs md:text-sm md:px-32 bg-primary-light rounded-md pb-6 px-4">
+                        For the batch of this year it is required to be an active student at either bachelor or master's university course.
                       </div>
                     </span>
                   </details>
                 </div>
-
-                <div className="w-full lg:w-1/2 px-4 py-2">
-                  <details className="mb-4">
-                    <summary className="font-semibold  bg-gray-200 rounded-md py-2 px-4">
-                      Длительность подготовки? Сколько раз в год проводится программа?
-                    </summary>
-
-                    <span>
-                      <div className="font-medium  bg-white rounded-md py-2 px-4 mt-2">
-                      Длительность программы будет адаптироваться под каждого участника индивидуально. Срок программы - 3 месяца.
-                      </div>
-                    </span>
-                  </details>
-                  <details className="mb-4">
-                    <summary className="font-semibold bg-gray-200 rounded-md py-2 px-4">
-                      Сколько участников будет отобрано?
-                    </summary>
-
-                    <span>
-                      <div className="font-medium  bg-white rounded-md py-2 px-4 mt-2">
-                      По итогам интервью будет отобрано 30 участников программы.
-                      </div>
-                </span>
-                  </details>
-                  <details className="mb-4">
-                    <summary className="font-semibold  bg-gray-200 rounded-md py-2 px-4">
-                      Нужно ли мне быть студентом? Кто подходит под вашу программу?
-                    </summary>
-
-                    <span>
-                      <div className="font-medium  bg-white rounded-md py-2 px-4 mt-2">
-                      В этом году на программу принимаются только девушки обучающиеся на программах бакалавриата или магистратуры.
-                      </div>
-                    </span>
-                  </details>
-                </div>
-                {/*<div className="w-full lg:w-1/2 px-4 py-2">*/}
-                {/*  <details className="mb-4">*/}
-                {/*    <summary className="font-semibold  bg-gray-200 rounded-md py-2 px-4">*/}
-                {/*      Длительность подготовки? Сколько раз в год проводится программа?*/}
-                {/*    </summary>*/}
-
-                {/*    <span className="px-4">*/}
-                {/*      <div className="font-medium  bg-gray-100 rounded-md py-2 px-4">*/}
-                {/*      Длительность программы будет адаптироваться под каждого участника индивидуально. Минимальный срок программы 3 месяца.*/}
-                {/*      </div>*/}
-                {/*    </span>*/}
-                {/*  </details>*/}
-                {/*  <details className="mb-4">*/}
-                {/*    <summary className="font-semibold  bg-gray-200 rounded-md py-2 px-4">*/}
-                {/*      Сколько участников будет отобрано?*/}
-                {/*    </summary>*/}
-
-                {/*    <span className="px-4 py-2">*/}
-                {/*    <div className="font-medium  bg-gray-100 rounded-md py-2 px-4 mt-2">*/}
-                {/*    По итогам интервью будет отобрано 30 участников программы.*/}
-                {/*    </div>*/}
-                {/*</span>*/}
-                {/*  </details>*/}
-                {/*  <details className="mb-4">*/}
-                {/*    <summary className="font-semibold  bg-gray-200 rounded-md py-2 px-4">*/}
-                {/*      Нужно ли мне быть студентом? Кто подходит под вашу программу?*/}
-                {/*    </summary>*/}
-
-                {/*    <span className="px-4 py-2">*/}
-                {/*     <div className="font-medium  bg-gray-100 rounded-md py-2 px-4 mt-2">*/}
-                {/*    В этом году на программу принимаются только девушки обучающиеся на программах бакалавриата или магистратуры.*/}
-                {/*    </div>*/}
-                {/*</span>*/}
-                {/*  </details>*/}
-                {/*</div>*/}
               </div>
             </div>
         </div>
       </section>
-      <section className="font-mono container mx-auto my-20 py-24 bg-gray-200 rounded-lg text-center bg-opacity-50">
-        <h3 className="text-5xl font-semibold">Хотите стажировку в FAANG?</h3>
-        <p className="mt-8 text-xl font-light">
-         Подавайте в Exponential и станьте одним из 30 учеников эксклюзивной программы!
-        </p>
-        <p className="mt-3 text-sm font-bold mx-auto">
-          Дедлайн подачи: 6 сентября 23:59 по времени Астаны
-        </p>
-        <p className="mt-8">
-          <Link to="https://docs.google.com/forms/d/e/1FAIpQLSfEXdTmGSKaBnU_W-K95pV4xw_1Rca0ihzixFdbhDxYFCptqg/viewform?usp=sf_link">
-            <Button size="xl">Подать заявку</Button>
-          </Link>
-        </p>
-      </section>
+
+      <div className="md:w-full w-11/12 lg:text-md lg:pt-20 lg:py-0 lg:pl-20 md:text-sm text-xs sm:text-xs md:py-20 py-5 px-6 bg-mainblue text-white container mx-10 my-10 mx-auto md:my-20 rounded-big text-left">
+        <div className="flow-root">
+          <h3 className="sm:text-2xl md:text-5xl text-sm font-bold spacing-xl">Do you want an internship at FAANG?</h3>
+          <p className="mt-3 md:text-xl text-xs font-normal sm:text-l sm:max-w-sm">
+          Join Exponential and become one of the 30 participants of our exclusive program!
+          </p>
+
+              <div className="float-left">
+              <p className="mt-8 ">
+                <Link to="https://docs.google.com/forms/d/e/1FAIpQLSfEXdTmGSKaBnU_W-K95pV4xw_1Rca0ihzixFdbhDxYFCptqg/viewform?usp=sf_link">
+                  <ButtonLight className="sm:py-4 sm:px-26 sm:text-md md:py-5 md:px-32 md:text-lg text-sm rounded-lg">Apply now</ButtonLight>
+                </Link>
+              </p>
+              <p className="mt-8 md:text-xl text-xs mx-auto">
+                Applications accepted until July 22
+              </p>
+              </div>
+              <img className="float-right hidden lg:block" src={elipsis} alt="Elipsis" />
+        </div>
+      </div>
     </Layout>
   );
 }

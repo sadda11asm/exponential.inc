@@ -2,15 +2,15 @@ import React, { useState } from 'react';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 import LogoIcon from '../../svg/LogoIcon';
 import Button from '../Button';
-import logo from '../../images/growth-3.png';
+import logo from '../../images/favicon.png';
 import { Transition } from "@headlessui/react";
 import { Link } from 'gatsby';
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
   return (
-    <div className="sticky top-0">
-      <nav class="bg-primary">
+    <div className="z-30 sticky top-0 font-body shadow-2xl">
+      <nav class="bg-black">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:pl-20">
           <div className="flex items-center mx-auto justify-between h-16 lg:px-20 md:px-10">
             <div className="flex items-center">
@@ -23,46 +23,53 @@ const Header = () => {
               </div>
               <div className="hidden md:block px-48">
                 <div className="ml-10 flex space-x-8">
-                  <AnchorLink
-                    href="#what-we-offer"
-                    className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
-                  >
-                    Программа
-                  </AnchorLink>
+                  <Link className="text-gray-500 hover:bg-gray-700 hover:text-white px-3 my-5 py-1 rounded-md text-sm font-medium" to={`/`}>
+                    Home
+                  </Link>
 
-                  <AnchorLink
-                    href="#program"
-                    className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                  <Link
+                    to="/#mentors"
+                    className="text-gray-500 hover:bg-gray-700 hover:text-white px-3 my-5 py-1 rounded-md text-sm font-medium"
                   >
-                    Процесс
-                  </AnchorLink>
+                    Mentors
+                  </Link>
 
-                  <AnchorLink
-                    href="#mentors"
-                    className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                  <Link
+                    to="/#program"
+                    className="text-gray-500 hover:bg-gray-700 hover:text-white px-3 my-5 py-1 rounded-md text-sm font-medium"
                   >
-                    Команда
-                  </AnchorLink>
+                    Program
+                  </Link>
 
-                  <AnchorLink
-                    href="#value"
-                    className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
-                  >
-                    Результаты
-                  </AnchorLink>
+                  <Link className="text-gray-500 hover:bg-gray-700 hover:text-white px-3 my-5 py-1 rounded-md text-sm font-medium" to={`/price/`}>
+                    Price
+                  </Link>
 
-                  <AnchorLink
-                    href="#faq"
-                    className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                  <Link className="text-gray-500 hover:bg-gray-700 hover:text-white px-3 my-5 py-1 rounded-md text-sm font-medium" to={`/alumni/`}>
+                    Alumni
+                  </Link>
+
+                  <Link className="text-gray-500 hover:bg-gray-700 hover:text-white px-3 my-5 py-1 rounded-md text-sm font-medium" to={`/blog/`}>
+                    Blog
+                  </Link>
+
+                  <Link className="text-gray-500 hover:bg-gray-700 hover:text-white px-3 my-5 py-1 rounded-md text-sm font-medium" to={`/media/`}>
+                    Media About Us
+                  </Link>
+
+                  <Link
+                    to="/#faq"
+                    className="text-gray-500 hover:bg-gray-700 hover:text-white px-3 my-5 py-1 rounded-md text-sm font-medium"
                   >
                     FAQ
-                  </AnchorLink>
-                </div>
-              </div>
-              <div className="invisible md:visible">
-                  <Link to="https://docs.google.com/forms/d/e/1FAIpQLSfEXdTmGSKaBnU_W-K95pV4xw_1Rca0ihzixFdbhDxYFCptqg/viewform?usp=sf_link">
-                    <Button className="bg-primary-changed" size="sm">Подать заявку</Button>
                   </Link>
+
+                  <div className="absolute right-0 transform -translate-x-1/2 z-20 invisible lg:visible py-3">
+                    <Link to="https://docs.google.com/forms/d/e/1FAIpQLSfEXdTmGSKaBnU_W-K95pV4xw_1Rca0ihzixFdbhDxYFCptqg/viewform?usp=sf_link">
+                      <Button className="bg-primary-changed w-48 py-2 rounded-big">Apply Now</Button>
+                    </Link>
+                  </div>
+                </div>
               </div>
             </div>
             <div className="-mr-2 flex md:hidden">
@@ -124,40 +131,46 @@ const Header = () => {
           {(ref) => (
             <div className="md:hidden" id="mobile-menu">
               <div ref={ref} className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-                <AnchorLink
-                  href="#what-we-offer"
+                <Link className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium" to={`/`}>
+                  Home
+                </Link>
+
+                <Link
+                  to="/#program"
                   className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
                 >
-                  Программа
-                </AnchorLink>
+                  Program
+                </Link>
 
-                <AnchorLink
-                  href="#program"
+                <Link
+                  to="/#mentors"
                   className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
                 >
-                  Процесс
-                </AnchorLink>
+                  Mentors
+                </Link>
 
-                <AnchorLink
-                  href="#mentors"
-                  className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
-                >
-                  Команда
-                </AnchorLink>
+                <Link className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium" to={`/alumni/`}>
+                  Alumni
+                </Link>
 
-                <AnchorLink
-                  href="#value"
-                  className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
-                >
-                  Результаты
-                </AnchorLink>
+                <Link className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium" to={`/price/`}>
+                    Price
+                </Link>
 
-                <AnchorLink
-                  href="#faq"
+                <Link className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium" to={`/blog/`}>
+                  Blog
+                </Link>
+
+                <Link
+                  to="/#faq"
                   className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
                 >
                   FAQ
-                </AnchorLink>
+                </Link>
+
+                <Link className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium" to={`/media/`}>
+                  Media about us
+                </Link>
               </div>
             </div>
           )}
