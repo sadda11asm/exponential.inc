@@ -22,7 +22,7 @@ const Header = () => {
                 />
               </div>
               <div className="hidden md:block px-48">
-                <div className="ml-10 flex space-x-8">
+                <div className="flex space-x-8">
                   <Link className="text-gray-500 hover:bg-gray-700 hover:text-white px-3 my-5 py-1 rounded-md text-sm font-medium" to={`/`}>
                     Home
                   </Link>
