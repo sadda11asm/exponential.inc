@@ -10,19 +10,21 @@ const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
   return (
     <div className="z-30 sticky top-0 font-body shadow-2xl">
-      <nav class="bg-black">
+      <nav class="bg-black relative">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:pl-20">
           <div className="flex items-center mx-auto justify-between h-16 lg:px-20 md:px-10">
             <div className="flex items-center">
               <div className="flex-shrink-0 ">
-                <img
-                  className="h-10 w-10"
-                  src={logo}
-                  alt="Workflow"
-                />
+                <Link to={`/`}>
+                  <img
+                    className="h-10 w-10"
+                    src={logo}
+                    alt="Workflow"
+                  />
+                </Link>
               </div>
               <div className="hidden md:block">
-                <div className="ml-32 flex space-x-8">
+                <div className="ml-10 flex space-x-8">
                   <Link className="text-gray-500 hover:bg-gray-700 hover:text-white px-3 my-5 py-1 rounded-md text-sm font-medium" to={`/`}>
                     Home
                   </Link>
@@ -64,7 +66,7 @@ const Header = () => {
                     FAQ
                   </Link>
 
-                  <div className="absolute right-0 transform -translate-x-1/2 z-20 invisible lg:visible py-3">
+                  <div className="absolute right-0 transform -translate-x-1/2 invisible lg:visible py-3">
                     <Link to="https://docs.google.com/forms/d/e/1FAIpQLSfEXdTmGSKaBnU_W-K95pV4xw_1Rca0ihzixFdbhDxYFCptqg/viewform?usp=sf_link">
                       <Button className="bg-primary-changed w-48 py-2 rounded-big">Apply Now</Button>
                     </Link>

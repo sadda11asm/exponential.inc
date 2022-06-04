@@ -41,7 +41,6 @@ module.exports = {
       'largest': '70px'
     }
   },
-  variants: {},
   plugins: [
     require('tailwind-scrollbar-hide'),
     require('@tailwindcss/typography'),
