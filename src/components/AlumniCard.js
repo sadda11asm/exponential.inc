@@ -34,12 +34,12 @@ const AlumniCard = ({ mentor, link }) => {
         </div>
       </div>
       <div className="mt-2 flex flex-row justify-end w-3/12 mb-6 ml-6 absolute inset-x-0 bottom-0">
-        <a href="https://www.google.com/">
+        <a href={mentor.instaLink}>
           <img
             src={insta}
           />
         </a>
-        <a href="https://www.qries.com/">
+        <a href={mentor.bioLink}>
           <img
             src={linkedin}
           />
