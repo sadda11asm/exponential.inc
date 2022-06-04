@@ -15,11 +15,13 @@ const Header = () => {
           <div className="flex items-center mx-auto justify-between h-16 lg:px-20 md:px-10">
             <div className="flex items-center">
               <div className="flex-shrink-0 ">
-                <img
-                  className="h-10 w-10"
-                  src={logo}
-                  alt="Workflow"
-                />
+                <Link to={`/`}>
+                  <img
+                    className="h-10 w-10"
+                    src={logo}
+                    alt="Workflow"
+                  />
+                </Link>
               </div>
               <div className="hidden md:block">
                 <div className="ml-10 flex space-x-8">
