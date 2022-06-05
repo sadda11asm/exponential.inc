@@ -39,7 +39,7 @@ const Footer = () => (
               </Link>
             </p>
             <p className="mt-12 md:text-xl text-xs mx-auto">
-              Applications accepted until July 22
+              Applications accepted until July 31
             </p>
           </div>
         </div>
@@ -48,13 +48,13 @@ const Footer = () => (
         <div className="pt-10 px-8 flex flex-row">
         <div className="w-8 h-8 flex-shrink-0"><img src={logo} style={{ marginTop: "5px" }}/></div>
           <div className="w-14 pl-4 md:pl-12  md:text-sm text-xs">
-            <div><Link to="">Mentors</Link></div>
+            <div><Link to="/#mentors">Mentors</Link></div>
             <div><Link to="/alumni">Graduates</Link></div>
-            <div><Link to="">Pricing</Link></div>
+            <div><Link to="/price">Pricing</Link></div>
           </div>
           <div className="w-14 pl-4 md:pl-12  md:text-sm text-xs">
             <div><Link to="/blog">Blog</Link></div>
-            <div><Link to="">Press&Media</Link></div>
+            <div><Link to="/blog">Press&Media</Link></div>
           </div>
           <div className="flex-1">
             <Link className="float-right w-12 h-8 flex-shrink-0" to="https://www.instagram.com/exp.program/" target="_blank"><img src={insta_logo}/></Link>

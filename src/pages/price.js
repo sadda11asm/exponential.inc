@@ -42,7 +42,7 @@ const Price = () => {
               </Link>
             </p>
             <p className="mt-8 md:text-xl text-xs mx-auto">
-              Applications accepted until July 22
+              Applications accepted until July 31st
             </p>
           </div>
           <img className="float-right hidden lg:block" src={elipsis} alt="Elipsis" />
@@ -63,14 +63,14 @@ const Price = () => {
                     <div className="container mx-auto px-2 md:px-8 items-center flex flex-row">
                       <span className="flex items-center justify-center w-12 h-12 text-xl font-bold">01</span>
                       <div className={`lg:mt-0 w-full px-8 lg:w-1/2`}>
-                        Price of the program? How much do I need to pay?
+                        What is the price of the program? How much do I need to pay?
                       </div>
                       <span className="flex items-center ml-auto justify-center text-black w-12 h-12 text-xl font-bold bg-white rounded-full">+</span>
                     </div>
                   </summary>
                   <span>
                       <div className="font-medium text-xs md:text-sm md:px-32 bg-primary-light rounded-md pb-6 px-4">
-                      You need to pay only if you get an offer from the company of your choice. Price will be equal to 15-20 percent of your monthly salary.
+                      You need to pay only if you get an offer from the company of your choice. Price will be equal to 10-20 percent of your monthly salary over the period of 3 - 12 months.
                       </div>
                     </span>
                 </details>
@@ -86,7 +86,7 @@ const Price = () => {
                   </summary>
                   <span>
                       <div className="font-medium text-xs md:text-sm md:px-32 bg-primary-light rounded-md pb-6 px-4">
-                        After filling out the form on the site, succesful candidates will be notified through email. After interview step 30 final candidates will be selected.
+                        After filling out the form on the site, successful candidates will be notified through email. After the interview step, final candidates will be selected.
                       </div>
                     </span>
                 </details>
@@ -118,7 +118,7 @@ const Price = () => {
                   </summary>
                   <span>
                       <div className="font-medium text-xs md:text-sm md:px-32 bg-primary-light rounded-md pb-6 px-4">
-                        Deadline for the application is July 22nd 23:59 Astana time. Program starts in September.
+                        Deadline for the application is July 31st 23:59, East Kazakhstan time. Program starts in September.
                       </div>
                     </span>
                 </details>
@@ -150,7 +150,7 @@ const Price = () => {
                   </summary>
                   <span>
                       <div className="font-medium text-xs md:text-sm md:px-32 bg-primary-light rounded-md pb-6 px-4">
-                        After the interview step 30 final participants are selected.
+                        The exact amount of applicants will be defined closer to the interviewing step of the selection process. There are will be 2 batches of program - for men and for women.
                       </div>
                     </span>
                 </details>
@@ -159,14 +159,30 @@ const Price = () => {
                     <div className="container mx-auto px-2 md:px-8 items-center flex flex-row">
                       <span className="flex items-center justify-center w-12 h-12 text-xl font-bold">07</span>
                       <div className={`lg:mt-0 w-full px-8 lg:w-1/2`}>
-                        Do I need to be a student at university? Who are eligible for participation?
+                        Can I apply if I am not software engineer? (Product Manager, Product Designer, Marketing Manager etc.)
                       </div>
                       <span className="flex items-center ml-auto justify-center text-black w-12 h-12 text-xl font-bold bg-white rounded-full">+</span>
                     </div>
                   </summary>
                   <span>
                       <div className="font-medium text-xs md:text-sm md:px-32 bg-primary-light rounded-md pb-6 px-4">
-                        For the batch of this year it is required to be an active student at either bachelor or master's university course.
+                      Unfortunately, for this year we only accepts students and engineers who are applying for software engineering roles.
+                      </div>
+                    </span>
+                </details>
+                <details className="mb-4">
+                  <summary className="font-semibold  bg-primary-light text-mainblue rounded-md py-2 md:py-6 px-4">
+                    <div className="container mx-auto px-2 md:px-8 items-center flex flex-row">
+                      <span className="flex items-center justify-center w-12 h-12 text-xl font-bold">08</span>
+                      <div className={`lg:mt-0 w-full px-8 lg:w-1/2`}>
+                        Do I need to be a student at university? Who is eligible for participation?
+                      </div>
+                      <span className="flex items-center ml-auto justify-center text-black w-12 h-12 text-xl font-bold bg-white rounded-full">+</span>
+                    </div>
+                  </summary>
+                  <span>
+                      <div className="font-medium text-xs md:text-sm md:px-32 bg-primary-light rounded-md pb-6 px-4">
+                        For the batch of the 2022-2023 year we accept both students and experienced software engineers which apply for Software Engineering positions in FAANG companies.
                       </div>
                     </span>
                 </details>

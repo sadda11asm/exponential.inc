@@ -81,7 +81,7 @@ const Index = () => {
           </div>
         </div>
         <p className="mx-auto text-l lg:text-xl lg:mt-64 mt-40 lg:pl-20 lg:text-left text-center text-gray-600">
-          Apply before the deadline on <span className="text-white"> July 22nd  </span>
+          Apply before the deadline on <span className="text-white"> July 31st  </span>
         </p>
       </section>
       <section id="what-we-offer" className=" pt-20 md:pt-40 pb-40">
@@ -103,8 +103,8 @@ const Index = () => {
         primarySlot={
           <div className=" lg:pr-32 xl:pr-48">
             <h3 className="md:text-4xl text-2xl font-bold leading-tight text-mainblue">Individual support</h3>
-            <p className="mt-4 md:text-2xl text-sm font-medium leading-relaxed">
-              for the stuidents on their way to the job at FAANG
+            <p className="mt-4 md:text-xl text-sm font-medium leading-relaxed">
+              includes moral and technical support during the whole period of application, interviewing process and offer negotiation
             </p>
           </div>
         }
@@ -117,8 +117,8 @@ const Index = () => {
             <h3 className="md:text-4xl text-2xl font-bold leading-tight text-mainblue">
             Developed strategy
             </h3>
-            <p className="mt-4 md:text-2xl text-sm font-medium leading-relaxed">
-            based on the experience of 40 applicants, who landed a job offer at FAANG
+            <p className="mt-4 md:text-xl text-sm font-medium leading-relaxed">
+            Preparation strategy is based on the experience of 40 applicants, who landed a job offer at FAANG
             </p>
           </div>
         }
@@ -130,8 +130,8 @@ const Index = () => {
             <h3 className="md:text-4xl text-2xl font-bold leading-tight text-mainblue">
             Perfect atmosphere
             </h3>
-            <p className="mt-4 md:text-2xl text-sm font-medium leading-relaxed">
-            of preparation, including exchange of knowledge and experience, support of weak and improvement of strong sides
+            <p className="mt-4 md:text-xl text-sm font-medium leading-relaxed">
+            Our program includes exchange of knowledge and experience between peers, guest lectures, support of weak and improvement of strong sides
             </p>
           </div>
         }
@@ -160,13 +160,13 @@ const Index = () => {
         <section className="z-10 md:absolute mt-24 pt-24 pr-16 right-0 rounded-l-largest w-4/12 flex flex-row">
           <div className="inline-block flex flex-col justify-end">
             <div className="text-center font-bold mb-4">
-             15 offers
+             16 offers
             </div>
             <img src={bluecylinder} alt="bluecylinder" />
           </div>
           <div className="inline-block ml-10 flex flex-col justify-end">
             <div className="text-center font-bold mb-4">
-              24 participants
+              23 participants
             </div>
             <img src={blackcylinder} alt="blackcylinder" />
           </div>
@@ -272,14 +272,14 @@ const Index = () => {
                       <div className="container mx-auto px-2 md:px-8 items-center flex flex-row">
                         <span className="flex items-center justify-center w-12 h-12 text-xl font-bold">01</span>
                         <div className={`lg:mt-0 w-full px-8 lg:w-1/2`}>
-                          Price of the program? How much do I need to pay?
+                          What is the price of the program? How much do I need to pay?
                         </div>
                         <span className="flex items-center ml-auto justify-center text-black w-12 h-12 text-xl font-bold bg-white rounded-full">+</span>
                       </div>
                     </summary>
                     <span>
                       <div className="font-medium text-xs md:text-sm md:px-32 bg-primary-light rounded-md pb-6 px-4">
-                      You need to pay only if you get an offer from the company of your choice. Price will be equal to 15-20 percent of your monthly salary.
+                      You need to pay only if you get an offer from the company of your choice. Price will be equal to 10-20 percent of your monthly salary over the period of 3 - 12 months.
                       </div>
                     </span>
                   </details>
@@ -295,7 +295,7 @@ const Index = () => {
                     </summary>
                     <span>
                       <div className="font-medium text-xs md:text-sm md:px-32 bg-primary-light rounded-md pb-6 px-4">
-                        After filling out the form on the site, succesful candidates will be notified through email. After interview step 30 final candidates will be selected.
+                        After filling out the form on the site, successful candidates will be notified through email. After the interview step, final candidates will be selected.
                       </div>
                     </span>
                   </details>
@@ -327,7 +327,7 @@ const Index = () => {
                     </summary>
                     <span>
                       <div className="font-medium text-xs md:text-sm md:px-32 bg-primary-light rounded-md pb-6 px-4">
-                        Deadline for the application is July 22nd 23:59 Astana time. Program starts in September.
+                        Deadline for the application is July 31st 23:59, East Kazakhstan time. Program starts in September.
                       </div>
                     </span>
                   </details>
@@ -359,7 +359,7 @@ const Index = () => {
                     </summary>
                     <span>
                       <div className="font-medium text-xs md:text-sm md:px-32 bg-primary-light rounded-md pb-6 px-4">
-                        After the interview step 30 final participants are selected.
+                        The exact amount of applicants will be defined closer to the interviewing step of the selection process. There are will be 2 batches of program - for men and for women.
                       </div>
                     </span>
                   </details>
@@ -368,14 +368,30 @@ const Index = () => {
                       <div className="container mx-auto px-2 md:px-8 items-center flex flex-row">
                         <span className="flex items-center justify-center w-12 h-12 text-xl font-bold">07</span>
                         <div className={`lg:mt-0 w-full px-8 lg:w-1/2`}>
-                          Do I need to be a student at university? Who are eligible for participation?
+                          Can I apply if I am not software engineer? (Product Manager, Product Designer, Marketing Manager etc.)
                         </div>
                         <span className="flex items-center ml-auto justify-center text-black w-12 h-12 text-xl font-bold bg-white rounded-full">+</span>
                       </div>
                     </summary>
                     <span>
                       <div className="font-medium text-xs md:text-sm md:px-32 bg-primary-light rounded-md pb-6 px-4">
-                        For the batch of this year it is required to be an active student at either bachelor or master's university course.
+                      Unfortunately, for this year we only accepts students and engineers who are applying for software engineering roles.
+                      </div>
+                    </span>
+                  </details>
+                  <details className="mb-4">
+                    <summary className="font-semibold  bg-primary-light text-mainblue rounded-md py-2 md:py-6 px-4">
+                      <div className="container mx-auto px-2 md:px-8 items-center flex flex-row">
+                        <span className="flex items-center justify-center w-12 h-12 text-xl font-bold">08</span>
+                        <div className={`lg:mt-0 w-full px-8 lg:w-1/2`}>
+                          Do I need to be a student at university? Who is eligible for participation?
+                        </div>
+                        <span className="flex items-center ml-auto justify-center text-black w-12 h-12 text-xl font-bold bg-white rounded-full">+</span>
+                      </div>
+                    </summary>
+                    <span>
+                      <div className="font-medium text-xs md:text-sm md:px-32 bg-primary-light rounded-md pb-6 px-4">
+                        For the batch of the 2022-2023 year we accept both students and experienced software engineers which apply for Software Engineering positions in FAANG companies.
                       </div>
                     </span>
                   </details>
@@ -399,7 +415,7 @@ const Index = () => {
                 </Link>
               </p>
               <p className="mt-8 md:text-xl text-xs mx-auto">
-                Applications accepted until July 22
+                Applications accepted until July 31st
               </p>
               </div>
               <img className="float-right hidden lg:block" src={elipsis} alt="Elipsis" />

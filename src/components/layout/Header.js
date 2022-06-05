@@ -55,12 +55,12 @@ const Header = () => {
                     Blog
                   </Link>
 
-                  <Link className="text-gray-500 hover:bg-gray-700 hover:text-white px-3 my-5 py-1 rounded-md text-sm font-medium" to={`/media/`}>
-                    Media About Us
-                  </Link>
+                  {/*<Link className="text-gray-500 hover:bg-gray-700 hover:text-white px-3 my-5 py-1 rounded-md text-sm font-medium" to={`/media/`}>*/}
+                  {/*  Media About Us*/}
+                  {/*</Link>*/}
 
                   <Link
-                    to="/#faq"
+                    to="/price/#faq"
                     className="text-gray-500 hover:bg-gray-700 hover:text-white px-3 my-5 py-1 rounded-md text-sm font-medium"
                   >
                     FAQ
@@ -164,15 +164,15 @@ const Header = () => {
                 </Link>
 
                 <Link
-                  to="/#faq"
+                  to="/price/#faq"
                   className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
                 >
                   FAQ
                 </Link>
 
-                <Link className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium" to={`/media/`}>
-                  Media about us
-                </Link>
+                {/*<Link className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium" to={`/media/`}>*/}
+                {/*  Media about us*/}
+                {/*</Link>*/}
               </div>
             </div>
           )}
