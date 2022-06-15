@@ -33,7 +33,7 @@ const HowItWorks = () => {
   return (
     <>
       <h2 className="sm:text-4xl lg:text-5xl">How does it <span style={{ color: '#2778FD' }}>work?</span></h2>
-      <Link to="" target="_blank"><span className="inline-block" style={{ color: '#2778FD' }}>Watch video</span> <YoutubeIcon className="inline-block"/> </Link>
+      <Link to="https://www.youtube.com/watch?v=WSKKYy4iJs8" target="_blank"><span className="inline-block" style={{ color: '#2778FD' }}>Watch video</span> <YoutubeIcon className="inline-block"/> </Link>
       <div className="mt-8">
         <LargeHowItWorksSteps className="hidden md:block mx-auto"/>
         <MobileHowItWorksSteps className="md:hidden mx-auto"/>
