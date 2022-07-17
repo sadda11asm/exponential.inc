@@ -118,7 +118,7 @@ const Price = () => {
                   </summary>
                   <span>
                       <div className="font-medium text-xs md:text-sm md:px-32 bg-primary-light rounded-md pb-6 px-4">
-                        Deadline for the application is July 31st 23:59, East Kazakhstan time. Program starts in September.
+                        Deadline for the application is August 31st 23:59, East Kazakhstan time. Program starts in September.
                       </div>
                     </span>
                 </details>
