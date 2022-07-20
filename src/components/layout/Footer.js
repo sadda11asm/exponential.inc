@@ -57,7 +57,7 @@ const Footer = () => (
             <div><Link to="/blog">Press&Media</Link></div>
           </div>
           <div className="flex-1">
-            <Link className="float-right w-12 h-8 flex-shrink-0" to="https://www.instagram.com/exp.program/" target="_blank"><img src={insta_logo}/></Link>
+            <Link className="float-right w-12 h-8 flex-shrink-0" to="https://www.instagram.com/try.exp/" target="_blank"><img src={insta_logo}/></Link>
           </div>
         </div>
         <div className="mt-16 px-8 md:text-sm text-xs">
