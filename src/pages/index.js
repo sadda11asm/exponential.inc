@@ -160,7 +160,7 @@ const Index = () => {
         <section className="z-10 md:absolute mt-24 pt-24 pr-16 right-0 rounded-l-largest w-4/12 flex flex-row">
           <div className="inline-block flex flex-col justify-end">
             <div className="text-center font-bold mb-4">
-             16 offers
+             19 offers
             </div>
             <img src={bluecylinder} alt="bluecylinder" />
           </div>
@@ -221,13 +221,13 @@ const Index = () => {
         <section className="mx-16 mt-4 mb-16 align-middle rounded-l-largest flex flex-row">
           <div className="inline-block flex flex-col justify-between">
             <div className="text-center font-bold mb-4">
-              15 offers
+              19 offers
             </div>
             <img src={bluecylinder} alt="bluecylinder" />
           </div>
           <div className="inline-block ml-10 flex flex-col justify-between">
             <div className="text-center font-bold mb-4">
-              24 participants
+              23 participants
             </div>
             <img src={blackcylinder} alt="blackcylinder" />
           </div>
