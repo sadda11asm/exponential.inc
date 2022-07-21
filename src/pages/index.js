@@ -166,7 +166,7 @@ const Index = () => {
           </div>
           <div className="inline-block ml-10 flex flex-col justify-end">
             <div className="text-center font-bold mb-4">
-              23 participants
+              24 participants
             </div>
             <img src={blackcylinder} alt="blackcylinder" />
           </div>
@@ -227,7 +227,7 @@ const Index = () => {
           </div>
           <div className="inline-block ml-10 flex flex-col justify-between">
             <div className="text-center font-bold mb-4">
-              23 participants
+              24 participants
             </div>
             <img src={blackcylinder} alt="blackcylinder" />
           </div>
