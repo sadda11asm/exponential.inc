@@ -91,7 +91,7 @@ const Index = () => {
               About <span className="text-mainblue"> program </span>
             </h1>
             <p className="mt-8">
-              <YoutubeEmbed className="md:h-full md:w-full h-20 md:mt-6 mt-2" embedId="WSKKYy4iJs8" />
+              <YoutubeEmbed className="md:h-full md:w-full h-20 md:mt-6 mt-2" embedId="zuXA1DCTdZc" />
             </p>
           </div>
         </div>
