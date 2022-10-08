@@ -4,18 +4,10 @@ import raikhan from '../images/specialized-mentors/raikhan-cropped.jpg'
 import ayan from '../images/specialized-mentors/ayan-cropped.jpg'
 import alibek from '../images/specialized-mentors/alibek-cropped.jpg'
 import dani from '../images/specialized-mentors/dani-cropped.jpg'
-import aliya from '../images/specialized-mentors/aliya-cropped.jpg'
 import tortay from '../images/specialized-mentors/tortay-cropped.jpg'
 import batyr from '../images/specialized-mentors/batyr-cropped.jpg'
 
 export default [
-  {
-    title: 'Mentor',
-    mentorDescription: 'Software Engineer at Deepmind, London',
-    mentorName: 'Aliya Rysbek',
-    mentorImage: aliya,
-    bioLink: 'https://linkedin.com/in/rysbekova',
-  },
   {
     title: 'Mentor',
     mentorDescription: 'Software Engineer at Facebook, London',
