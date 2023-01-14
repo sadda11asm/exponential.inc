@@ -41,7 +41,7 @@ const Page = () => {
         const rawResponse = await axios.get('https://hello-world-oli3pqpn7a-oa.a.run.app/?interviewTypes=tech&companies=meta,google');
         const data = rawResponse.data.data;
 
-        setRawData(data);
+        // setRawData(data);
 
         const techMentorsData = convertApiData(data);
 
