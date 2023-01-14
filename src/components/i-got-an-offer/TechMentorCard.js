@@ -15,7 +15,7 @@ const Card = ({ className, children }) => (
 
 
 const TechMentorCard = ({ mentor, link }) => {
-    const shortDescription = mentor.mentorDescription.split('\n').slice(0, 2).join('\n');
+    // const shortDescription = mentor.mentorDescription.split('\n').slice(0, 2).join('\n');
   
     return (
       <Card className="mb-8 bg-opacity-60 bg-white flex flex-col h-full text-center">
@@ -26,7 +26,7 @@ const TechMentorCard = ({ mentor, link }) => {
           alt={mentor.mentorName}
         />
         <p>{mentor.mentorName}</p>
-        <div className="mb-4"><text className="whitespace-pre-line font-display text-sm text-gray-600">Software Engineer @ Meta</text></div>
+        <div className="mb-4"><text className="whitespace-pre-line font-display text-sm text-gray-600">{`${mentor.role} @ ${mentor.company}`}</text></div>
         <div className="absolute inset-x-0 bottom-0">
           {link ? 
           <>

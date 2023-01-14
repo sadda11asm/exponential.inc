@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from 'react';
+import axios from 'axios';
+
 import Layout from '../components/layout/Layout';
 import Button from '../components/Button';
 import TechMentorCard from '../components/i-got-an-offer/TechMentorCard';
@@ -14,9 +16,34 @@ const Page = () => {
         'Booking',
     ]);
 
+    const [mentorsData, setMentorsData] = useState([]);
+
+    const convertApiData = (apiData) => {
+        const result = [];
+        for (const { fields } of apiData) {
+            try {
+                const updatedRecord = { mentorImage: fields.photo[0].thumbnails.large.url, mentorName: fields.Name, company: fields.Company, role: fields.Role }
+
+                result.push(updatedRecord);
+            } catch(err) {}
+        }
+
+        return result;
+    };
+
+    useEffect(async () => {
+        const rawResponse = await axios.get('https://hello-world-oli3pqpn7a-oa.a.run.app/?interviewTypes=tech&companies=meta,google');
+        const data = rawResponse.data.data;
+
+        const techMentorsData = convertApiData(data);
+
+        setMentorsData(techMentorsData);
+    });
+
     return (
         <Layout>
             <div className="px-10 my-10">
+                <p>MentorsData: {JSON.stringify(mentorsData)}</p>
                 <div>
                     <div class="w-full bg-zinc-500">
                         <div class="flex flex-wrap -mx-3 mb-6">
@@ -39,8 +66,8 @@ const Page = () => {
                         </div>
                     </div>
                     <div className="grid lg:grid-cols-5 gap-4 sm:grid-cols-2">
-                        {teamData.concat(teamData).map(mentor => (
-                            <TechMentorCard mentor={mentor} link={mentor.bioLink} />
+                        {mentorsData.map(mentor => (
+                            <TechMentorCard mentor={mentor} link={`https://docs.google.com/forms/d/e/1FAIpQLSeAJJiodYjvzv1xF1EcTpU9XUUtL6ZIvuzzQekMK7WmaHAjiw/viewform?usp=pp_url&entry.312829758=${mentor.mentorName.split(' ').join('+')}`} />
                         ))}
                     </div>
                 </div>
