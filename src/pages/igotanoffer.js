@@ -5,8 +5,6 @@ import Layout from '../components/layout/Layout';
 import Button from '../components/Button';
 import TechMentorCard from '../components/i-got-an-offer/TechMentorCard';
 
-import teamData from '../data/demo-igotanoffer';
-
 const Page = () => {
     const [companyNames, setCompanyNames] = useState([
         'Meta',
@@ -22,10 +20,17 @@ const Page = () => {
         const result = [];
         for (const { fields } of apiData) {
             try {
-                const updatedRecord = { mentorImage: fields.photo[0].thumbnails.large.url, mentorName: fields.Name, company: fields.Company, role: fields.Role }
+                const updatedRecord = {
+                    mentorImage: fields.photo[0].thumbnails.large.url,
+                    mentorName: fields.Name,
+                    company: fields.Company,
+                    previousCompanies: fields['Previous companies'],
+                    role: fields.Role,
+                    conductsInterviews: fields['Interview types'],
+                }
 
                 result.push(updatedRecord);
-            } catch(err) {}
+            } catch (err) { }
         }
 
         return result;
