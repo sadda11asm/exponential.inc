@@ -63,7 +63,7 @@ const Header = () => {
                     to="/price/#faq"
                     className="text-gray-500 hover:bg-gray-700 hover:text-white px-3 my-5 py-1 rounded-md text-sm font-medium"
                   >
-                    FAQ
+                    FAQs
                   </Link>
 
                   <div className="absolute right-0 transform -translate-x-1/2 invisible lg:visible py-3">
