@@ -1,20 +1,21 @@
 import React, { useState, useEffect } from 'react';
+import Select from 'react-select';
 import axios from 'axios';
 
 import Layout from '../components/layout/Layout';
-import Button from '../components/Button';
 import TechMentorCard from '../components/i-got-an-offer/TechMentorCard';
 
 const Page = () => {
-    const [companyNames, setCompanyNames] = useState([
-        'Meta',
-        'Google',
-        'Amazon',
-        'Apple',
-        'Booking',
-    ]);
-
+    const [companyNames, setCompanyNames] = useState([]);
+    const [interviewTypes, setInterviewTypes] = useState([]);
+    
+    const [allMentorsData, setAllMentorsData] = useState([]);
     const [mentorsData, setMentorsData] = useState([]);
+    
+    // debug purposes
+    // const [rawData, setRawData] = useState([]);
+    // const [eventContents, setEventContents] = useState([]);
+    // debug purposes
 
     const convertApiData = (apiData) => {
         const result = [];
@@ -40,34 +41,75 @@ const Page = () => {
         const rawResponse = await axios.get('https://hello-world-oli3pqpn7a-oa.a.run.app/?interviewTypes=tech&companies=meta,google');
         const data = rawResponse.data.data;
 
+        setRawData(data);
+
         const techMentorsData = convertApiData(data);
 
+        setAllMentorsData(techMentorsData);
         setMentorsData(techMentorsData);
-    });
+
+        const companiesSelectOptions = rawResponse.data.companies.map(companyName => { return { value: companyName, label: companyName } });
+        const interviewTypesSelectOptions = rawResponse.data.interview_types.map(interviewType => { return { value: interviewType, label: interviewType } });
+
+        setCompanyNames(companiesSelectOptions);
+        setInterviewTypes(interviewTypesSelectOptions);
+    }, []);
+
+    const onInterviewSelectChange = (event) => {
+        const queriedInterviewTypes = event.map(e => e.value);
+        setMentorsData(allMentorsData.filter(({ conductsInterviews }) => {
+            for (const interviewType of queriedInterviewTypes) {
+                if (conductsInterviews.includes(interviewType)) return true;
+            }
+            return false;
+        }));
+    }
+    
+    const onCompanySelectChange = (event) => {
+        const queriedCompanies = event.map(e => e.value);
+
+        setMentorsData(allMentorsData.filter(({ company, previousCompanies }) => {
+            for (const queriedCompany of queriedCompanies) {
+                if (queriedCompany === company || previousCompanies.includes(queriedCompany)) return true;
+            }
+
+            return false;
+        }));
+    };
 
     return (
         <Layout>
             <div className="px-10 my-10">
+                {/* <p>rawData: {JSON.stringify(rawData)}</p>
                 <p>MentorsData: {JSON.stringify(mentorsData)}</p>
+                <p>eventContents: {JSON.stringify(eventContents)}</p> */}
                 <div>
                     <div class="w-full bg-zinc-500">
                         <div class="flex flex-wrap -mx-3 mb-6">
                             <div class="w-full md:w-1/3 px-3 mb-6 md:mb-0">
                                 <label for="mock-type" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Mock type</label>
-                                <select id="mock-type" class="py-3 bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
-                                    <option selected value="any">Any</option>
-                                    <option value="technical">Technical</option>
-                                    <option value="system">System Design</option>
-                                    <option value="behavioral">Behavioral</option>
-                                </select>
+                                {interviewTypes.length >0 && <Select
+                                    defaultValue={interviewTypes}
+                                    isMulti
+                                    name="colors"
+                                    options={interviewTypes}
+                                    className="basic-multi-select"
+                                    classNamePrefix="select"
+                                    onChange={onInterviewSelectChange}
+                                />}
                             </div>
                             <div class="w-full md:w-1/3 px-3 mb-6 md:mb-0">
-                                <label for="company-name" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Mock type</label>
-                                <select id="company-name" class="py-3 bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-md focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
-                                    {companyNames.map((name, i) => <option value={name}>{name}</option>)}
-                                </select>
+                                <label for="company-name" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Company name</label>
+                                {companyNames.length > 0 && <Select
+                                    defaultValue={companyNames}
+                                    isMulti
+                                    name="colors"
+                                    options={companyNames}
+                                    className="basic-multi-select"
+                                    classNamePrefix="select"
+                                    onChange={onCompanySelectChange}
+                                />}
                             </div>
-                            <Button className="bg-primary-changed rounded-lg text-sm py-3">Apply Now</Button>
                         </div>
                     </div>
                     <div className="grid lg:grid-cols-5 gap-4 sm:grid-cols-2">
