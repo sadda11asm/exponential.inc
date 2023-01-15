@@ -4,8 +4,11 @@ import axios from 'axios';
 
 import Layout from '../components/layout/Layout';
 import TechMentorCard from '../components/i-got-an-offer/TechMentorCard';
+import LoadingSpinner from '../components/i-got-an-offer/LoadingSpinner';
 
 const Page = () => {
+    const [isLoading, setIsLoading] = useState(true);
+
     const [companyNames, setCompanyNames] = useState([]);
     const [interviewTypes, setInterviewTypes] = useState([]);
     
@@ -53,6 +56,7 @@ const Page = () => {
 
         setCompanyNames(companiesSelectOptions);
         setInterviewTypes(interviewTypesSelectOptions);
+        setIsLoading(false);
     }, []);
 
     const onInterviewSelectChange = (event) => {
@@ -79,6 +83,7 @@ const Page = () => {
 
     return (
         <Layout>
+            { isLoading && <div className="flex flex-col justify-center h-screen w-screen inset-0 z-50 absolute bg-gray-100 bg-opacity-50"><LoadingSpinner/></div> };
             <div className="px-10 my-10">
                 {/* <p>rawData: {JSON.stringify(rawData)}</p>
                 <p>MentorsData: {JSON.stringify(mentorsData)}</p>
