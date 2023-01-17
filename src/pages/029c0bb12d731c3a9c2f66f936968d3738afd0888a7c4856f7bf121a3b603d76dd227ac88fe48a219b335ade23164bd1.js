@@ -21,7 +21,7 @@ const Page = () => {
     // debug purposes
 
     useEffect(async () => {
-        const { techMentorsData, rawResponse } = await genQueryApi();
+        const { techMentorsData, rawResponse } = await genQueryApi(false);
 
         setAllMentorsData(techMentorsData);
         setMentorsData(techMentorsData);
