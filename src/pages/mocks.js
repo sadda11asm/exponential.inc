@@ -39,7 +39,7 @@ const Page = () => {
         const queriedInterviewTypes = event.map(e => e.value);
         setMentorsData(allMentorsData.filter(({ conductsInterviews }) => {
             for (const interviewType of queriedInterviewTypes) {
-                if (conductsInterviews.includes(interviewType)) return true;
+                if (conductsInterviews && conductsInterviews.includes(interviewType)) return true;
             }
             return false;
         }));
@@ -50,7 +50,8 @@ const Page = () => {
 
         setMentorsData(allMentorsData.filter(({ company, previousCompanies }) => {
             for (const queriedCompany of queriedCompanies) {
-                if (queriedCompany === company || previousCompanies.includes(queriedCompany)) return true;
+                if (queriedCompany === company) return true;
+                // if (previousCompanies && previousCompanies.includes(queriedCompany)) return true;
             }
 
             return false;
