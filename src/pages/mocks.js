@@ -21,6 +21,7 @@ const Page = () => {
     // debug purposes
 
     useEffect(async () => {
+        document.title = 'Exp Mocks';
         const { techMentorsData, rawResponse } = await genQueryApi();
 
         setAllMentorsData(techMentorsData);
