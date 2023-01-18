@@ -12,6 +12,9 @@ import Card from '../components/Card'
 
 
 const Blog = () => {
+  useEffect(() => {
+    document.title = 'Blog';
+  }, []);
 
   return (
     <Layout>

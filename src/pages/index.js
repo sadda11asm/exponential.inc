@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Button from '../components/Button';
 import ButtonLight from '../components/ButtonLight';
 import Card from '../components/Card';
@@ -43,6 +43,10 @@ import { Link } from 'gatsby';
 
 
 const Index = () => {
+  useEffect(() => {
+    document.title = 'Exponential';
+  }, []);
+
   const [ topmostSectionIsVisible, topmostSection ] = useVisibility(100);
 
   return (

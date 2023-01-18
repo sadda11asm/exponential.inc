@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 
 
 
@@ -10,6 +10,9 @@ import MediaPosts from '../components/MediaPosts';
 
 
 const Media = () => {
+  useEffect(() => {
+    document.title = 'Media about us';
+  }, []);
 
   return (
     <Layout>

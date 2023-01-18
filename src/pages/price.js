@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 
 
 
@@ -13,6 +13,10 @@ import dollar_icon from '../images/dollar_icon.png'
 import p from '../images/p.png';
 
 const Price = () => {
+  useEffect(() => {
+    document.title = 'Price';
+  }, []);
+
   return (
     <Layout>
       <div className=" py-10 lg:px-40 text-center flow-root" style={{ backgroundColor: 'white' }}>
