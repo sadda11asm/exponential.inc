@@ -39,7 +39,7 @@ const TechMentorCard = ({ mentor, link }) => {
         <p>{mentor.mentorName}</p>
         <div className=""><text className="whitespace-pre-line font-display text-sm text-gray-600">{`${mentor.role} @ ${mentor.company}`}</text></div>
         {previouslyEmployedAt && <div className="mb-4"><text className="whitespace-pre-line font-display text-sm text-gray-600">{`ex-${previouslyEmployedAt}`}</text></div>}
-        { conductsInterviews && <div className="mb-2"><text className="whitespace-pre-line font-display text-sm"><span className="font-semibold">Conducts: </span> {conductsInterviews} </text></div> }
+        {conductsInterviews && <div className="mb-2"><text className="whitespace-pre-line font-display text-sm"><span className="font-semibold">Conducts: </span> {conductsInterviews} </text></div> }
         <div className="absolute inset-x-0 bottom-0 hover:bg-blue-100">
           {link ? 
           <>

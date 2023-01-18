@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { genQueryApi } from '../api/igotanoffer';
+import { genQueryApi, } from '../api/igotanoffer';
 import Select from 'react-select';
 
 import Layout from '../components/layout/Layout';
@@ -21,13 +21,16 @@ const Page = () => {
     // debug purposes
 
     useEffect(async () => {
-        const { techMentorsData, rawResponse } = await genQueryApi();
+        document.title = 'Exp Mocks';
+        const { techMentorsData, companiesList, interviewTypesList } = await genQueryApi();
+
+        // setRawData(techMentorsData);
 
         setAllMentorsData(techMentorsData);
         setMentorsData(techMentorsData);
 
-        const companiesSelectOptions = rawResponse.data.companies.map(companyName => { return { value: companyName, label: companyName } });
-        const interviewTypesSelectOptions = rawResponse.data.interview_types.map(interviewType => { return { value: interviewType, label: interviewType } });
+        const companiesSelectOptions = companiesList.map(companyName => { return { value: companyName, label: companyName } });
+        const interviewTypesSelectOptions = interviewTypesList.map(interviewType => { return { value: interviewType, label: interviewType } });
 
         setCompanyNames(companiesSelectOptions);
         setInterviewTypes(interviewTypesSelectOptions);
@@ -38,7 +41,7 @@ const Page = () => {
         const queriedInterviewTypes = event.map(e => e.value);
         setMentorsData(allMentorsData.filter(({ conductsInterviews }) => {
             for (const interviewType of queriedInterviewTypes) {
-                if (conductsInterviews.includes(interviewType)) return true;
+                if (conductsInterviews && conductsInterviews.includes(interviewType)) return true;
             }
             return false;
         }));
@@ -49,7 +52,8 @@ const Page = () => {
 
         setMentorsData(allMentorsData.filter(({ company, previousCompanies }) => {
             for (const queriedCompany of queriedCompanies) {
-                if (queriedCompany === company || previousCompanies.includes(queriedCompany)) return true;
+                if (queriedCompany === company) return true;
+                // if (previousCompanies && previousCompanies.includes(queriedCompany)) return true;
             }
 
             return false;
