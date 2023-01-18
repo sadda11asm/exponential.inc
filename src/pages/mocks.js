@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { genQueryApi } from '../api/igotanoffer';
+import { genQueryApi, } from '../api/igotanoffer';
 import Select from 'react-select';
 
 import Layout from '../components/layout/Layout';
@@ -22,13 +22,15 @@ const Page = () => {
 
     useEffect(async () => {
         document.title = 'Exp Mocks';
-        const { techMentorsData, rawResponse } = await genQueryApi();
+        const { techMentorsData, companiesList, interviewTypesList } = await genQueryApi();
+
+        // setRawData(techMentorsData);
 
         setAllMentorsData(techMentorsData);
         setMentorsData(techMentorsData);
 
-        const companiesSelectOptions = rawResponse.data.companies.map(companyName => { return { value: companyName, label: companyName } });
-        const interviewTypesSelectOptions = rawResponse.data.interview_types.map(interviewType => { return { value: interviewType, label: interviewType } });
+        const companiesSelectOptions = companiesList.map(companyName => { return { value: companyName, label: companyName } });
+        const interviewTypesSelectOptions = interviewTypesList.map(interviewType => { return { value: interviewType, label: interviewType } });
 
         setCompanyNames(companiesSelectOptions);
         setInterviewTypes(interviewTypesSelectOptions);
