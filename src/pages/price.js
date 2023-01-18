@@ -14,7 +14,7 @@ import p from '../images/p.png';
 
 const Price = () => {
   useEffect(() => {
-    document.title = 'Price';
+    document.title = 'FAQs';
   }, []);
 
   return (
