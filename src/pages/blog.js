@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, } from 'react';
 
 
 
@@ -12,6 +12,9 @@ import Card from '../components/Card'
 
 
 const Blog = () => {
+  useEffect(() => {
+    document.title = 'Blog';
+  }, []);
 
   return (
     <Layout>

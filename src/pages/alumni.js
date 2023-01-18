@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, } from 'react';
 
 
 
@@ -10,6 +10,9 @@ import AlumniCard from '../components/AlumniCard';
 
 
 const Alumni = () => {
+  useEffect(() => {
+    document.title = 'Exp Alumni';
+  }, []);
 
   const finalData = [];
   let tempData = [];
