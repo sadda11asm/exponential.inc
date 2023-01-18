@@ -25,52 +25,59 @@ const Header = () => {
               </div>
               <div className="hidden md:block">
                 <div className="ml-10 flex space-x-8">
-                  <Link className="text-gray-500 hover:bg-gray-700 hover:text-white px-3 my-5 py-1 rounded-md text-sm font-medium" to={`/`}>
+                  <Link className="text-white-500 hover:bg-gray-700 hover:text-white px-3 my-5 py-1 rounded-md text-sm font-medium" to={`/`}>
                     Home
                   </Link>
 
                   <Link
                     to="/#mentors"
-                    className="text-gray-500 hover:bg-gray-700 hover:text-white px-3 my-5 py-1 rounded-md text-sm font-medium"
+                    className="text-white-500 hover:bg-gray-700 hover:text-white px-3 my-5 py-1 rounded-md text-sm font-medium"
                   >
                     Mentors
                   </Link>
 
                   <Link
                     to="/#program"
-                    className="text-gray-500 hover:bg-gray-700 hover:text-white px-3 my-5 py-1 rounded-md text-sm font-medium"
+                    className="text-white-500 hover:bg-gray-700 hover:text-white px-3 my-5 py-1 rounded-md text-sm font-medium"
                   >
                     Program
                   </Link>
 
-                  <Link className="text-gray-500 hover:bg-gray-700 hover:text-white px-3 my-5 py-1 rounded-md text-sm font-medium" to={`/price/`}>
+                  <Link className="text-white-500 hover:bg-gray-700 hover:text-white px-3 my-5 py-1 rounded-md text-sm font-medium" to={`/price/`}>
                     Price
                   </Link>
 
-                  <Link className="text-gray-500 hover:bg-gray-700 hover:text-white px-3 my-5 py-1 rounded-md text-sm font-medium" to={`/alumni/`}>
+                  <Link className="text-white-500 hover:bg-gray-700 hover:text-white px-3 my-5 py-1 rounded-md text-sm font-medium" to={`/alumni/`}>
                     Alumni
                   </Link>
 
-                  <Link className="text-gray-500 hover:bg-gray-700 hover:text-white px-3 my-5 py-1 rounded-md text-sm font-medium" to={`/blog/`}>
+                  <Link className="text-white-500 hover:bg-gray-700 hover:text-white px-3 my-5 py-1 rounded-md text-sm font-medium" to={`/blog/`}>
                     Blog
                   </Link>
 
-                  {/*<Link className="text-gray-500 hover:bg-gray-700 hover:text-white px-3 my-5 py-1 rounded-md text-sm font-medium" to={`/media/`}>*/}
+                  {/*<Link className="text-white-500 hover:bg-gray-700 hover:text-white px-3 my-5 py-1 rounded-md text-sm font-medium" to={`/media/`}>*/}
                   {/*  Media About Us*/}
                   {/*</Link>*/}
 
                   <Link
                     to="/price/#faq"
-                    className="text-gray-500 hover:bg-gray-700 hover:text-white px-3 my-5 py-1 rounded-md text-sm font-medium"
+                    className="text-white-500 hover:bg-gray-700 hover:text-white px-3 my-5 py-1 rounded-md text-sm font-medium"
                   >
                     FAQs
                   </Link>
 
                   <Link
                     to={`/mocks`}
-                    className="text-gray-500 hover:bg-gray-700 hover:text-white px-3 my-5 py-1 rounded-md text-sm font-medium"
+                    className="text-white-500 hover:bg-gray-700 hover:text-white px-3 my-5 py-1 rounded-md text-sm font-medium relative"
                   >
                     Mocks
+                    <span
+                    to={`/mocks`}
+                    className="text-yellow-400 absolute text-xs font-extralight top-0"
+                  >
+                    Beta
+                  </span>
+                  {/* <span className='text-white-500 hover:bg-gray-700 hover:text-white my-5 py-1 rounded-md text-sm font-medium'>Mocks</span> */}
                   </Link>
 
                   <div className="absolute right-0 transform -translate-x-1/2 invisible lg:visible py-3">
@@ -179,9 +186,15 @@ const Header = () => {
 
                 <Link
                   to={`/mocks`}
-                  className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+                  className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium relative"
                 >
                   Mocks
+                  <span
+                    to={`/mocks`}
+                    className="text-yellow-400 absolute text-xs font-extralight top-0"
+                  >
+                    Beta
+                  </span>
                 </Link>
 
 
