@@ -21,10 +21,10 @@ const Price = () => {
     <Layout>
       <div className=" py-10 lg:px-40 text-center flow-root" style={{ backgroundColor: 'white' }}>
         <h2 className="text-5xl bold">Price</h2>
-        <img className="z-10 invisible lg:visible absolute mt-20 right-0 lg:w-1/12" src={dollar_icon} alt="Dollar Icon"/>
+        <img className="z-10 invisible lg:visible absolute mt-20 right-0 lg:w-1/12" src={dollar_icon} alt="Dollar Icon" />
         <h3 className="font-medium">Payment is required only in the case of a succesful offer from a company.</h3>
         <div class="relative grid overflow-hidden place-items-center py-20 rounded-lg">
-          <img class="object-cover lg:w-4/12 w-6/12" src={pricebackground} alt="Price Background"/>
+          <img class="object-cover lg:w-4/12 w-6/12" src={pricebackground} alt="Price Background" />
 
           <div class="absolute top-10 left-10">
             <h4 class="mb-3 lg:text-5xl text-3xl text-mainblue font-semibold tracking-tight">15-20%</h4>
@@ -46,13 +46,12 @@ const Price = () => {
               </Link>
             </p>
             <p className="mt-8 md:text-xl text-xs mx-auto">
-              Applications accepted until July 31st
             </p>
           </div>
           <img className="float-right hidden lg:block" src={elipsis} alt="Elipsis" />
         </div>
       </div>
-      <section id= "faq" className="lg:py-20 lg:px-20">
+      <section id="faq" className="lg:py-20 lg:px-20">
         <div>
           <div className="container py-10 mx-auto">
             <div className="text-center mb-20">
@@ -73,10 +72,10 @@ const Price = () => {
                     </div>
                   </summary>
                   <span>
-                      <div className="font-medium text-xs md:text-sm md:px-32 bg-primary-light rounded-md pb-6 px-4">
+                    <div className="font-medium text-xs md:text-sm md:px-32 bg-primary-light rounded-md pb-6 px-4">
                       You need to pay only if you get an offer from the company of your choice. Price will be equal to 10-20 percent of your monthly salary over the period of 3 - 12 months.
-                      </div>
-                    </span>
+                    </div>
+                  </span>
                 </details>
                 <details className="mb-4">
                   <summary className="font-semibold  bg-primary-light text-mainblue rounded-md py-2 md:py-6 px-4">
@@ -89,10 +88,10 @@ const Price = () => {
                     </div>
                   </summary>
                   <span>
-                      <div className="font-medium text-xs md:text-sm md:px-32 bg-primary-light rounded-md pb-6 px-4">
-                        After filling out the form on the site, successful candidates will be notified through email. After the interview step, final candidates will be selected.
-                      </div>
-                    </span>
+                    <div className="font-medium text-xs md:text-sm md:px-32 bg-primary-light rounded-md pb-6 px-4">
+                      After filling out the form on the site, successful candidates will be notified through email. After the interview step, final candidates will be selected.
+                    </div>
+                  </span>
                 </details>
                 <details className="mb-4">
                   <summary className="font-semibold  bg-primary-light text-mainblue rounded-md py-2 md:py-6 px-4">
@@ -105,10 +104,10 @@ const Price = () => {
                     </div>
                   </summary>
                   <span>
-                      <div className="font-medium text-xs md:text-sm md:px-32 bg-primary-light rounded-md pb-6 px-4">
-                        Entire program is conducted online. Candidates only need a laptop with an internet access, webcam and microphone.
-                      </div>
-                    </span>
+                    <div className="font-medium text-xs md:text-sm md:px-32 bg-primary-light rounded-md pb-6 px-4">
+                      Entire program is conducted online. Candidates only need a laptop with an internet access, webcam and microphone.
+                    </div>
+                  </span>
                 </details>
                 <details className="mb-4">
                   <summary className="font-semibold  bg-primary-light text-mainblue rounded-md py-2 md:py-6 px-4">
@@ -121,10 +120,10 @@ const Price = () => {
                     </div>
                   </summary>
                   <span>
-                      <div className="font-medium text-xs md:text-sm md:px-32 bg-primary-light rounded-md pb-6 px-4">
-                        Deadline for the application is August 31st 23:59, East Kazakhstan time. Program starts in September.
-                      </div>
-                    </span>
+                    <div className="font-medium text-xs md:text-sm md:px-32 bg-primary-light rounded-md pb-6 px-4">
+                      We haven't opened application yet, but you can already start your application
+                    </div>
+                  </span>
                 </details>
                 <details className="mb-4">
                   <summary className="font-semibold  bg-primary-light text-mainblue rounded-md py-2 md:py-6 px-4">
@@ -137,10 +136,10 @@ const Price = () => {
                     </div>
                   </summary>
                   <span>
-                      <div className="font-medium md:text-sm text-xs md:text-sm md:px-32 bg-primary-light rounded-md pb-6 px-4">
-                        Duration of the program is adjusted indivually, with shortest duration of 3 month.
-                      </div>
-                    </span>
+                    <div className="font-medium md:text-sm text-xs md:text-sm md:px-32 bg-primary-light rounded-md pb-6 px-4">
+                      Duration of the program is adjusted indivually, with shortest duration of 3 month.
+                    </div>
+                  </span>
                 </details>
                 <details className="mb-4">
                   <summary className="font-semibold  bg-primary-light text-mainblue rounded-md py-2 md:py-6 px-4">
@@ -153,10 +152,10 @@ const Price = () => {
                     </div>
                   </summary>
                   <span>
-                      <div className="font-medium text-xs md:text-sm md:px-32 bg-primary-light rounded-md pb-6 px-4">
-                        The exact amount of applicants will be defined closer to the interviewing step of the selection process. There are will be 2 batches of program - for men and for women.
-                      </div>
-                    </span>
+                    <div className="font-medium text-xs md:text-sm md:px-32 bg-primary-light rounded-md pb-6 px-4">
+                      The exact amount of applicants will be defined closer to the interviewing step of the selection process. There are will be 2 batches of program - for men and for women.
+                    </div>
+                  </span>
                 </details>
                 <details className="mb-4">
                   <summary className="font-semibold  bg-primary-light text-mainblue rounded-md py-2 md:py-6 px-4">
@@ -169,10 +168,10 @@ const Price = () => {
                     </div>
                   </summary>
                   <span>
-                      <div className="font-medium text-xs md:text-sm md:px-32 bg-primary-light rounded-md pb-6 px-4">
+                    <div className="font-medium text-xs md:text-sm md:px-32 bg-primary-light rounded-md pb-6 px-4">
                       Unfortunately, for this year we only accepts students and engineers who are applying for software engineering roles.
-                      </div>
-                    </span>
+                    </div>
+                  </span>
                 </details>
                 <details className="mb-4">
                   <summary className="font-semibold  bg-primary-light text-mainblue rounded-md py-2 md:py-6 px-4">
@@ -185,10 +184,10 @@ const Price = () => {
                     </div>
                   </summary>
                   <span>
-                      <div className="font-medium text-xs md:text-sm md:px-32 bg-primary-light rounded-md pb-6 px-4">
-                        For the batch of the 2022-2023 year we accept both students and experienced software engineers which apply for Software Engineering positions in FAANG companies.
-                      </div>
-                    </span>
+                    <div className="font-medium text-xs md:text-sm md:px-32 bg-primary-light rounded-md pb-6 px-4">
+                      For the batch of the 2022-2023 year we accept both students and experienced software engineers which apply for Software Engineering positions in FAANG companies.
+                    </div>
+                  </span>
                 </details>
               </div>
             </div>

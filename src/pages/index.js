@@ -85,7 +85,6 @@ const Index = () => {
           </div>
         </div>
         <p className="mx-auto text-l lg:text-xl lg:mt-64 mt-40 lg:pl-20 lg:text-left text-center text-gray-600">
-          Apply before the deadline on <span className="text-white"> August 31st  </span>
         </p>
       </section>
       <section id="what-we-offer" className=" pt-20 md:pt-40 pb-40">
@@ -331,7 +330,7 @@ const Index = () => {
                     </summary>
                     <span>
                       <div className="font-medium text-xs md:text-sm md:px-32 bg-primary-light rounded-md pb-6 px-4">
-                        Deadline for the application is August 31st 23:59, East Kazakhstan time. Program starts in September.
+                        We haven't opened application yet, but you can already start your application
                       </div>
                     </span>
                   </details>
@@ -419,7 +418,6 @@ const Index = () => {
                 </Link>
               </p>
               <p className="mt-8 md:text-xl text-xs mx-auto">
-                Applications accepted until July 31st
               </p>
               </div>
               <img className="float-right hidden lg:block" src={elipsis} alt="Elipsis" />
