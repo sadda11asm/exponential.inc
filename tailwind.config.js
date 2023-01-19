@@ -1,4 +1,10 @@
 module.exports = {
+  purge: {
+    content: ['./public/**/*.html', './src/**/*.js'],
+    options: {
+      safelist: [/(from|via|to|border|bg|text)-(.*)-(\\d{1}0{1,2})/]
+    }
+  },
   theme: {
     fontFamily: {
       sans: ['Inter', 'sans-serif'],
@@ -24,7 +30,7 @@ module.exports = {
         grey: "#EFF2F6",
       },
       width: {
-        '96' : '24rem',
+        '96': '24rem',
       }
     },
     borderRadius: {

@@ -39,7 +39,6 @@ const Footer = () => (
               </Link>
             </p>
             <p className="mt-12 md:text-xl text-xs mx-auto">
-              Applications accepted until July 31
             </p>
           </div>
         </div>
