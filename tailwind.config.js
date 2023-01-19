@@ -1,5 +1,6 @@
 module.exports = {
   purge: {
+    content: ['./public/**/*.html', './src/**/*.js'],
     options: {
       safelist: [/(from|via|to|border|bg|text)-(.*)-(\\d{1}0{1,2})/]
     }
