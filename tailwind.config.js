@@ -1,4 +1,8 @@
 module.exports = {
+  purge: {
+    content: ['./src/**/*.html'],
+    safelist: ['bg-primary', 'bg-secondary']
+  },
   theme: {
     fontFamily: {
       sans: ['Inter', 'sans-serif'],
