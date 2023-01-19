@@ -1,7 +1,8 @@
 module.exports = {
   purge: {
-    content: ['./src/**/*.html'],
-    safelist: ['bg-primary', 'bg-secondary']
+    options: {
+      safelist: [/(from|via|to|border|bg|text)-(.*)-(\\d{1}0{1,2})/]
+    }
   },
   theme: {
     fontFamily: {
@@ -28,7 +29,7 @@ module.exports = {
         grey: "#EFF2F6",
       },
       width: {
-        '96' : '24rem',
+        '96': '24rem',
       }
     },
     borderRadius: {
