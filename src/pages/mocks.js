@@ -98,7 +98,7 @@ const Page = () => {
                     </div>
                     <div className="grid lg:grid-cols-5 gap-4 sm:grid-cols-2">
                         {mentorsData.map(mentor => (
-                            <TechMentorCard mentor={mentor} link={`https://docs.google.com/forms/d/e/1FAIpQLSeAJJiodYjvzv1xF1EcTpU9XUUtL6ZIvuzzQekMK7WmaHAjiw/viewform?usp=pp_url&entry.312829758=${mentor.mentorName.split(' ').join('+')}`} />
+                            <TechMentorCard mentor={mentor} link={`https://docs.google.com/forms/d/e/1FAIpQLSeAJJiodYjvzv1xF1EcTpU9XUUtL6ZIvuzzQekMK7WmaHAjiw/viewform?usp=pp_url`} />
                         ))}
                     </div>
                 </div>
