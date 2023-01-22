@@ -21,7 +21,7 @@ const RequiredSelect = ({ options, passValueToParent }) => {
     <Select
       required
       className='px-6 relative'
-      placeholder='Mock type'
+      placeholder='Select mock type'
       options={options}
       onChange={({ value }) => {
         setValue(value);
