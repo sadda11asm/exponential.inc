@@ -1,7 +1,6 @@
 import alikhan from '../images/specialized-mentors/alikhan-cropped.jpg'
 import narikbi from '../images/specialized-mentors/narikbi-cropped.jpg'
 import raikhan from '../images/specialized-mentors/raikhan-cropped.jpg'
-import ayan from '../images/specialized-mentors/ayan-cropped.jpg'
 import alibek from '../images/specialized-mentors/alibek-cropped.jpg'
 import dani from '../images/specialized-mentors/dani-cropped.jpg'
 import tortay from '../images/specialized-mentors/tortay-cropped.jpg'
@@ -49,12 +48,6 @@ export default [
     mentorName: 'Batyrkhan Orynkul',
     mentorImage: batyr,
     bioLink: 'https://linkedin.com/in/batyrkhan-orynkul-68a45817b',
-  },
-  {
-    title: 'Mentor',
-    mentorDescription: 'Received internship offers from Google STEP, Facebook, Yandex',
-    mentorName: 'Ayan Ginet',
-    mentorImage: ayan,
   },
   {
     title: 'Mentor',
