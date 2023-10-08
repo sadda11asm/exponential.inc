@@ -34,6 +34,7 @@ import process_fifth from '../images/feedback.jpg'
 
 import WeekInMentorship from '../components/a-week-in-mentorship';
 import HowItWorks from '../components/how-it-works';
+import Page from '../pages/mocks'
 
 
 
@@ -75,7 +76,7 @@ const Index = () => {
               Exponential
             </h1>
             <p className="text-l lg:text-xl mt-6 lg:mr-10">
-              Mentorship program for software engineers and software engineering students applying to FAANGs
+              Mentorship platform for software engineers and software engineering students applying to FAANGs
             </p>
             <p className="mt-8 md:mt-12">
               <Link to="https://docs.google.com/forms/d/e/1FAIpQLSfEXdTmGSKaBnU_W-K95pV4xw_1Rca0ihzixFdbhDxYFCptqg/viewform?usp=sf_link">
@@ -87,11 +88,14 @@ const Index = () => {
         <p className="mx-auto text-l lg:text-xl lg:mt-64 mt-40 lg:pl-20 lg:text-left text-center text-gray-600">
         </p>
       </section>
+      <div id="mocks">
+        <Page/>
+      </div>
       <section id="what-we-offer" className=" pt-20 md:pt-40 pb-40">
         <div className="container mx-auto px-10 lg:flex">
           <div className="container mx-auto text-center">
             <h1 className="text-3xl lg:text-5xl font-bold">
-              About <span className="text-mainblue"> program </span>
+              About <span className="text-mainblue"> us </span>
             </h1>
             <p className="mt-8">
               <YoutubeEmbed className="md:h-full md:w-full h-20 md:mt-6 mt-2" embedId="zuXA1DCTdZc" />

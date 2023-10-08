@@ -11,10 +11,10 @@ const Page = () => {
 
     const [companyNames, setCompanyNames] = useState([]);
     const [interviewTypes, setInterviewTypes] = useState([]);
-    
+
     const [allMentorsData, setAllMentorsData] = useState([]);
     const [mentorsData, setMentorsData] = useState([]);
-    
+
     // debug purposes
     // const [rawData, setRawData] = useState([]);
     // const [eventContents, setEventContents] = useState([]);
@@ -46,7 +46,7 @@ const Page = () => {
             return false;
         }));
     }
-    
+
     const onCompanySelectChange = (event) => {
         const queriedCompanies = event.map(e => e.value);
 
@@ -61,8 +61,8 @@ const Page = () => {
     };
 
     return (
-        <Layout>
-            { isLoading && <div className="flex flex-col justify-center h-screen w-screen inset-0 z-50 absolute bg-gray-100 bg-opacity-50"><LoadingSpinner/></div> };
+        <div>
+            { isLoading && <div className="flex flex-col justify-center h-screen w-screen inset-0 z-50 absolute bg-gray-100 bg-opacity-50"><LoadingSpinner/></div> }
             <div className="px-10 my-10">
                 {/* <p>rawData: {JSON.stringify(rawData)}</p>
                 <p>MentorsData: {JSON.stringify(mentorsData)}</p>
@@ -103,7 +103,7 @@ const Page = () => {
                     </div>
                 </div>
             </div>
-        </Layout>
+        </div>
     );
 };
 

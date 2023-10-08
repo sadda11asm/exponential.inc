@@ -67,15 +67,15 @@ const Header = () => {
                   </Link>
 
                   <Link
-                    to={`/mocks`}
+                    to={`/#mocks`}
                     className="text-white-500 hover:bg-gray-700 hover:text-white px-3 my-5 py-1 rounded-md text-sm font-medium relative"
                   >
                     Mocks
                     <span
-                    to={`/mocks`}
+                    to={`/#mocks`}
                     className="text-yellow-400 absolute text-xs font-extralight top-0"
                   >
-                    Beta
+                    ***
                   </span>
                   {/* <span className='text-white-500 hover:bg-gray-700 hover:text-white my-5 py-1 rounded-md text-sm font-medium'>Mocks</span> */}
                   </Link>
@@ -185,15 +185,15 @@ const Header = () => {
                 </Link>
 
                 <Link
-                  to={`/mocks`}
+                  to={`/#mocks`}
                   className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium relative"
                 >
                   Mocks
                   <span
-                    to={`/mocks`}
+                    to={`/#mocks`}
                     className="text-yellow-400 absolute text-xs font-extralight top-0"
                   >
-                    Beta
+                    ***
                   </span>
                 </Link>
 

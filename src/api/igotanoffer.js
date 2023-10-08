@@ -4,6 +4,7 @@ const convertApiData = (apiData) => {
     const result = [];
     for (const { fields } of apiData) {
         try {
+            if (fields.Name === "Saddam Asmatullayev") continue;
             const updatedRecord = {
                 mentorImage: fields.photo[0].thumbnails.large.url,
                 mentorName: fields.Name,
