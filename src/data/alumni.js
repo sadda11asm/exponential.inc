@@ -114,14 +114,4 @@ export default [
     bioLink: 'https://hu.linkedin.com/in/nursezim-kurmanalieva-5417a2206',
     instaLink: 'https://www.instagram.com/try.exp'
   },
-  {
-    title: 'Incoming Software Engineer at',
-    position: 'Meta',
-    location: 'London',
-    quote: "Before joining Exponential, I did not consider a career in big tech. The application process and interviews made me anxious since I did not have people to consult. The program gave me an opportunity to meet new people with similar goals and receive advice on the hiring process. These two contributed to a sense of community and accountability that kept me focused on my goal",
-    name: 'Naziya Sabrkyzy',
-    image: naziya,
-    bioLink: 'https://www.linkedin.com/in/naziyazh/',
-    instaLink: 'https://www.instagram.com/try.exp'
-  },
 ];
