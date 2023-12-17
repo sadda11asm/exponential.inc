@@ -88,9 +88,6 @@ const Index = () => {
         <p className="mx-auto text-l lg:text-xl lg:mt-64 mt-40 lg:pl-20 lg:text-left text-center text-gray-600">
         </p>
       </section>
-      <div id="mocks">
-        <Page/>
-      </div>
       <section id="what-we-offer" className=" pt-20 md:pt-40 pb-40">
         <div className="container mx-auto px-10 lg:flex">
           <div className="container mx-auto text-center">

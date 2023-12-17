@@ -25,7 +25,7 @@ export default [
     bioLink: 'https://linkedin.com/in/sadda11asm',
   },
   {
-    title: 'Co-Founder, ',
+    title: 'Co-Founder',
     mentorDescription:
       'Software Engineer at Meta\n' +
       'Nazarbayev University 21`',
