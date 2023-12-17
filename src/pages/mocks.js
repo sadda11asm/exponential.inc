@@ -61,7 +61,7 @@ const Page = () => {
     };
 
     return (
-        <div>
+        <Layout>
             { isLoading && <div className="flex flex-col justify-center h-screen w-screen inset-0 z-50 absolute bg-gray-100 bg-opacity-50"><LoadingSpinner/></div> }
             <div className="px-10 my-10">
                 {/* <p>rawData: {JSON.stringify(rawData)}</p>
@@ -103,7 +103,7 @@ const Page = () => {
                     </div>
                 </div>
             </div>
-        </div>
+        </Layout>
     );
 };
 
