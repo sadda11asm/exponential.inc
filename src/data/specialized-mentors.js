@@ -1,59 +1,19 @@
-import alikhan from '../images/specialized-mentors/alikhan-cropped.jpg'
-import narikbi from '../images/specialized-mentors/narikbi-cropped.jpg'
-import raikhan from '../images/specialized-mentors/raikhan-cropped.jpg'
-import alibek from '../images/specialized-mentors/alibek-cropped.jpg'
-import dani from '../images/specialized-mentors/dani-cropped.jpg'
-import tortay from '../images/specialized-mentors/tortay-cropped.jpg'
-import batyr from '../images/specialized-mentors/batyr-cropped.jpg'
+import bakhtiyar from '../images/specialized-mentors/bakhtiyar-cropped.jpg'
+import saadat from '../images/specialized-mentors/saadat-cropped.jpg'
 
 export default [
   {
     title: 'Mentor',
-    mentorDescription: 'Software Engineer at Facebook, London',
-    mentorName: 'Raikhan Khassenova',
-    mentorImage: raikhan,
-    bioLink: 'https://linkedin.com/in/raikhan-khassenova-b9a0a557',
+    mentorDescription: 'Software Engineer at Amazon,\n Madrid',
+    mentorName: 'Bakhtiyar Suleimenov',
+    mentorImage: bakhtiyar,
+    bioLink: 'https://www.linkedin.com/in/bakhtiyars',
   },
   {
     title: 'Mentor',
-    mentorDescription: 'IOS Engineer at Booking, Amsterdam',
-    mentorName: 'Narikbi Maksut',
-    mentorImage: narikbi,
-    bioLink: 'https://linkedin.com/in/narikbi',
-  },
-  {
-    title: 'Mentor',
-    mentorDescription: 'Site Reliability Engineer at Google, Dublin',
-    mentorName: 'Alikhan Okas',
-    mentorImage: alikhan,
-    bioLink: 'https://linkedin.com/in/alikhan-okas-586614170',
-  },
-  {
-    title: 'Mentor',
-    mentorDescription: 'Quantative Researcher at Unnoted, Seoul',
-    mentorName: 'Alisher Tortay',
-    mentorImage: tortay,
-    bioLink: 'https://linkedin.com/in/alishertortay',
-  },
-  {
-    title: 'Mentor',
-    mentorDescription: 'Network Engineer at Booking, Amsterdam',
-    mentorName: 'Alibek Yergaliyev',
-    mentorImage: alibek,
-    bioLink: 'https://linkedin.com/in/ayergaliyev',
-  },
-  {
-    title: 'Mentor',
-    mentorDescription: 'Software Engineer at Google,\n Mountain View',
-    mentorName: 'Batyrkhan Orynkul',
-    mentorImage: batyr,
-    bioLink: 'https://linkedin.com/in/batyrkhan-orynkul-68a45817b',
-  },
-  {
-    title: 'Mentor',
-    mentorDescription: 'Internship offer from Microsoft, \nBelgrade and Yelp, London',
-    mentorName: 'Daneker Nurgaliyeva',
-    mentorImage: dani,
-    bioLink: 'https://linkedin.com/in/ndaneker',
+    mentorDescription: 'Interned at Meta, \n London',
+    mentorName: 'Saadat Nursultan',
+    mentorImage: saadat,
+    bioLink: 'https://www.linkedin.com/in/saadat-nursultan',
   }
 ];
